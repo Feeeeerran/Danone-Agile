@@ -1,6 +1,6 @@
 const controller = new ScrollMagic.Controller();
 
-import {intro} from './intro/intro-script.js';
+import intro from './intro/intro-script.js';
 intro(controller);
 
 import menu from './menu/menu-script.js';
