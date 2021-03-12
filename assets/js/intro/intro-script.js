@@ -1,4 +1,4 @@
-export function intro (controller) {
+export default function intro (controller) {
 
     var introTitle = new TimelineMax()
     .fromTo("#introTit",1,{opacity:0},{opacity:1})
