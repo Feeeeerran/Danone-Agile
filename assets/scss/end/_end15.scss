@@ -1,0 +1,28 @@
+div#endContainer15 {
+    height:200vh;
+
+    div#sub-containerEnd15 {
+        @include subContainers;
+        justify-content: flex-start;
+        h3 {
+            width: 35%;
+            color:white;
+            text-align: center;
+            font:{
+                family:blog;
+                size:2.4vw;
+            }
+        }
+
+        svg {
+            margin-top:2%;
+            height:18%;
+
+            .cls-1{fill:#fff;}
+            .cls-2{fill:#020100;}
+
+        }
+
+
+    }
+}

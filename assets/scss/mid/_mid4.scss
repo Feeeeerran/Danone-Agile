@@ -1,0 +1,25 @@
+div#mid-container4 {
+    position: relative;
+    height:300vh;
+
+    div#sub-containerMid4 {
+        @include subContainers;
+        @include midTitulos;
+        justify-content: flex-start;
+
+        .mid4Icon {
+            position: relative;
+            top:-10%;
+            width: 100%;
+            height: 80%;
+            transform: scale(1.2);
+        }
+    }
+}
+
+// TRIGGERS ////////////////
+
+.mid4Trigger-title {
+    position: absolute;
+    top:100vh;
+}

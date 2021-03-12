@@ -1,0 +1,46 @@
+@import "what";
+@import "when";
+@import "why";
+@import "how";
+
+section#menu {
+    position: relative;
+
+    #menuQuestions {
+        position:sticky;
+        z-index:1000;
+        width: 60%;
+        height:0;
+        margin:0;
+        top:5vh;
+        padding-right:0;
+        // transform:translate(-100vw,0);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+
+        margin:auto;
+
+        li {
+            position:relative;
+            color:white;
+            font:{
+                family:blog;
+                size:3.6vw;
+            }
+        }
+    }
+}
+
+// TRIGGERS ////////////
+
+.menuTrigger {
+    position: absolute;
+    top:35vh;
+}
+.menuTrigger-out {
+    position: absolute;
+    bottom:50vh;
+}

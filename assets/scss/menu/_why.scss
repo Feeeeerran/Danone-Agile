@@ -1,0 +1,88 @@
+#containerWhy {
+    position: relative;
+    height:650vh;
+    #sub-containerWhy {
+        @include subContainers;
+        @include menuTitulos;
+
+        .whyContent {
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+
+            width:80%;
+            height:60%;
+
+            .whyText {
+                width:85%;
+
+                >p {
+                    height:30%;
+                    color:white;
+                    font: {
+                        family:bariolR;
+                        size:2.1vw;
+                    }
+                }
+
+                .whyCheck {
+                    width: 90%;
+                    height: 50%;
+                    display: grid;
+                    grid-template-columns: 0.2fr 1fr 0.2fr 1fr;
+                    grid-template-rows:1fr 1fr;
+                    grid-template-areas: 
+                    "check1 . check3 ."
+                    "check2 . check4 .";
+
+                    .check {
+                        position: relative;
+                        top:-5%;
+                        width:60%;
+                        justify-self: center;
+                    }
+                    .check1 {grid-area: check1;}
+                    .check2 {grid-area: check2;}
+                    .check3 {grid-area: check3;}
+                    .check4 {grid-area: check4;}
+
+                    p {
+                        color:black;
+                        font:{
+                            family:bariolB;
+                            size:1.8rem;
+                        }
+                    }
+                } 
+                
+            }
+
+
+
+
+            .whyIcon {
+                width:20%;
+                height:100%;
+            }
+
+
+        }
+    }
+}
+
+// TRIGGERS ////////////////////////
+
+.whyTrigger-title{
+    position:absolute;
+    top:80vh;
+}
+
+.whyTrigger-content {
+    position: absolute;
+    top:180vh;
+}
+
+.whyTrigger-rocket {
+    position: absolute;
+    top:300vh;
+}

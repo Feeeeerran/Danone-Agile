@@ -1,0 +1,352 @@
+
+div#end-container11-12-13-14 {
+    position: relative;
+
+
+    .groupContainer {
+        // display: none;
+        position: sticky;
+        top:8vh;
+        z-index:10010;
+        
+        width:100%;
+        height: 0;
+
+        display: flex;
+        justify-content: center;
+
+        
+        .groupIcons {
+            // border:black solid 2px;
+            position: absolute;
+            left:30%;
+            width:55%;
+            height:45vh;
+
+            display: flex;
+            flex-direction: column;
+
+            svg {height: 100%;}
+
+            p {
+                position: absolute;
+                top:-30%;
+                right:0%;
+                width:50%;
+
+                color:white;
+                font:{
+                    family:bariolB;
+                    size:2.8vw;
+                }
+            }
+            p:after {
+                content:"CHAPTER LEADER";
+                font-family: blog;
+            }
+
+            .chat {
+                width:45%;
+                height:30%;
+                
+                display: flex;
+                flex-direction: row-reverse;
+
+                svg {height: 100%;}
+
+                .chatIcon1 {
+                    width: 40%;
+                }
+                .chatIcon2{
+                    width:60%;
+                }
+            }
+
+            .group {
+                width:100%;
+                height:60%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex;
+
+                svg {
+                    position: relative;
+                }
+
+                .groupIcon1 {
+                    bottom:-8%;
+                    // left: 15%;
+                }
+                .groupIcon2 {
+                    bottom:-9%
+                }
+                .groupIcon3 {
+                    bottom: -10%;
+                }
+                .groupIcon4 {
+                    bottom:16%;
+                    left:-5%;
+                    height:125%;                
+                }
+            }
+
+            .groundIcon {
+                width:70%;
+                height:10%;
+            }
+        }
+
+    }
+
+
+    div#end-container11-12 {
+        .boatContainer {
+            display: none;
+            position: sticky;
+            top:16vh;
+            z-index:10010;
+            
+            width:100%;
+            height: 0;
+    
+            
+            .boatIcons {
+                border:black solid 2px;
+                position: absolute;
+                left:5vw;
+                width: 60%;
+                height:85vh;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                p {
+                    position: absolute;
+                    top:-15%;
+                    width: 100%;
+                    text-align: center;
+                    color:white;
+
+                    font:{
+                        family:blog;
+                        size:3.5vw;
+                    }
+                }
+
+                .boat {
+                    height: 100%;
+                    width:30%;
+                } 
+
+                .rectangles {
+                    border:chartreuse solid 3px;
+                    position: absolute;
+                    
+                    width: 100%;
+                    height: 70%;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    svg {
+                        position: relative;
+                        width: 85%;
+                    }
+
+                    .rect1 {top:25%;}
+                    .rect2 {top:29%;}
+                }
+            }
+        }
+
+        div#endContainer11 {
+            height:200vh;
+        
+            div#sub-containerEnd11 {
+                z-index:1002;
+                @include subContainers;
+                justify-content: center;
+                align-items: flex-end;
+
+
+                .end11Content {
+                    border:black solid 2px;
+                    position: relative;
+                    right: 12%;
+                    width:20%;
+                    height: 80%;
+
+                    padding-top: 5%;
+
+                    p {
+                        color: white;
+                        font:{
+                            family:bariolR;
+                            size:2.5vw;
+                        }
+                    }
+                }
+        
+            }
+        }
+        
+        div#endContainer12 {
+            height:200vh;
+        
+            div#sub-containerEnd12 {
+                @include subContainers;
+                align-items: flex-end;
+
+                .end12Content {
+                    border:black solid 2px;
+                    position: relative;
+                    right: 5%;
+                    width:26%;
+                    height: 45%;
+
+
+                    p {
+                        color: white;
+                        font:{
+                            family:bariolR;
+                            size:2.5vw;
+                        }
+                    }
+                }
+        
+            }
+        }
+
+    }
+    
+
+    div#end-container13-14 {
+
+        .responsibContainer {
+            position: sticky;
+            top:62vh;
+            z-index:10010;
+            
+            width:100%;
+            height: 0;
+
+            display: flex;
+            justify-content: center;
+
+            >.responsib {
+                border:green solid 3px;
+                position: absolute;
+                width: 60%;
+                height:35vh;
+
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                >p {
+                    position: absolute;
+                    top:-30%;
+                    width:100%;
+                    margin:0;
+
+                    text-align: center;
+                    font:{
+                        family:bariolR;
+                        size:2vw;
+                    }
+                }
+               >p:after {
+                    content:"RESPONSIBILITIES";
+                    font-family: bariolB;
+                }
+
+                .card {
+                    height: 100%;
+                    width:30%;
+
+
+                    .back {
+                        display: none;
+                        height: 100%;
+                        background-color: transparent;
+                        
+                        // display: flex;
+                        justify-content: center;
+                        
+                        .backCard {
+                            width: 100%;
+                            height:100%;
+                            border:none;
+                        }
+
+                        .backIcon {
+                            position: absolute;
+                            height:100%;
+                            width:15%;
+                        }
+
+                        .backIconRight {
+                            width:14%;
+                        }
+                    }
+
+                    .flip {
+                        height: 100%;
+                        background-color: transparent;
+                        
+                        display: flex;
+                        justify-content: center;
+
+                        .flipCard {
+                            width: 100%;
+                            height:100%;
+                            border:none;
+                        }
+
+                        .flipText {
+                            position: absolute;
+                            height:100%;
+                            width:15%;
+
+                            text-align: center;
+                            font:{
+                                family:bariolR;
+                                size:1.5vw;
+                            }
+                        }
+
+                        .flipTextCenter {
+                            top:25%;
+                        }
+                    }
+                }
+                
+
+            }
+        }
+
+        div#endContainer13 {
+            height:200vh;
+        
+            div#sub-containerEnd13 {
+                @include subContainers;
+        
+            }
+        }
+        div#endContainer14 {
+            height:200vh;
+        
+            div#sub-containerEnd14 {
+                @include subContainers;
+        
+            }
+        }
+
+    }
+
+}
+

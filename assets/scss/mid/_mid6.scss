@@ -1,0 +1,51 @@
+div#mid-container6 {
+    position: relative;
+    height:500vh;
+
+    div#sub-containerMid6 {
+        @include subContainers;
+        @include midTitulos;
+        h3 {margin-top: 2vh;}
+        justify-content: flex-start;
+
+
+        .mid6Content {
+            position: relative;
+            top:5%;
+            width:100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            svg {position: absolute;}
+
+            .mid6Icon1 {
+                width:25%;
+                top:18%;
+            }
+            .mid6Icon2 {
+                position: relative;
+                width:15%;
+                top:-15%;
+                left:1%;
+            }
+            .mid6Icon3 {
+                position: relative;
+                width: 10%;
+                top:65%;
+                right:-2%;
+            }
+        }
+
+    }
+}
+
+// TRIGGERS /////////////////
+
+.mid6Trigger-title {
+    position: absolute;
+    top:100vh
+}
+.mid6Trigger-icons {
+    position: absolute;
+    top:200vh
+}

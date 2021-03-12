@@ -1,0 +1,31 @@
+export default function what (controller) {
+
+
+    var whatT = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-title",
+    })
+    .setClassToggle("#whatTit","typed")
+    .addIndicators()
+    .addTo(controller);
+
+
+   var whatContent = new TimelineMax()
+    .fromTo(".whatContent>.primerP",1,{opacity:0},{opacity:1})
+    .fromTo(".whatContent>.whatIcon3",1,{transform:"translate(100vw,0)"},{transform:"translate(0,0)"})
+    .fromTo(".whatContent>.segundoP",1,{opacity:0},{opacity:1})
+    .fromTo(".whatIcon2",1,{transform:"scale(0)"},{transform:"scale(2)"},)
+    .to(".whatIcon2",1,{transform:"scale(1)"})
+    .to(".whatContent,#whatTit",1,{filter:"blur(1.5px)"})
+    .to(".whatContent,#whatTit",1,{filter:"blur(3px)"})
+    .to(".whatContent,#whatTit",1,{filter:"blur(6px)"})
+
+
+    var what = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-content",
+        duration:2500
+    })
+    .setTween(whatContent)
+    .addIndicators()
+    .addTo(controller)
+
+}

@@ -1,0 +1,108 @@
+    
+div#end-container7-8 {
+
+    .end7-8Icon {
+        position:sticky;
+        z-index:1001;
+        height: 0;
+        top:5vh;
+        width: 60%;
+        padding-left: 5%;
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+        div {
+            position: relative;
+            width:28%;
+            height: 100vh;
+            
+            svg {
+                width:100%;
+            }
+
+            p {
+                position: relative;
+                bottom:15%;
+                left: 0;
+                text-align: center;
+                font:{
+                    family:blog;
+                    size:2rem;
+                }
+            }
+        }
+
+        div.center {
+            p {bottom:10%}
+        }
+    }
+    
+    div#endContainer7 {
+        height:200vh;
+
+        div#sub-containerEnd7 {
+            z-index:1000;
+            @include subContainers;
+            justify-content: center;
+
+            .end7Content {
+                width:80%;
+                height: 80%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                p {
+                    padding-right:1%;
+                    width:30%;
+                    color:white;
+                    font:{
+                        family:bariolB;
+                        size:2rem;
+                    }
+                }
+                p:nth-child(2) {font-family: bariolR;}
+            }
+        }
+    }
+
+    div#endContainer8 {
+        height:200vh;
+
+        div#sub-containerEnd8 {
+            @include subContainers;
+            justify-content: center;
+            
+            .end8Content {
+                width:75%;
+                height: 80%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                p {
+                    padding-right:1%;
+                    width:20%;
+                    color:white;
+                    font:{
+                        family:bariolB;
+                        size:1.8rem;
+                    }
+
+                    span {
+                        font-family: blog;
+                    }
+                }
+                p:nth-child(2) {font-family: bariolR;}
+            }
+
+        }
+    }
+}

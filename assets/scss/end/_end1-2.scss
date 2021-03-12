@@ -1,0 +1,93 @@
+
+div#end-container1-2 {
+
+
+    div.end1-2_icons {
+        // overflow-x: hidden;
+        position:sticky;
+        top:30vh;
+        height: 0;
+        z-index:100;
+        width:80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        svg {
+            position: relative;
+            width:18%
+        }
+
+        .end1-2Icon2 {
+            top:15vh;
+        }
+
+        .end1-2Icon1,.end1-2Icon3 {
+            top:-5vh;
+        }
+
+        .end1-2Icon4,.end1-2Icon5,.end1-2Icon6,.end1-2Icon7 {
+            position:absolute;
+        }
+
+        .end1-2Icon4 {
+            left:25%;
+            top:35vh;
+        }
+        .end1-2Icon6 {
+            right:25%;
+            top:35vh;
+        }
+
+        .end1-2Icon5 {
+            top:10vh;
+        }
+
+        .end1-2Icon7 {
+            transform: scale(0.6);
+            left:25%;
+        }
+    }
+
+
+    div#endContainer1 {
+        height:200vh;
+
+        div#sub-containerEnd1 {
+            @include subContainers;
+            @include midTitulos;
+            justify-content: flex-start;
+
+
+            h3 {
+                width: 55%;
+                margin-top: 15vh;
+                font-size: 2.8rem;
+            }
+
+            h3:after {
+                content:"COORDINATION BETWEEN TEAMS";
+                font-family: blog;
+            }
+
+
+        }
+    }
+
+    div#endContainer2 {
+        height:200vh;
+
+        div#sub-containerEnd2 {
+            @include subContainers;
+            @include midTitulos;
+
+
+            h3 {
+                margin-bottom: 1vh;
+                width: 80%;
+                font-size: 2.8rem;
+            }
+        }
+    }
+}

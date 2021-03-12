@@ -1,0 +1,192 @@
+div#end-container4-5-6 {
+
+    .end4-5-6Icon {
+        position: sticky;
+        top:10vh;
+        height: 0;
+        width:100%;
+        z-index:100;
+
+        display: flex;
+        justify-content: center;
+
+        svg {
+            position: absolute;
+            height:100vh;
+        }
+
+        p {
+            position: relative;
+            top:-1vh;
+            left:12%;
+            color:black;
+            font:{
+                family:blog;
+                size:3rem;
+
+            }
+        }
+
+    }
+
+    
+    div#endContainer4 {
+        height:200vh;
+
+        div#sub-containerEnd4 {
+            @include subContainers;
+            justify-content: center;
+
+            .end4Content {
+                margin-top: 10vh;
+                width:80%;
+                height:65%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                p {
+                    width:25%;
+                    color:white;
+                    font:{
+                        family:bariolB;
+                        size:2rem;
+                    }
+                }
+
+                ul{
+                    width:30%;
+                    align-self:flex-end;
+                    
+                    color:white;
+                    font:{
+                        family:bariolB;
+                        size:2rem;
+                    }
+
+                    li {
+                        margin-left: 5vh;
+                        font: {
+                            family:bariolR;
+                            size:1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    div#end-container5-6 {
+
+        .contentContainer {
+            width: 100%;
+            height:0;
+            position: sticky;
+            top:10vh;
+            z-index: 100;
+
+            display: flex;
+            justify-content: center;
+
+            .end5-6Content {
+                width:95%;
+                height:80vh;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .keyRoles {
+                    width:30%;
+                    padding-left: 8%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+
+                    color:white;
+                    font:{family:blog;size:2.5rem;}
+
+                    
+                    li {
+
+                        list-style: none;
+                        font:{family:bariolB;size:1.8rem;}
+                    }
+
+                    li:after {
+                        content:" (+)";
+                        // background-color: white;
+                        // border-radius: 100%;
+                    }
+
+                    li:nth-child(1):after {color:greenyellow}
+                    li:nth-child(2):after {color:blue}
+                    li:nth-child(3):after {color:grey}
+                }
+
+                .info {
+                    width:30%;
+                    height:120%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    color:white;
+                    font:{
+                        family:bariolR;
+                        size:1.4rem;
+                    }
+
+                    li {
+                        position: relative;
+                        list-style: none;
+                        width: 100%;
+                        height:33%;
+                        
+                        p {
+                            position: relative;
+                            z-index: 10;
+                            width:100%;
+                            padding:0 5%;
+                        }
+                        
+                        img {
+                            position: absolute;
+                            z-index: 0;
+                            top:-10%;
+                            left:-2.5%;
+                            width: 100%;
+                            height:80%;
+                        }
+                    }
+                }
+            }
+        }
+    
+
+        div#endContainer5 {
+            height:200vh;
+
+            div#sub-containerEnd5 {
+                @include subContainers;
+                @include menuTitulos;
+
+            }
+        }
+
+        div#endContainer6 {
+            height:200vh;
+
+            div#sub-containerEnd6 {
+                @include subContainers;
+                @include menuTitulos;
+
+            }
+        }
+    }
+}

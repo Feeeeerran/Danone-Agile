@@ -1,0 +1,179 @@
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    @import "../../variables";
+    @import "../../intro/intro";
+    @import "../../menu/menu";
+    @import "../../mid/mid";
+    @import "../../end/end";
+    
+    
+
+    section#intro {
+        .intro-container {
+            h1 {
+                font-size: 9vw;
+            }
+            p:nth-child(2) {
+                width: 85%;
+                font-size: 5vw;
+            }
+            p:nth-child(4) {
+                width: 80%;
+                font-size: 3vw;
+            }
+
+            .introIcons {
+                width:50%;
+                height: 20vh;
+
+                // .introIcon1 {height:30%}
+                .introIcon2 {height: 70%;align-self: center;}
+                // .introIcon3 {height: 30%;}
+            }
+        }
+
+
+    }
+
+    section#menu {
+        #menuQuestions {
+            width:70%;
+            li {
+                font-size: 4vw;
+            }
+        }
+
+        #containerWhat {
+            #sub-containerWhat {
+                @include menuTitulosResp;      
+                .whatContent {
+                    height:60%;
+                    width:90%;
+
+                    p:nth-child(1) {
+                        font-size: 4vw;
+                        padding-left: 3vw;
+                    }   
+                    
+                    p:nth-child(2) {
+                        align-self: center;
+                        font-size: 2.8vw;
+                    }
+        
+                    .whatIcon1 {
+                        width: 80%;
+                    }
+        
+                    .whatIcon2 {
+                        align-self: center;
+                        left:-50%;
+                        width: 130%;
+                    }
+                }
+            }
+        }
+
+        #containerWhen {
+            #sub-containerWhen {
+                padding-top: 0;
+                @include menuTitulosResp;      
+                .whenContent {
+                    height:70%;
+                    width:95%;
+
+                    margin-bottom: 0;
+
+                    
+                    .whenText {
+                        p {
+                            color:white;
+                            font:{
+                                family:bariolR;
+                                size:4vw;
+                            }
+                        }
+        
+                    }
+
+                }
+            }
+        }
+
+        #containerWhy {
+            #sub-containerWhy {
+                padding-top: 0;
+                @include menuTitulosResp;      
+                .whyContent {
+                    height: 70%;
+                    width:95%;
+
+                    .whyText {
+                        >p {
+                            height: 30%;
+                            font-size: 4vw;
+                        }
+                        .whyCheck {
+                            margin-top: 10vh;
+                            width:100%;
+                            height: 40%;
+
+                            .check {
+                                width:100%;
+                            }
+                            p {
+                                align-self: center;
+                                font-size: 3.8vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #containerHow {
+            #sub-containerHow {
+                padding-top: 0;
+                @include menuTitulosResp;
+                h3 {font-size: 4vw;} 
+                .howContent {
+                    width:95%;
+                    height:50%;
+
+
+                    >p {
+                        width:80%;
+                        font-size: 3.3vw;
+                    }
+
+                    .logo {
+                        top:-10%;
+                        left:-20%;
+                        width: 100%;
+                    }
+
+                    .howIcon1 {
+                        top:-100%;
+                        left:0;
+                        width: 80%;;
+                        transform: scale(1.2);
+                    }
+
+                    .keepS {
+                        p {
+                            font-size: 2.3vw;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,193 @@
+div#endContainer16 {
+    height:200vh;
+
+    div#sub-containerEnd16 {
+        @include subContainers;
+        justify-content: center;
+
+        h3 {
+            margin:0;
+            width: 53%;
+            color:white;
+            text-align: center;
+            font:{
+                family:blog;
+                size:3vw;
+            }
+        }
+
+
+        .end16Content {
+            // border:black solid 2px;
+            width:90%;
+            height:65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .contentTop {
+                // border:lightcoral solid 2px;
+                height: 30%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content:flex-start;
+
+                .topContainer {
+                    position: relative;
+                    height: 100%;;
+                    width:30%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    p {
+                        width:70%;
+                        margin:0;
+                        text-align: center;
+
+                        font: {
+                            family:bariolR;
+                            size:1.8vw;
+                        }
+                    }
+
+                    .topIcon {
+                        height: 100%;
+                        width: 100%;
+                    }
+    
+                    .topIcon3 {
+                        width:150%;
+                        .cls-1{fill:#0e2233;}
+                    }
+                }
+
+                .top1 {
+                    top:0%;
+                    left:-5%;
+                    svg {transform: scale(1.2) translateY(-1vh);}
+                }
+
+                .top2 {
+                    top:25%;
+                    p {
+                        width:45%;
+                    }
+                }
+
+                .top3 {
+                    top:25%;
+                    right:-5%;
+                    p {margin-top: 1vh;width:60%}
+                    svg {
+                        transform: scale(1.5) translateY(-1vh);
+                    }
+                }
+
+                
+            }
+
+
+
+            .contentMid {
+                // border:#405496 solid 2px;
+                height:20%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .midIcon {
+                    position: relative;
+                    width:10%;
+                    height: 100%;
+
+                    .cls-1,.cls-2 {
+                        fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;
+                    }
+                    .cls-2{stroke-dasharray:11.43 11.43;}
+                }
+
+                .midIcon1 {
+                    top:30%;
+                    left:2%;
+                }
+                .midIcon2 {
+                    top:30%;
+                    left:2%;
+                }
+                .midIcon3 {
+                    left:6%;
+                }
+                .midIcon4 {
+                    top:50%;
+                }
+                .midIcon5 {
+                    top:50%;
+                    left:-5%;
+                }
+            }
+
+
+
+            .contentBottom {
+                // border:rgb(124, 155, 40) solid 2px;
+                height: 30%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                .bottomContainer {
+                    position: relative;
+                    height: 100%;;
+                    width:30%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+
+
+                    p {
+                        width:35%;
+                        margin:0;
+                        margin-top: 1vh;
+                        text-align: center;
+
+                        font: {
+                            family:bariolR;
+                            size:1.8vw;
+                        }
+                    }
+
+
+                    .bottomIcon {
+                        width: 50%;
+                        height: 50%;
+                    }
+    
+                    .bottomIcon2 {
+                        .cls-1{fill:#0e2233;}
+                    }
+                }
+
+                .bottom1 {
+                    top:-20%;
+                    left:-5%;
+                }
+                .bottom2 {
+                    left:7%;
+                    top:10%;
+                    
+                }
+                .bottom3 {
+                    left:10%;
+                }
+                
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,28 @@
+div#endContainer3 {
+    height:200vh;
+
+    div#sub-containerEnd3 {
+        z-index: 1000;
+        @include subContainers;
+        @include midTitulos;
+        justify-content: flex-start;
+
+        h3 {margin-top: 1vh;}
+        h3:after {
+            content:"STRUCTURED TO ENABLE AGILITY";
+            font-family: blog;
+        }
+
+        p {
+            font:{
+                family:bariolR;
+                size:2rem;
+            }
+        }
+
+        svg {
+            position: relative;
+            top:5%;
+        }
+    }
+}
