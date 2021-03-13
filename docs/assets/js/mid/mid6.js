@@ -16,7 +16,7 @@ export default function mid6 (controller) {
 
     var mid5 = new ScrollMagic.Scene({
         triggerElement:".mid6Trigger-icons",
-        duration:1500
+        duration:2500
     })
     .setTween(mid6Icons)
     .addIndicators()

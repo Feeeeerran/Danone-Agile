@@ -17,9 +17,7 @@ export default function why (controller) {
         .fromTo(".check3",1,{transform:"scale(0)"},{transform:"scale(1.1)"})
         .fromTo(".textCheck4",1,{transform:"translateY(80vh)"},{transform:"translateY(0)"})
         .fromTo(".check4",1,{transform:"scale(0)"},{transform:"scale(1.1)"})
-        .to(".whyContent,#whyTit",1,{filter:"blur(1.5px)"})
-        .to(".whyContent,#whyTit",1,{filter:"blur(3px)"})
-        .to(".whyContent,#whyTit",1,{filter:"blur(6px)"})
+        // .to(".whyContent,#whyTit",1,{transform:"translateY(-50vh)"})
 
 
     var why = new ScrollMagic.Scene({

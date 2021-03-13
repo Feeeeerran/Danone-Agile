@@ -6,7 +6,7 @@ import how from "./how-script.js";
 export default function menu(controller) {
 
     var menuQuestions = new TweenMax
-        .fromTo("#menuQuestions li",1,{left:"-100vw"},{left:0})
+        .fromTo(".menuQuestions-container #menuQuestions",1,{left:"-100vw"},{left:0})
 
     var menuQ = new ScrollMagic.Scene({
         triggerElement:".menuTrigger",
@@ -21,9 +21,45 @@ export default function menu(controller) {
         triggerElement:".menuTrigger-out",
         duration:200
     })
-    .setTween("#menuQuestions",1,{transform:"translateY(-20vh)"})
+    .setTween(".menuQuestions-container",1,{transform:"translateY(-20vh)"})
     .addIndicators()
     .addTo(controller)
+
+    var menuActive = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-title",
+        duration:3500
+    })
+    .setClassToggle("#what","menuActive")
+    .addIndicators()
+    .addTo(controller)
+    
+    var menuActive = new ScrollMagic.Scene({
+        triggerElement:".whenTrigger-title",
+        duration:3450
+    })
+    .setClassToggle("#when","menuActive")
+    .addIndicators()
+    .addTo(controller)
+    
+    var menuActive = new ScrollMagic.Scene({
+        triggerElement:".whyTrigger-title",
+        duration:4300
+    })
+    .setClassToggle("#why","menuActive")
+    .addIndicators()
+    .addTo(controller)
+    
+    var menuActive = new ScrollMagic.Scene({
+        triggerElement:".howTrigger-title",
+        duration:3500
+    })
+    .setClassToggle("#how","menuActive")
+    .addIndicators()
+    .addTo(controller)
+
+
+
+
 
 
     what(controller)

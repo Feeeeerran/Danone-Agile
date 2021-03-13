@@ -51,6 +51,10 @@
                 grid-area:icon2;
                 position:relative;
                 width:100%;
+                
+                .exclam {
+                    transform-origin: 50% 50%;
+                }
             }
 
             .whatIcon3 {

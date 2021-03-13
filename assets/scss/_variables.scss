@@ -90,6 +90,7 @@
 
 
 ////////////// CLASES //////////////
+
 .triggers {
     position:absolute;
     height: inherit;
@@ -98,13 +99,23 @@
 
 
 .typed {
-            animation:typedAnim 4s steps(40) forwards;
-            opacity:1 !important;
-        }
-        @keyframes typedAnim {
-            from {width:0%}
-            to{width: 100%;}
-        }
+    animation:typedAnim 4s steps(40) forwards;
+    opacity:1 !important;
+}
+@keyframes typedAnim {
+    from {width:0%}
+    to{width: 100%;}
+}
+
+
+.menuActive {
+    background-image: url(../../img/other/menuSubrayado1.png) !important;
+    transition: background-image 0.5s;
+    svg {
+        opacity:1 !important;
+        transition: opacity 0.5s;
+    }
+}
 
 
 

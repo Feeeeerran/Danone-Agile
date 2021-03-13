@@ -6,29 +6,71 @@
 section#menu {
     position: relative;
 
-    #menuQuestions {
-        position:sticky;
-        z-index:1000;
-        width: 60%;
-        height:0;
-        margin:0;
+    .menuQuestions-container {
+        position: sticky;
         top:5vh;
-        padding-right:0;
-        // transform:translate(-100vw,0);
+        z-index:1000;
+        width:100%;
+        height: 0;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
+        #menuQuestions {
+            position: relative;
+            width: 65%;
+            margin:0;
+            padding-right:0;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+    
+            margin:auto;
+    
+            li {
+                width:25%;
+                padding-top: 2vh;
+                padding-left: 1vw;
 
-        margin:auto;
+                position:relative;
+                color:white;
+                text-align: center;
 
-        li {
-            position:relative;
-            color:white;
-            font:{
-                family:blog;
-                size:3.6vw;
+                font:{
+                    family:blog;
+                    size:3vw;
+                }
+    
+                background-image: url(../../../img/other/menuSubrayado2.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: background-image 0.5s;
+
+                >svg {
+                    // opacity:0;
+                    position: absolute;
+                    width:15%;
+                    height: 100%;
+                    top:-5%;
+                    left:5%;
+                    .cls-1{fill:none;}
+                    .cls-2{clip-path:url(#clip-path);}
+                    .cls-3{fill:#fff;}
+
+                     transition: opacity 0.5s;
+
+                }
+
+            }
+
+            li#why {
+                svg{
+                    left:9%;
+                }
+            }
+            li#how {
+                svg{
+                    left:9%;
+                }
             }
         }
     }

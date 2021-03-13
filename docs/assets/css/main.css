@@ -25,6 +25,16 @@
       width: 100%;
     }
   }
+  .menuActive {
+    background-image: url(../../img/other/menuSubrayado1.png) !important;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  .menuActive svg {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -46,7 +56,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
-    height: 300vh;
+    height: 400vh;
   }
   section#intro .intro-container {
     position: -webkit-sticky;
@@ -71,13 +81,26 @@
   section#intro .intro-container * {
     z-index: 10;
   }
-  section#intro .intro-container h1 {
-    margin: 0;
+  section#intro .intro-container .introTit-container {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+  }
+  section#intro .intro-container .introTit-container h1 {
+    margin: auto;
     text-align: center;
     margin-top: 10vh;
     color: white;
     font-family: blog;
     font-size: 6vw;
+  }
+  section#intro .intro-container .introTit-container img {
+    position: absolute;
+    z-index: 9;
+    left: 32%;
+    top: 25%;
+    width: 27%;
+    height: 25vh;
   }
   section#intro .intro-container p:nth-child(2) {
     margin: 0;
@@ -228,6 +251,10 @@
     position: relative;
     width: 100%;
   }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon2 .exclam {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
   #containerWhat #sub-containerWhat .whatContent .whatIcon3 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -247,7 +274,7 @@
   }
   #containerWhen {
     position: relative;
-    height: 580vh;
+    height: 520vh;
   }
   #containerWhen #sub-containerWhen {
     overflow: hidden;
@@ -586,6 +613,16 @@
   #containerHow #sub-containerHow .howContent .howIcon1 .light {
     fill: none;
   }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-3 {
+    fill: none;
+  }
   #containerHow #sub-containerHow .howContent .keepS {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
@@ -630,14 +667,18 @@
   section#menu {
     position: relative;
   }
-  section#menu #menuQuestions {
+  section#menu .menuQuestions-container {
     position: -webkit-sticky;
     position: sticky;
-    z-index: 1000;
-    width: 60%;
-    height: 0;
-    margin: 0;
     top: 5vh;
+    z-index: 1000;
+    width: 100%;
+    height: 0;
+  }
+  section#menu .menuQuestions-container #menuQuestions {
+    position: relative;
+    width: 65%;
+    margin: 0;
     padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -651,11 +692,45 @@
     list-style: none;
     margin: auto;
   }
-  section#menu #menuQuestions li {
+  section#menu .menuQuestions-container #menuQuestions li {
+    width: 25%;
+    padding-top: 2vh;
+    padding-left: 1vw;
     position: relative;
     color: white;
+    text-align: center;
     font-family: blog;
-    font-size: 3.6vw;
+    font-size: 3vw;
+    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: -5%;
+    left: 5%;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-1 {
+    fill: none;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-3 {
+    fill: #fff;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#why svg {
+    left: 9%;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#how svg {
+    left: 9%;
   }
   .menuTrigger {
     position: absolute;
@@ -750,7 +825,7 @@
   }
   div#mid-container1-2 div#mid-container2 {
     position: relative;
-    height: 500vh;
+    height: 350vh;
   }
   div#mid-container1-2 div#mid-container2 div#sub-containerMid2 {
     overflow: hidden;
@@ -910,10 +985,6 @@
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
-  }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-4 {
-    -webkit-clip-path: url(#clip-path);
-            clip-path: url(#clip-path);
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
     -webkit-clip-path: url(#clip-path-2);
@@ -1134,7 +1205,7 @@
   }
   div#mid-container6 {
     position: relative;
-    height: 500vh;
+    height: 580vh;
   }
   div#mid-container6 div#sub-containerMid6 {
     overflow: hidden;
@@ -2868,6 +2939,16 @@
       width: 100%;
     }
   }
+  .menuActive {
+    background-image: url(../../img/other/menuSubrayado1.png) !important;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  .menuActive svg {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -2889,7 +2970,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
-    height: 300vh;
+    height: 400vh;
   }
   section#intro .intro-container {
     position: -webkit-sticky;
@@ -2914,13 +2995,26 @@
   section#intro .intro-container * {
     z-index: 10;
   }
-  section#intro .intro-container h1 {
-    margin: 0;
+  section#intro .intro-container .introTit-container {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+  }
+  section#intro .intro-container .introTit-container h1 {
+    margin: auto;
     text-align: center;
     margin-top: 10vh;
     color: white;
     font-family: blog;
     font-size: 6vw;
+  }
+  section#intro .intro-container .introTit-container img {
+    position: absolute;
+    z-index: 9;
+    left: 32%;
+    top: 25%;
+    width: 27%;
+    height: 25vh;
   }
   section#intro .intro-container p:nth-child(2) {
     margin: 0;
@@ -3071,6 +3165,10 @@
     position: relative;
     width: 100%;
   }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon2 .exclam {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
   #containerWhat #sub-containerWhat .whatContent .whatIcon3 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -3090,7 +3188,7 @@
   }
   #containerWhen {
     position: relative;
-    height: 580vh;
+    height: 520vh;
   }
   #containerWhen #sub-containerWhen {
     overflow: hidden;
@@ -3429,6 +3527,16 @@
   #containerHow #sub-containerHow .howContent .howIcon1 .light {
     fill: none;
   }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-3 {
+    fill: none;
+  }
   #containerHow #sub-containerHow .howContent .keepS {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
@@ -3473,14 +3581,18 @@
   section#menu {
     position: relative;
   }
-  section#menu #menuQuestions {
+  section#menu .menuQuestions-container {
     position: -webkit-sticky;
     position: sticky;
-    z-index: 1000;
-    width: 60%;
-    height: 0;
-    margin: 0;
     top: 5vh;
+    z-index: 1000;
+    width: 100%;
+    height: 0;
+  }
+  section#menu .menuQuestions-container #menuQuestions {
+    position: relative;
+    width: 65%;
+    margin: 0;
     padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3494,11 +3606,45 @@
     list-style: none;
     margin: auto;
   }
-  section#menu #menuQuestions li {
+  section#menu .menuQuestions-container #menuQuestions li {
+    width: 25%;
+    padding-top: 2vh;
+    padding-left: 1vw;
     position: relative;
     color: white;
+    text-align: center;
     font-family: blog;
-    font-size: 3.6vw;
+    font-size: 3vw;
+    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: -5%;
+    left: 5%;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-1 {
+    fill: none;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-3 {
+    fill: #fff;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#why svg {
+    left: 9%;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#how svg {
+    left: 9%;
   }
   .menuTrigger {
     position: absolute;
@@ -3593,7 +3739,7 @@
   }
   div#mid-container1-2 div#mid-container2 {
     position: relative;
-    height: 500vh;
+    height: 350vh;
   }
   div#mid-container1-2 div#mid-container2 div#sub-containerMid2 {
     overflow: hidden;
@@ -3753,10 +3899,6 @@
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
-  }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-4 {
-    -webkit-clip-path: url(#clip-path);
-            clip-path: url(#clip-path);
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
     -webkit-clip-path: url(#clip-path-2);
@@ -3977,7 +4119,7 @@
   }
   div#mid-container6 {
     position: relative;
-    height: 500vh;
+    height: 580vh;
   }
   div#mid-container6 div#sub-containerMid6 {
     overflow: hidden;
@@ -5849,6 +5991,16 @@
       width: 100%;
     }
   }
+  .menuActive {
+    background-image: url(../../img/other/menuSubrayado1.png) !important;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  .menuActive svg {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -5870,7 +6022,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
-    height: 300vh;
+    height: 400vh;
   }
   section#intro .intro-container {
     position: -webkit-sticky;
@@ -5895,13 +6047,26 @@
   section#intro .intro-container * {
     z-index: 10;
   }
-  section#intro .intro-container h1 {
-    margin: 0;
+  section#intro .intro-container .introTit-container {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+  }
+  section#intro .intro-container .introTit-container h1 {
+    margin: auto;
     text-align: center;
     margin-top: 10vh;
     color: white;
     font-family: blog;
     font-size: 6vw;
+  }
+  section#intro .intro-container .introTit-container img {
+    position: absolute;
+    z-index: 9;
+    left: 32%;
+    top: 25%;
+    width: 27%;
+    height: 25vh;
   }
   section#intro .intro-container p:nth-child(2) {
     margin: 0;
@@ -6053,6 +6218,10 @@
     position: relative;
     width: 100%;
   }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon2 .exclam {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
   #containerWhat #sub-containerWhat .whatContent .whatIcon3 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -6072,7 +6241,7 @@
   }
   #containerWhen {
     position: relative;
-    height: 580vh;
+    height: 520vh;
   }
   #containerWhen #sub-containerWhen {
     overflow: hidden;
@@ -6409,6 +6578,16 @@
   #containerHow #sub-containerHow .howContent .howIcon1 .light {
     fill: none;
   }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  #containerHow #sub-containerHow .howContent .howIcon1 .cls-3 {
+    fill: none;
+  }
   #containerHow #sub-containerHow .howContent .keepS {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
@@ -6453,14 +6632,18 @@
   section#menu {
     position: relative;
   }
-  section#menu #menuQuestions {
+  section#menu .menuQuestions-container {
     position: -webkit-sticky;
     position: sticky;
-    z-index: 1000;
-    width: 60%;
-    height: 0;
-    margin: 0;
     top: 5vh;
+    z-index: 1000;
+    width: 100%;
+    height: 0;
+  }
+  section#menu .menuQuestions-container #menuQuestions {
+    position: relative;
+    width: 65%;
+    margin: 0;
     padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6474,11 +6657,45 @@
     list-style: none;
     margin: auto;
   }
-  section#menu #menuQuestions li {
+  section#menu .menuQuestions-container #menuQuestions li {
+    width: 25%;
+    padding-top: 2vh;
+    padding-left: 1vw;
     position: relative;
     color: white;
+    text-align: center;
     font-family: blog;
-    font-size: 3.6vw;
+    font-size: 3vw;
+    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: -5%;
+    left: 5%;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-1 {
+    fill: none;
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-2 {
+    -webkit-clip-path: url(#clip-path);
+            clip-path: url(#clip-path);
+  }
+  section#menu .menuQuestions-container #menuQuestions li > svg .cls-3 {
+    fill: #fff;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#why svg {
+    left: 9%;
+  }
+  section#menu .menuQuestions-container #menuQuestions li#how svg {
+    left: 9%;
   }
   .menuTrigger {
     position: absolute;
@@ -6573,7 +6790,7 @@
   }
   div#mid-container1-2 div#mid-container2 {
     position: relative;
-    height: 500vh;
+    height: 350vh;
   }
   div#mid-container1-2 div#mid-container2 div#sub-containerMid2 {
     overflow: hidden;
@@ -6733,10 +6950,6 @@
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
-  }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-4 {
-    -webkit-clip-path: url(#clip-path);
-            clip-path: url(#clip-path);
   }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
     -webkit-clip-path: url(#clip-path-2);
@@ -6957,7 +7170,7 @@
   }
   div#mid-container6 {
     position: relative;
-    height: 500vh;
+    height: 580vh;
   }
   div#mid-container6 div#sub-containerMid6 {
     overflow: hidden;

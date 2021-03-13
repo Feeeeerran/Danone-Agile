@@ -11,7 +11,7 @@ export default function how (controller) {
         .fromTo(".howContent>p",1,{transform:"translateY(100vh)"},{transform:"translateY(0)"})
         .fromTo(".howIcon1",1.5,{transform:"scale(0)"},{transform:"scale(1.5)"})
         .to(".howIcon1",1,{transform:"scale(1.5)"})
-        .to(".light",1,{fill:"yellow"})
+        .to(".howIcon1>.cls-3",1,{fill:"yellow"})
         .fromTo(".keepS",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
         
 
