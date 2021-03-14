@@ -13,7 +13,6 @@ export default function menu(controller) {
         duration:500
     })
     .setTween(menuQuestions)
-    .addIndicators()
     .addTo(controller);
 
 
@@ -22,7 +21,6 @@ export default function menu(controller) {
         duration:200
     })
     .setTween(".menuQuestions-container",1,{transform:"translateY(-20vh)"})
-    .addIndicators()
     .addTo(controller)
 
     var menuActive = new ScrollMagic.Scene({
@@ -30,7 +28,6 @@ export default function menu(controller) {
         duration:3500
     })
     .setClassToggle("#what","menuActive")
-    .addIndicators()
     .addTo(controller)
     
     var menuActive = new ScrollMagic.Scene({
@@ -38,7 +35,6 @@ export default function menu(controller) {
         duration:3450
     })
     .setClassToggle("#when","menuActive")
-    .addIndicators()
     .addTo(controller)
     
     var menuActive = new ScrollMagic.Scene({
@@ -46,7 +42,6 @@ export default function menu(controller) {
         duration:4300
     })
     .setClassToggle("#why","menuActive")
-    .addIndicators()
     .addTo(controller)
     
     var menuActive = new ScrollMagic.Scene({
@@ -54,7 +49,6 @@ export default function menu(controller) {
         duration:3500
     })
     .setClassToggle("#how","menuActive")
-    .addIndicators()
     .addTo(controller)
 
 

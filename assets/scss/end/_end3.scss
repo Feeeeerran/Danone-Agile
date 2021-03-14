@@ -1,5 +1,6 @@
 div#endContainer3 {
-    height:200vh;
+    position: relative;
+    height:550vh;
 
     div#sub-containerEnd3 {
         z-index: 1000;
@@ -7,13 +8,15 @@ div#endContainer3 {
         @include midTitulos;
         justify-content: flex-start;
 
-        h3 {margin-top: 1vh;}
+        h3 {margin-top: 1vh;margin-bottom:0;}
         h3:after {
             content:"STRUCTURED TO ENABLE AGILITY";
             font-family: blog;
         }
 
         p {
+            margin:0;
+            margin-bottom: 3vh;
             font:{
                 family:bariolR;
                 size:2rem;
@@ -22,7 +25,22 @@ div#endContainer3 {
 
         svg {
             position: relative;
-            top:5%;
         }
     }
+}
+
+// TRIGGERS ////////////
+
+.end3Trigger-title {
+    position: absolute;
+    top:100vh;
+}
+.end3Trigger-icon {
+    position: absolute;
+    top: 150vh;
+}
+
+.end3Trigger-iconOut {
+    position: absolute;
+    bottom:150vh;
 }

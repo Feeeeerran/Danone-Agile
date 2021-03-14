@@ -5,7 +5,6 @@ export default function when (controller) {
         triggerElement:".whenTrigger-title",
     })
     .setClassToggle("#whenTit","typed")
-    .addIndicators()
     .addTo(controller);
 
     var whenContent = new TimelineMax()
@@ -22,7 +21,6 @@ export default function when (controller) {
         duration:2300
     })
     .setTween(whenContent)
-    .addIndicators()
     .addTo(controller)
 
 }

@@ -10,7 +10,6 @@ export default function intro (controller) {
         duration:2000,
     })
     .setTween(introTitle)
-    .addIndicators()
     .addTo(controller)
 }
 

@@ -1,18 +1,31 @@
     
 div#end-container7-8 {
+    position: relative;
 
     .end7-8Icon {
         position:sticky;
         z-index:1001;
         height: 0;
-        top:5vh;
-        width: 60%;
+        top:3vh;
+        width: 58%;
         padding-left: 5%;
 
         display:flex;
         flex-direction: row;
         justify-content: space-around;
-        
+
+        >p {
+            position: absolute;
+            top:-5vh;
+            
+            width: 100%;
+            text-align: center;
+
+            font:{
+                family:blog;
+                size:3vw;
+            }
+        }
 
         div {
             position: relative;
@@ -35,13 +48,13 @@ div#end-container7-8 {
             }
         }
 
-        div.center {
-            p {bottom:10%}
+        .center {
+            p {bottom:18%}
         }
     }
     
     div#endContainer7 {
-        height:200vh;
+        height:850vh;
 
         div#sub-containerEnd7 {
             z-index:1000;
@@ -72,7 +85,8 @@ div#end-container7-8 {
     }
 
     div#endContainer8 {
-        height:200vh;
+        position: relative;
+        height:300vh;
 
         div#sub-containerEnd8 {
             @include subContainers;
@@ -105,4 +119,16 @@ div#end-container7-8 {
 
         }
     }
+}
+
+// TRIGGERS /////////
+
+.end7Trigger {
+    position: absolute;
+    top:100vh;
+}
+
+.end8Trigger-out {
+    position: absolute;
+    bottom:80vh;
 }

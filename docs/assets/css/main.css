@@ -701,13 +701,14 @@
     text-align: center;
     font-family: blog;
     font-size: 3vw;
-    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-image: url(../../../img/other/menuSubrayado2.png), url(../../img/other/menuSubrayado2.png);
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
   }
   section#menu .menuQuestions-container #menuQuestions li > svg {
+    opacity: 0;
     position: absolute;
     width: 15%;
     height: 100%;
@@ -1452,7 +1453,8 @@
     font-size: 2.8rem;
   }
   div#endContainer3 {
-    height: 200vh;
+    position: relative;
+    height: 550vh;
   }
   div#endContainer3 div#sub-containerEnd3 {
     z-index: 1000;
@@ -1502,18 +1504,35 @@
   }
   div#endContainer3 div#sub-containerEnd3 h3 {
     margin-top: 1vh;
+    margin-bottom: 0;
   }
   div#endContainer3 div#sub-containerEnd3 h3:after {
     content: "STRUCTURED TO ENABLE AGILITY";
     font-family: blog;
   }
   div#endContainer3 div#sub-containerEnd3 p {
+    margin: 0;
+    margin-bottom: 3vh;
     font-family: bariolR;
     font-size: 2rem;
   }
   div#endContainer3 div#sub-containerEnd3 svg {
     position: relative;
-    top: 5%;
+  }
+  .end3Trigger-title {
+    position: absolute;
+    top: 100vh;
+  }
+  .end3Trigger-icon {
+    position: absolute;
+    top: 150vh;
+  }
+  .end3Trigger-iconOut {
+    position: absolute;
+    bottom: 150vh;
+  }
+  div#end-container4-5-6 {
+    position: relative;
   }
   div#end-container4-5-6 .end4-5-6Icon {
     position: -webkit-sticky;
@@ -1531,18 +1550,18 @@
   }
   div#end-container4-5-6 .end4-5-6Icon svg {
     position: absolute;
-    height: 100vh;
+    height: 85vh;
   }
   div#end-container4-5-6 .end4-5-6Icon p {
     position: relative;
-    top: -1vh;
+    top: -10vh;
     left: 12%;
     color: black;
     font-family: blog;
     font-size: 3rem;
   }
   div#end-container4-5-6 div#endContainer4 {
-    height: 200vh;
+    height: 650vh;
   }
   div#end-container4-5-6 div#endContainer4 div#sub-containerEnd4 {
     overflow: hidden;
@@ -1612,6 +1631,9 @@
     font-family: bariolR;
     font-size: 1.4rem;
   }
+  div#end-container4-5-6 div#end-container5-6 {
+    position: relative;
+  }
   div#end-container4-5-6 div#end-container5-6 .contentContainer {
     width: 100%;
     height: 0;
@@ -1675,8 +1697,9 @@
     color: grey;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
-    width: 30%;
-    height: 120%;
+    margin: 0;
+    width: 25%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1684,9 +1707,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     color: white;
     font-family: bariolR;
     font-size: 1.4rem;
@@ -1700,19 +1722,19 @@
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li p {
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 80%;
     padding: 0 5%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li img {
     position: absolute;
     z-index: 0;
-    top: -10%;
-    left: -2.5%;
+    top: 4%;
+    left: -12%;
     width: 100%;
-    height: 80%;
+    height: 95%;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 {
-    height: 200vh;
+    height: 450vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 div#sub-containerEnd5 {
     overflow: hidden;
@@ -1760,7 +1782,8 @@
     transition: opacity 0.5s;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 {
-    height: 200vh;
+    position: relative;
+    height: 620vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 div#sub-containerEnd6 {
     overflow: hidden;
@@ -1807,13 +1830,32 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  .end4-5-6Trigger-boat {
+    position: absolute;
+    top: 100vh;
+  }
+  .end4Trigger-content {
+    position: absolute;
+    top: 150vh;
+  }
+  .end5-6Trigger-leftContent {
+    position: absolute;
+    top: 75vh;
+  }
+  .end6Trigger-out {
+    position: absolute;
+    bottom: 70vh;
+  }
+  div#end-container7-8 {
+    position: relative;
+  }
   div#end-container7-8 .end7-8Icon {
     position: -webkit-sticky;
     position: sticky;
     z-index: 1001;
     height: 0;
-    top: 5vh;
-    width: 60%;
+    top: 3vh;
+    width: 58%;
     padding-left: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1824,6 +1866,14 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  div#end-container7-8 .end7-8Icon > p {
+    position: absolute;
+    top: -5vh;
+    width: 100%;
+    text-align: center;
+    font-family: blog;
+    font-size: 3vw;
   }
   div#end-container7-8 .end7-8Icon div {
     position: relative;
@@ -1841,11 +1891,11 @@
     font-family: blog;
     font-size: 2rem;
   }
-  div#end-container7-8 .end7-8Icon div.center p {
-    bottom: 10%;
+  div#end-container7-8 .end7-8Icon .center p {
+    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
-    height: 200vh;
+    height: 850vh;
   }
   div#end-container7-8 div#endContainer7 div#sub-containerEnd7 {
     z-index: 1000;
@@ -1910,7 +1960,8 @@
     font-family: bariolR;
   }
   div#end-container7-8 div#endContainer8 {
-    height: 200vh;
+    position: relative;
+    height: 300vh;
   }
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 {
     overflow: hidden;
@@ -1976,6 +2027,17 @@
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 .end8Content p:nth-child(2) {
     font-family: bariolR;
   }
+  .end7Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end8Trigger-out {
+    position: absolute;
+    bottom: 80vh;
+  }
+  div#end-container9-10 {
+    position: relative;
+  }
   div#end-container9-10 .end9-10Content-container {
     position: -webkit-sticky;
     position: sticky;
@@ -2000,7 +2062,6 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border: black solid 2px;
     position: relative;
     left: 5%;
     width: 60%;
@@ -2022,6 +2083,7 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText {
     position: absolute;
     right: -50%;
+    margin: 0;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(1) {
     color: white;
@@ -2033,14 +2095,31 @@
     font-family: blog;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(2) {
+    position: relative;
+    top: -10vh;
+    left: 1vw;
     width: 60%;
+    margin: 0;
     font-family: bariolR;
     font-size: 1.5rem;
   }
-  div#end-container9-10 .end9-10Content-container .responsib {
-    border: black solid 2px;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer {
     position: relative;
+    width: 100%;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes {
+    position: relative;
+    top: 9vh;
+    position: absolute;
     width: 60%;
+    height: 35vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2048,41 +2127,74 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  div#end-container9-10 .end9-10Content-container .responsib .cardContainer {
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: bariolB;
+    font-size: 2.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card {
+    position: relative;
+    height: 100%;
+    width: 30%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    height: 100%;
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
-  div#end-container9-10 .end9-10Content-container .responsib svg:not(.card) {
-    position: absolute;
-    top: 45%;
-    height: 40%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .cardRight svg:not(.card) {
-    height: 34%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .card {
-    position: relative;
-    background-color: transparent;
-    border: none;
-    width: 80%;
-    height: 80%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib p {
-    position: absolute;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIcon {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIconRight {
+    width: 65%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
+    position: absolute;
+    height: 100%;
+    width: 55%;
     text-align: center;
-    font-family: bariolB;
-    font-size: 2rem;
+    font-family: bariolR;
+    font-size: 1.5vw;
+  }
+  div#end-container9-10 div#endContainer9 {
+    height: 400vh;
   }
   div#end-container9-10 div#endContainer9 div#sub-containerEnd9 {
     z-index: 1001;
@@ -2116,6 +2228,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#end-container9-10 div#endContainer10 {
+    position: relative;
+    height: 450vh;
+  }
   div#end-container9-10 div#endContainer10 div#sub-containerEnd10 {
     overflow: hidden;
     position: -webkit-sticky;
@@ -2148,53 +2264,17 @@
     height: 100vh;
     z-index: 0;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip {
-    border: black solid 2px;
-    width: 60%;
-    margin: auto;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    list-style: none;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li {
-    position: relative;
-    width: 33%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li p {
-    margin: 0;
-    margin-top: 5vh;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .end9-10Trigger {
     position: absolute;
-    z-index: 100;
-    width: 58%;
-    text-align: center;
-    font-family: bariolR;
-    font-size: 1.5vw;
+    top: 50vh;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li svg {
-    width: 80%;
-    height: 80%;
-    background-color: transparent;
-    border: none;
+  .end9-10Trigger-cards {
+    position: absolute;
+    top: 150vh;
+  }
+  .end10Trigger-out {
+    position: absolute;
+    bottom: 80vh;
   }
   div#end-container11-12-13-14 {
     position: relative;
@@ -2214,10 +2294,11 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons {
+    overflow-x: hidden;
     position: absolute;
     left: 30%;
-    width: 55%;
-    height: 45vh;
+    width: 69%;
+    height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2225,13 +2306,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons svg {
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p {
     position: absolute;
-    top: -30%;
+    top: -10%;
     right: 0%;
     width: 50%;
     color: white;
@@ -2244,7 +2328,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
     width: 45%;
-    height: 30%;
+    height: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2257,6 +2341,8 @@
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon1 {
+    position: relative;
+    left: -20%;
     width: 40%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon2 {
@@ -2264,7 +2350,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group {
     width: 100%;
-    height: 60%;
+    height: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2272,9 +2358,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: flex;
-        -ms-flex-pack: flex;
-            justify-content: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group svg {
     position: relative;
@@ -2284,21 +2370,22 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon2 {
     bottom: -9%;
+    left: -5%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon3 {
     bottom: -10%;
+    left: -8%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon4 {
     bottom: 16%;
-    left: -5%;
+    left: -15%;
     height: 125%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .groundIcon {
     width: 70%;
-    height: 10%;
+    height: 8%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer {
-    display: none;
     position: -webkit-sticky;
     position: sticky;
     top: 16vh;
@@ -2307,7 +2394,6 @@
     height: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons {
-    border: black solid 2px;
     position: absolute;
     left: 5vw;
     width: 60%;
@@ -2325,7 +2411,7 @@
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons p {
     position: absolute;
-    top: -15%;
+    top: -20%;
     width: 100%;
     text-align: center;
     color: white;
@@ -2337,7 +2423,6 @@
     width: 30%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons .rectangles {
-    border: chartreuse solid 3px;
     position: absolute;
     width: 100%;
     height: 70%;
@@ -2363,7 +2448,7 @@
     top: 29%;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 {
-    height: 200vh;
+    height: 600vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 {
     z-index: 1002;
@@ -2404,7 +2489,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 .end11Content {
-    border: black solid 2px;
     position: relative;
     right: 12%;
     width: 20%;
@@ -2417,7 +2501,8 @@
     font-size: 2.5vw;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 {
-    height: 200vh;
+    position: relative;
+    height: 700vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 {
     overflow: hidden;
@@ -2454,7 +2539,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 .end12Content {
-    border: black solid 2px;
     position: relative;
     right: 5%;
     width: 26%;
@@ -2480,7 +2564,6 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib {
-    border: green solid 3px;
     position: absolute;
     width: 60%;
     height: 35vh;
@@ -2509,13 +2592,16 @@
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
+    position: relative;
     height: 100%;
-    width: 30%;
+    width: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
-    display: none;
     height: 100%;
     background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2528,12 +2614,14 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIcon {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIconRight {
-    width: 14%;
+    width: 40%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -2551,7 +2639,7 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
@@ -2560,7 +2648,8 @@
     top: 25%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
-    height: 200vh;
+    position: relative;
+    height: 400vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -2626,6 +2715,18 @@
     width: 100%;
     height: 100vh;
     z-index: 0;
+  }
+  .end11-12-13-14Triggger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end12Trigger {
+    position: absolute;
+    top: 80vh;
+  }
+  .end13Trigger {
+    position: absolute;
+    top: 50vh;
   }
   div#endContainer15 {
     height: 200vh;
@@ -3615,13 +3716,14 @@
     text-align: center;
     font-family: blog;
     font-size: 3vw;
-    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-image: url(../../../img/other/menuSubrayado2.png), url(../../img/other/menuSubrayado2.png);
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
   }
   section#menu .menuQuestions-container #menuQuestions li > svg {
+    opacity: 0;
     position: absolute;
     width: 15%;
     height: 100%;
@@ -4366,7 +4468,8 @@
     font-size: 2.8rem;
   }
   div#endContainer3 {
-    height: 200vh;
+    position: relative;
+    height: 550vh;
   }
   div#endContainer3 div#sub-containerEnd3 {
     z-index: 1000;
@@ -4416,18 +4519,35 @@
   }
   div#endContainer3 div#sub-containerEnd3 h3 {
     margin-top: 1vh;
+    margin-bottom: 0;
   }
   div#endContainer3 div#sub-containerEnd3 h3:after {
     content: "STRUCTURED TO ENABLE AGILITY";
     font-family: blog;
   }
   div#endContainer3 div#sub-containerEnd3 p {
+    margin: 0;
+    margin-bottom: 3vh;
     font-family: bariolR;
     font-size: 2rem;
   }
   div#endContainer3 div#sub-containerEnd3 svg {
     position: relative;
-    top: 5%;
+  }
+  .end3Trigger-title {
+    position: absolute;
+    top: 100vh;
+  }
+  .end3Trigger-icon {
+    position: absolute;
+    top: 150vh;
+  }
+  .end3Trigger-iconOut {
+    position: absolute;
+    bottom: 150vh;
+  }
+  div#end-container4-5-6 {
+    position: relative;
   }
   div#end-container4-5-6 .end4-5-6Icon {
     position: -webkit-sticky;
@@ -4445,18 +4565,18 @@
   }
   div#end-container4-5-6 .end4-5-6Icon svg {
     position: absolute;
-    height: 100vh;
+    height: 85vh;
   }
   div#end-container4-5-6 .end4-5-6Icon p {
     position: relative;
-    top: -1vh;
+    top: -10vh;
     left: 12%;
     color: black;
     font-family: blog;
     font-size: 3rem;
   }
   div#end-container4-5-6 div#endContainer4 {
-    height: 200vh;
+    height: 650vh;
   }
   div#end-container4-5-6 div#endContainer4 div#sub-containerEnd4 {
     overflow: hidden;
@@ -4526,6 +4646,9 @@
     font-family: bariolR;
     font-size: 1.4rem;
   }
+  div#end-container4-5-6 div#end-container5-6 {
+    position: relative;
+  }
   div#end-container4-5-6 div#end-container5-6 .contentContainer {
     width: 100%;
     height: 0;
@@ -4589,8 +4712,9 @@
     color: grey;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
-    width: 30%;
-    height: 120%;
+    margin: 0;
+    width: 25%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4598,9 +4722,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     color: white;
     font-family: bariolR;
     font-size: 1.4rem;
@@ -4614,19 +4737,19 @@
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li p {
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 80%;
     padding: 0 5%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li img {
     position: absolute;
     z-index: 0;
-    top: -10%;
-    left: -2.5%;
+    top: 4%;
+    left: -12%;
     width: 100%;
-    height: 80%;
+    height: 95%;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 {
-    height: 200vh;
+    height: 450vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 div#sub-containerEnd5 {
     overflow: hidden;
@@ -4674,7 +4797,8 @@
     transition: opacity 0.5s;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 {
-    height: 200vh;
+    position: relative;
+    height: 620vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 div#sub-containerEnd6 {
     overflow: hidden;
@@ -4721,13 +4845,32 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  .end4-5-6Trigger-boat {
+    position: absolute;
+    top: 100vh;
+  }
+  .end4Trigger-content {
+    position: absolute;
+    top: 150vh;
+  }
+  .end5-6Trigger-leftContent {
+    position: absolute;
+    top: 75vh;
+  }
+  .end6Trigger-out {
+    position: absolute;
+    bottom: 70vh;
+  }
+  div#end-container7-8 {
+    position: relative;
+  }
   div#end-container7-8 .end7-8Icon {
     position: -webkit-sticky;
     position: sticky;
     z-index: 1001;
     height: 0;
-    top: 5vh;
-    width: 60%;
+    top: 3vh;
+    width: 58%;
     padding-left: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4738,6 +4881,14 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  div#end-container7-8 .end7-8Icon > p {
+    position: absolute;
+    top: -5vh;
+    width: 100%;
+    text-align: center;
+    font-family: blog;
+    font-size: 3vw;
   }
   div#end-container7-8 .end7-8Icon div {
     position: relative;
@@ -4755,11 +4906,11 @@
     font-family: blog;
     font-size: 2rem;
   }
-  div#end-container7-8 .end7-8Icon div.center p {
-    bottom: 10%;
+  div#end-container7-8 .end7-8Icon .center p {
+    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
-    height: 200vh;
+    height: 850vh;
   }
   div#end-container7-8 div#endContainer7 div#sub-containerEnd7 {
     z-index: 1000;
@@ -4824,7 +4975,8 @@
     font-family: bariolR;
   }
   div#end-container7-8 div#endContainer8 {
-    height: 200vh;
+    position: relative;
+    height: 300vh;
   }
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 {
     overflow: hidden;
@@ -4890,6 +5042,17 @@
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 .end8Content p:nth-child(2) {
     font-family: bariolR;
   }
+  .end7Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end8Trigger-out {
+    position: absolute;
+    bottom: 80vh;
+  }
+  div#end-container9-10 {
+    position: relative;
+  }
   div#end-container9-10 .end9-10Content-container {
     position: -webkit-sticky;
     position: sticky;
@@ -4914,7 +5077,6 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border: black solid 2px;
     position: relative;
     left: 5%;
     width: 60%;
@@ -4936,6 +5098,7 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText {
     position: absolute;
     right: -50%;
+    margin: 0;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(1) {
     color: white;
@@ -4947,14 +5110,31 @@
     font-family: blog;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(2) {
+    position: relative;
+    top: -10vh;
+    left: 1vw;
     width: 60%;
+    margin: 0;
     font-family: bariolR;
     font-size: 1.5rem;
   }
-  div#end-container9-10 .end9-10Content-container .responsib {
-    border: black solid 2px;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer {
     position: relative;
+    width: 100%;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes {
+    position: relative;
+    top: 9vh;
+    position: absolute;
     width: 60%;
+    height: 35vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4962,41 +5142,74 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  div#end-container9-10 .end9-10Content-container .responsib .cardContainer {
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: bariolB;
+    font-size: 2.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card {
+    position: relative;
+    height: 100%;
+    width: 30%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    height: 100%;
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
-  div#end-container9-10 .end9-10Content-container .responsib svg:not(.card) {
-    position: absolute;
-    top: 45%;
-    height: 40%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .cardRight svg:not(.card) {
-    height: 34%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .card {
-    position: relative;
-    background-color: transparent;
-    border: none;
-    width: 80%;
-    height: 80%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib p {
-    position: absolute;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIcon {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIconRight {
+    width: 65%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
+    position: absolute;
+    height: 100%;
+    width: 55%;
     text-align: center;
-    font-family: bariolB;
-    font-size: 2rem;
+    font-family: bariolR;
+    font-size: 1.5vw;
+  }
+  div#end-container9-10 div#endContainer9 {
+    height: 400vh;
   }
   div#end-container9-10 div#endContainer9 div#sub-containerEnd9 {
     z-index: 1001;
@@ -5030,6 +5243,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#end-container9-10 div#endContainer10 {
+    position: relative;
+    height: 450vh;
+  }
   div#end-container9-10 div#endContainer10 div#sub-containerEnd10 {
     overflow: hidden;
     position: -webkit-sticky;
@@ -5062,53 +5279,17 @@
     height: 100vh;
     z-index: 0;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip {
-    border: black solid 2px;
-    width: 60%;
-    margin: auto;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    list-style: none;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li {
-    position: relative;
-    width: 33%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li p {
-    margin: 0;
-    margin-top: 5vh;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .end9-10Trigger {
     position: absolute;
-    z-index: 100;
-    width: 58%;
-    text-align: center;
-    font-family: bariolR;
-    font-size: 1.5vw;
+    top: 50vh;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li svg {
-    width: 80%;
-    height: 80%;
-    background-color: transparent;
-    border: none;
+  .end9-10Trigger-cards {
+    position: absolute;
+    top: 150vh;
+  }
+  .end10Trigger-out {
+    position: absolute;
+    bottom: 80vh;
   }
   div#end-container11-12-13-14 {
     position: relative;
@@ -5128,10 +5309,11 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons {
+    overflow-x: hidden;
     position: absolute;
     left: 30%;
-    width: 55%;
-    height: 45vh;
+    width: 69%;
+    height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5139,13 +5321,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons svg {
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p {
     position: absolute;
-    top: -30%;
+    top: -10%;
     right: 0%;
     width: 50%;
     color: white;
@@ -5158,7 +5343,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
     width: 45%;
-    height: 30%;
+    height: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5171,6 +5356,8 @@
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon1 {
+    position: relative;
+    left: -20%;
     width: 40%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon2 {
@@ -5178,7 +5365,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group {
     width: 100%;
-    height: 60%;
+    height: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5186,9 +5373,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: flex;
-        -ms-flex-pack: flex;
-            justify-content: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group svg {
     position: relative;
@@ -5198,21 +5385,22 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon2 {
     bottom: -9%;
+    left: -5%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon3 {
     bottom: -10%;
+    left: -8%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon4 {
     bottom: 16%;
-    left: -5%;
+    left: -15%;
     height: 125%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .groundIcon {
     width: 70%;
-    height: 10%;
+    height: 8%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer {
-    display: none;
     position: -webkit-sticky;
     position: sticky;
     top: 16vh;
@@ -5221,7 +5409,6 @@
     height: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons {
-    border: black solid 2px;
     position: absolute;
     left: 5vw;
     width: 60%;
@@ -5239,7 +5426,7 @@
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons p {
     position: absolute;
-    top: -15%;
+    top: -20%;
     width: 100%;
     text-align: center;
     color: white;
@@ -5251,7 +5438,6 @@
     width: 30%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons .rectangles {
-    border: chartreuse solid 3px;
     position: absolute;
     width: 100%;
     height: 70%;
@@ -5277,7 +5463,7 @@
     top: 29%;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 {
-    height: 200vh;
+    height: 600vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 {
     z-index: 1002;
@@ -5318,7 +5504,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 .end11Content {
-    border: black solid 2px;
     position: relative;
     right: 12%;
     width: 20%;
@@ -5331,7 +5516,8 @@
     font-size: 2.5vw;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 {
-    height: 200vh;
+    position: relative;
+    height: 700vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 {
     overflow: hidden;
@@ -5368,7 +5554,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 .end12Content {
-    border: black solid 2px;
     position: relative;
     right: 5%;
     width: 26%;
@@ -5394,7 +5579,6 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib {
-    border: green solid 3px;
     position: absolute;
     width: 60%;
     height: 35vh;
@@ -5423,13 +5607,16 @@
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
+    position: relative;
     height: 100%;
-    width: 30%;
+    width: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
-    display: none;
     height: 100%;
     background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -5442,12 +5629,14 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIcon {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIconRight {
-    width: 14%;
+    width: 40%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -5465,7 +5654,7 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
@@ -5474,7 +5663,8 @@
     top: 25%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
-    height: 200vh;
+    position: relative;
+    height: 400vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -5540,6 +5730,18 @@
     width: 100%;
     height: 100vh;
     z-index: 0;
+  }
+  .end11-12-13-14Triggger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end12Trigger {
+    position: absolute;
+    top: 80vh;
+  }
+  .end13Trigger {
+    position: absolute;
+    top: 50vh;
   }
   div#endContainer15 {
     height: 200vh;
@@ -6666,13 +6868,14 @@
     text-align: center;
     font-family: blog;
     font-size: 3vw;
-    background-image: url(../../../img/other/menuSubrayado2.png);
+    background-image: url(../../../img/other/menuSubrayado2.png), url(../../img/other/menuSubrayado2.png);
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
   }
   section#menu .menuQuestions-container #menuQuestions li > svg {
+    opacity: 0;
     position: absolute;
     width: 15%;
     height: 100%;
@@ -7417,7 +7620,8 @@
     font-size: 2.8rem;
   }
   div#endContainer3 {
-    height: 200vh;
+    position: relative;
+    height: 550vh;
   }
   div#endContainer3 div#sub-containerEnd3 {
     z-index: 1000;
@@ -7467,18 +7671,35 @@
   }
   div#endContainer3 div#sub-containerEnd3 h3 {
     margin-top: 1vh;
+    margin-bottom: 0;
   }
   div#endContainer3 div#sub-containerEnd3 h3:after {
     content: "STRUCTURED TO ENABLE AGILITY";
     font-family: blog;
   }
   div#endContainer3 div#sub-containerEnd3 p {
+    margin: 0;
+    margin-bottom: 3vh;
     font-family: bariolR;
     font-size: 2rem;
   }
   div#endContainer3 div#sub-containerEnd3 svg {
     position: relative;
-    top: 5%;
+  }
+  .end3Trigger-title {
+    position: absolute;
+    top: 100vh;
+  }
+  .end3Trigger-icon {
+    position: absolute;
+    top: 150vh;
+  }
+  .end3Trigger-iconOut {
+    position: absolute;
+    bottom: 150vh;
+  }
+  div#end-container4-5-6 {
+    position: relative;
   }
   div#end-container4-5-6 .end4-5-6Icon {
     position: -webkit-sticky;
@@ -7496,18 +7717,18 @@
   }
   div#end-container4-5-6 .end4-5-6Icon svg {
     position: absolute;
-    height: 100vh;
+    height: 85vh;
   }
   div#end-container4-5-6 .end4-5-6Icon p {
     position: relative;
-    top: -1vh;
+    top: -10vh;
     left: 12%;
     color: black;
     font-family: blog;
     font-size: 3rem;
   }
   div#end-container4-5-6 div#endContainer4 {
-    height: 200vh;
+    height: 650vh;
   }
   div#end-container4-5-6 div#endContainer4 div#sub-containerEnd4 {
     overflow: hidden;
@@ -7577,6 +7798,9 @@
     font-family: bariolR;
     font-size: 1.4rem;
   }
+  div#end-container4-5-6 div#end-container5-6 {
+    position: relative;
+  }
   div#end-container4-5-6 div#end-container5-6 .contentContainer {
     width: 100%;
     height: 0;
@@ -7640,8 +7864,9 @@
     color: grey;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
-    width: 30%;
-    height: 120%;
+    margin: 0;
+    width: 25%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7649,9 +7874,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     color: white;
     font-family: bariolR;
     font-size: 1.4rem;
@@ -7665,19 +7889,19 @@
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li p {
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 80%;
     padding: 0 5%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info li img {
     position: absolute;
     z-index: 0;
-    top: -10%;
-    left: -2.5%;
+    top: 4%;
+    left: -12%;
     width: 100%;
-    height: 80%;
+    height: 95%;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 {
-    height: 200vh;
+    height: 450vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer5 div#sub-containerEnd5 {
     overflow: hidden;
@@ -7725,7 +7949,8 @@
     transition: opacity 0.5s;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 {
-    height: 200vh;
+    position: relative;
+    height: 620vh;
   }
   div#end-container4-5-6 div#end-container5-6 div#endContainer6 div#sub-containerEnd6 {
     overflow: hidden;
@@ -7772,13 +7997,32 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  .end4-5-6Trigger-boat {
+    position: absolute;
+    top: 100vh;
+  }
+  .end4Trigger-content {
+    position: absolute;
+    top: 150vh;
+  }
+  .end5-6Trigger-leftContent {
+    position: absolute;
+    top: 75vh;
+  }
+  .end6Trigger-out {
+    position: absolute;
+    bottom: 70vh;
+  }
+  div#end-container7-8 {
+    position: relative;
+  }
   div#end-container7-8 .end7-8Icon {
     position: -webkit-sticky;
     position: sticky;
     z-index: 1001;
     height: 0;
-    top: 5vh;
-    width: 60%;
+    top: 3vh;
+    width: 58%;
     padding-left: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7789,6 +8033,14 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  div#end-container7-8 .end7-8Icon > p {
+    position: absolute;
+    top: -5vh;
+    width: 100%;
+    text-align: center;
+    font-family: blog;
+    font-size: 3vw;
   }
   div#end-container7-8 .end7-8Icon div {
     position: relative;
@@ -7806,11 +8058,11 @@
     font-family: blog;
     font-size: 2rem;
   }
-  div#end-container7-8 .end7-8Icon div.center p {
-    bottom: 10%;
+  div#end-container7-8 .end7-8Icon .center p {
+    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
-    height: 200vh;
+    height: 850vh;
   }
   div#end-container7-8 div#endContainer7 div#sub-containerEnd7 {
     z-index: 1000;
@@ -7875,7 +8127,8 @@
     font-family: bariolR;
   }
   div#end-container7-8 div#endContainer8 {
-    height: 200vh;
+    position: relative;
+    height: 300vh;
   }
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 {
     overflow: hidden;
@@ -7941,6 +8194,17 @@
   div#end-container7-8 div#endContainer8 div#sub-containerEnd8 .end8Content p:nth-child(2) {
     font-family: bariolR;
   }
+  .end7Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end8Trigger-out {
+    position: absolute;
+    bottom: 80vh;
+  }
+  div#end-container9-10 {
+    position: relative;
+  }
   div#end-container9-10 .end9-10Content-container {
     position: -webkit-sticky;
     position: sticky;
@@ -7965,7 +8229,6 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border: black solid 2px;
     position: relative;
     left: 5%;
     width: 60%;
@@ -7987,6 +8250,7 @@
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText {
     position: absolute;
     right: -50%;
+    margin: 0;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(1) {
     color: white;
@@ -7998,14 +8262,31 @@
     font-family: blog;
   }
   div#end-container9-10 .end9-10Content-container .end9-10Content .contentText p:nth-child(2) {
+    position: relative;
+    top: -10vh;
+    left: 1vw;
     width: 60%;
+    margin: 0;
     font-family: bariolR;
     font-size: 1.5rem;
   }
-  div#end-container9-10 .end9-10Content-container .responsib {
-    border: black solid 2px;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer {
     position: relative;
+    width: 100%;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes {
+    position: relative;
+    top: 9vh;
+    position: absolute;
     width: 60%;
+    height: 35vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8013,41 +8294,74 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  div#end-container9-10 .end9-10Content-container .responsib .cardContainer {
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: bariolB;
+    font-size: 2.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card {
+    position: relative;
+    height: 100%;
+    width: 30%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    height: 100%;
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
-  div#end-container9-10 .end9-10Content-container .responsib svg:not(.card) {
-    position: absolute;
-    top: 45%;
-    height: 40%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .cardRight svg:not(.card) {
-    height: 34%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib .card {
-    position: relative;
-    background-color: transparent;
-    border: none;
-    width: 80%;
-    height: 80%;
-  }
-  div#end-container9-10 .end9-10Content-container .responsib p {
-    position: absolute;
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIcon {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backIconRight {
+    width: 65%;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
+    position: absolute;
+    height: 100%;
+    width: 55%;
     text-align: center;
-    font-family: bariolB;
-    font-size: 2rem;
+    font-family: bariolR;
+    font-size: 1.5vw;
+  }
+  div#end-container9-10 div#endContainer9 {
+    height: 400vh;
   }
   div#end-container9-10 div#endContainer9 div#sub-containerEnd9 {
     z-index: 1001;
@@ -8081,6 +8395,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#end-container9-10 div#endContainer10 {
+    position: relative;
+    height: 450vh;
+  }
   div#end-container9-10 div#endContainer10 div#sub-containerEnd10 {
     overflow: hidden;
     position: -webkit-sticky;
@@ -8113,53 +8431,17 @@
     height: 100vh;
     z-index: 0;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip {
-    border: black solid 2px;
-    width: 60%;
-    margin: auto;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    list-style: none;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li {
-    position: relative;
-    width: 33%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li p {
-    margin: 0;
-    margin-top: 5vh;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .end9-10Trigger {
     position: absolute;
-    z-index: 100;
-    width: 58%;
-    text-align: center;
-    font-family: bariolR;
-    font-size: 1.5vw;
+    top: 50vh;
   }
-  div#end-container9-10 div#endContainer10 div#sub-containerEnd10 .cardFlip li svg {
-    width: 80%;
-    height: 80%;
-    background-color: transparent;
-    border: none;
+  .end9-10Trigger-cards {
+    position: absolute;
+    top: 150vh;
+  }
+  .end10Trigger-out {
+    position: absolute;
+    bottom: 80vh;
   }
   div#end-container11-12-13-14 {
     position: relative;
@@ -8179,10 +8461,11 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons {
+    overflow-x: hidden;
     position: absolute;
     left: 30%;
-    width: 55%;
-    height: 45vh;
+    width: 69%;
+    height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8190,13 +8473,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons svg {
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p {
     position: absolute;
-    top: -30%;
+    top: -10%;
     right: 0%;
     width: 50%;
     color: white;
@@ -8209,7 +8495,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
     width: 45%;
-    height: 30%;
+    height: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8222,6 +8508,8 @@
     height: 100%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon1 {
+    position: relative;
+    left: -20%;
     width: 40%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat .chatIcon2 {
@@ -8229,7 +8517,7 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group {
     width: 100%;
-    height: 60%;
+    height: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8237,9 +8525,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: flex;
-        -ms-flex-pack: flex;
-            justify-content: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group svg {
     position: relative;
@@ -8249,21 +8537,22 @@
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon2 {
     bottom: -9%;
+    left: -5%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon3 {
     bottom: -10%;
+    left: -8%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .group .groupIcon4 {
     bottom: 16%;
-    left: -5%;
+    left: -15%;
     height: 125%;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .groundIcon {
     width: 70%;
-    height: 10%;
+    height: 8%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer {
-    display: none;
     position: -webkit-sticky;
     position: sticky;
     top: 16vh;
@@ -8272,7 +8561,6 @@
     height: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons {
-    border: black solid 2px;
     position: absolute;
     left: 5vw;
     width: 60%;
@@ -8290,7 +8578,7 @@
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons p {
     position: absolute;
-    top: -15%;
+    top: -20%;
     width: 100%;
     text-align: center;
     color: white;
@@ -8302,7 +8590,6 @@
     width: 30%;
   }
   div#end-container11-12-13-14 div#end-container11-12 .boatContainer .boatIcons .rectangles {
-    border: chartreuse solid 3px;
     position: absolute;
     width: 100%;
     height: 70%;
@@ -8328,7 +8615,7 @@
     top: 29%;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 {
-    height: 200vh;
+    height: 600vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 {
     z-index: 1002;
@@ -8369,7 +8656,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer11 div#sub-containerEnd11 .end11Content {
-    border: black solid 2px;
     position: relative;
     right: 12%;
     width: 20%;
@@ -8382,7 +8668,8 @@
     font-size: 2.5vw;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 {
-    height: 200vh;
+    position: relative;
+    height: 700vh;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 {
     overflow: hidden;
@@ -8419,7 +8706,6 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container11-12 div#endContainer12 div#sub-containerEnd12 .end12Content {
-    border: black solid 2px;
     position: relative;
     right: 5%;
     width: 26%;
@@ -8445,7 +8731,6 @@
             justify-content: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib {
-    border: green solid 3px;
     position: absolute;
     width: 60%;
     height: 35vh;
@@ -8474,13 +8759,16 @@
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
+    position: relative;
     height: 100%;
-    width: 30%;
+    width: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
-    display: none;
     height: 100%;
     background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -8493,12 +8781,14 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIcon {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backIconRight {
-    width: 14%;
+    width: 40%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -8516,7 +8806,7 @@
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 50%;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
@@ -8525,7 +8815,8 @@
     top: 25%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
-    height: 200vh;
+    position: relative;
+    height: 400vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -8591,6 +8882,18 @@
     width: 100%;
     height: 100vh;
     z-index: 0;
+  }
+  .end11-12-13-14Triggger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end12Trigger {
+    position: absolute;
+    top: 80vh;
+  }
+  .end13Trigger {
+    position: absolute;
+    top: 50vh;
   }
   div#endContainer15 {
     height: 200vh;
@@ -9056,9 +9359,5 @@ html, body {
           user-select: none;
   margin-bottom: 0;
   margin-top: 0;
-}
-
-#end {
-  display: none;
 }
 /*# sourceMappingURL=main.css.map */

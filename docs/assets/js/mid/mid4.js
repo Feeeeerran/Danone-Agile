@@ -8,7 +8,6 @@ export default function mid4 (controller) {
         duration:500
     })
     .setTween(mid4T)
-    .addIndicators()
     .addTo(controller)
 
 }

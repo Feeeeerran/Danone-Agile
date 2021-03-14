@@ -3,7 +3,6 @@ export default function how (controller) {
         triggerElement:".howTrigger-title",
     })
     .setClassToggle("#howTit","typed")
-    .addIndicators()
     .addTo(controller);
 
 
@@ -21,7 +20,6 @@ export default function how (controller) {
         duration:2500
     })
     .setTween(howContent)
-    .addIndicators()
     .addTo(controller)
 
 

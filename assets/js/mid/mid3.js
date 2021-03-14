@@ -8,7 +8,6 @@ export default function mid3 (controller) {
         duration:500
     })
     .setTween(mid3T)
-    .addIndicators()
     .addTo(controller)
 
     // ANIMACION DE FLECHA ////////////
@@ -20,7 +19,6 @@ export default function mid3 (controller) {
         duration:2000
     })
     .setTween(mid3Anim)
-    .addIndicators()
     .addTo(controller)
     
     var mid3Anim = new TimelineMax()
@@ -31,7 +29,6 @@ export default function mid3 (controller) {
         duration:2000
     })
     .setTween(mid3Anim)
-    .addIndicators()
     .addTo(controller)
     
     // ANIMACION DE PERSONA
@@ -49,7 +46,6 @@ export default function mid3 (controller) {
         duration:2300
     })
     .setTween(mid3Anim)
-    .addIndicators()
     .addTo(controller)
 
     

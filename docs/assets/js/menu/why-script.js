@@ -4,7 +4,6 @@ export default function why (controller) {
         triggerElement:".whyTrigger-title",
     })
     .setClassToggle("#whyTit","typed")
-    .addIndicators()
     .addTo(controller);
 
     var whyContent = new TimelineMax()
@@ -25,7 +24,6 @@ export default function why (controller) {
         duration:2500
     })
     .setTween(whyContent)
-    .addIndicators()
     .addTo(controller)
 
     var rocket = new TimelineMax()
@@ -35,7 +33,6 @@ export default function why (controller) {
         duration:3000
     })
     .setTween(rocket)
-    .addIndicators()
     .addTo(controller)
 
     

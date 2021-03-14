@@ -4,14 +4,12 @@ export default function mid1_2 (controller) {
         triggerElement:".mid1-2Trigger-title1",
     })
     .setClassToggle("#mid1Tit1","typed")
-    .addIndicators()
     .addTo(controller);
     
     var mid1_2T2 = new ScrollMagic.Scene({
         triggerElement:".mid1-2Trigger-title2",
     })
     .setClassToggle("#mid1Tit2","typed")
-    .addIndicators()
     .addTo(controller);
 
 
@@ -29,7 +27,6 @@ export default function mid1_2 (controller) {
         duration:2500
     })
     .setTween(girl)
-    .addIndicators()
     .addTo(controller)
 
 
@@ -44,7 +41,6 @@ export default function mid1_2 (controller) {
         duration:2000
     })
     .setTween(girlQuestion)
-    .addIndicators()
     .addTo(controller)
 
 

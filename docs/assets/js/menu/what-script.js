@@ -5,7 +5,6 @@ export default function what (controller) {
         triggerElement:".whatTrigger-title",
     })
     .setClassToggle("#whatTit","typed")
-    .addIndicators()
     .addTo(controller);
 
 
@@ -24,7 +23,6 @@ export default function what (controller) {
         duration:2500
     })
     .setTween(whatContent)
-    .addIndicators()
     .addTo(controller)
 
 }

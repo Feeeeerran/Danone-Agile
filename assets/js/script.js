@@ -9,10 +9,11 @@ menu(controller);
 import mid from './mid/mid-script.js';
 mid(controller);
 
+import end from './end/end-script.js';
+end(controller);
 
 
 
-// ver de llamar a efectos con trigger
 
 
 

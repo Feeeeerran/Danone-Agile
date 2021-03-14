@@ -8,7 +8,6 @@ export default function mid6 (controller) {
         duration:500
     })
     .setTween(mid6T)
-    .addIndicators()
     .addTo(controller)
 
     var mid6Icons = new TimelineMax()
@@ -19,7 +18,6 @@ export default function mid6 (controller) {
         duration:2500
     })
     .setTween(mid6Icons)
-    .addIndicators()
     .addTo(controller)
     
 

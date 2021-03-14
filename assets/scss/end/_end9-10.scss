@@ -1,4 +1,5 @@
 div#end-container9-10 {
+    position: relative;
     .end9-10Content-container {
         position: sticky;
         z-index: 1002;
@@ -14,11 +15,9 @@ div#end-container9-10 {
 
         .end9-10Content {
             align-self: flex-start;
-            border:black solid 2px;
             position: relative;
             left:5%;
             width:60%;
-            // height:60vh;
 
 
             display:flex;
@@ -33,6 +32,8 @@ div#end-container9-10 {
             .contentText {
                 position: absolute;
                 right:-50%;
+                margin:0;
+
                 p:nth-child(1) {
                     color:white;
                     font:{
@@ -46,7 +47,11 @@ div#end-container9-10 {
                 }
 
                 p:nth-child(2) {
+                    position: relative;
+                    top:-10vh;
+                    left:1vw;
                     width: 60%;
+                    margin:0;
                     font:{
                         family:bariolR;
                         size:1.5rem;
@@ -54,118 +59,143 @@ div#end-container9-10 {
                 }
             }
 
+            
+
         }
 
-        .responsib {
-            border:black solid 2px;
+        .tribeResContainer {
             position: relative;
-            width:60%;
+            width:100%;
+            height: 0;
 
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
 
-            .cardContainer {
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-            }
-
-            svg:not(.card) {
-                position: absolute;
-                top:45%;
-                height: 40%;
-            }
-
-            .cardRight {
-                svg:not(.card) {
-                    height: 34%;
-                }
-            }
-
-            .card {
+            .tribeRes {
                 position: relative;
-                // top:0;
-                background-color: transparent;
-                border:none;
-                width:80%;
-                height: 80%;
-            }
+                top:9vh;
 
-            p {
                 position: absolute;
-                width: 100%;
-                text-align: center;
-                font:{
-                    family:bariolB;
-                    size:2rem;
+                width: 60%;
+                height:35vh;
+
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                >p {
+                    position: absolute;
+                    top:-25%;
+                    width:100%;
+                    margin:0;
+
+                    text-align: center;
+                    font:{
+                        family:bariolB;
+                        size:2.5vw;
+                    }
                 }
+
+                .card {
+                    position: relative;
+                    height: 100%;
+                    width:30%;
+
+
+                    .back {
+                        // display: none;
+                        height: 100%;
+                        background-color: transparent;
+                        
+                        display: flex;
+                        justify-content: center;
+                        
+                        .backCard {
+                            width: 100%;
+                            height:100%;
+                            border:none;
+                        }
+
+                        .backIcon {
+                            position: absolute;
+                            height:100%;
+                            width:50%;
+                        }
+
+                        .backIconRight {
+                            width:65%;
+                        }
+                    }
+
+                    .flip {
+                        position: absolute;
+                        top:0;
+                        height: 100%;
+                        background-color: transparent;
+                        
+                        display: flex;
+                        justify-content: center;
+
+                        .flipCard {
+                            width: 100%;
+                            height:100%;
+                            border:none;
+                        }
+
+                        .flipText {
+                            position: absolute;
+                            height:100%;
+                            width:55%;
+
+                            text-align: center;
+                            font:{
+                                family:bariolR;
+                                size:1.5vw;
+                            }
+                        }
+
+                    }
+                }
+                
+
             }
         }
+
     }
     
     div#endContainer9 {
+        height: 400vh;
         div#sub-containerEnd9 {
             z-index:1001;
             @include subContainers;
-            
-
-
         }
     }
 
     div#endContainer10 {
-        // height:200vh;
+        position: relative;
+        height:450vh;
 
         div#sub-containerEnd10 {
             @include subContainers;
             justify-content: flex-end;
-            .cardFlip {
-                border:black solid 2px;
-                width:60%;
-                margin:auto;
-                padding:0;
-
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                list-style: none;
-    
-                li {
-                    position:relative;
-                    width:33%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-
-                    p {
-                        margin:0;
-                        margin-top: 5vh;
-                        align-self: center;
-                        position:absolute;
-                        z-index:100;
-                        width:58%;
-
-                        text-align: center;
-                        font:{
-                            family:bariolR;
-                            size:1.5vw;
-                        }
-                    }
-
-                    svg {
-                        width:80%;
-                        height: 80%; 
-                        background-color: transparent;
-                        border:none;   
-                    }
-                }
-
-            }
-
         }
     }
 }
 
+// TRIGGERS //////////
+
+.end9-10Trigger {
+    position: absolute;
+    top:50vh;
+}
+
+.end9-10Trigger-cards {
+    position: absolute;
+    top:150vh;
+}
+
+.end10Trigger-out {
+    position: absolute;
+    bottom:80vh;
+}

@@ -1,4 +1,5 @@
 div#end-container4-5-6 {
+    position: relative;
 
     .end4-5-6Icon {
         position: sticky;
@@ -12,12 +13,12 @@ div#end-container4-5-6 {
 
         svg {
             position: absolute;
-            height:100vh;
+            height:85vh;
         }
 
         p {
             position: relative;
-            top:-1vh;
+            top:-10vh;
             left:12%;
             color:black;
             font:{
@@ -31,7 +32,7 @@ div#end-container4-5-6 {
 
     
     div#endContainer4 {
-        height:200vh;
+        height:650vh;
 
         div#sub-containerEnd4 {
             @include subContainers;
@@ -79,6 +80,7 @@ div#end-container4-5-6 {
 
 
     div#end-container5-6 {
+        position: relative;
 
         .contentContainer {
             width: 100%;
@@ -129,12 +131,13 @@ div#end-container4-5-6 {
                 }
 
                 .info {
-                    width:30%;
-                    height:120%;
+                    margin:0;
+                    width:25%;
+                    height:100%;
 
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-around;
 
                     color:white;
                     font:{
@@ -151,17 +154,17 @@ div#end-container4-5-6 {
                         p {
                             position: relative;
                             z-index: 10;
-                            width:100%;
+                            width:80%;
                             padding:0 5%;
                         }
                         
                         img {
                             position: absolute;
                             z-index: 0;
-                            top:-10%;
-                            left:-2.5%;
+                            top:4%;
+                            left:-12%;
                             width: 100%;
-                            height:80%;
+                            height:95%;
                         }
                     }
                 }
@@ -170,7 +173,7 @@ div#end-container4-5-6 {
     
 
         div#endContainer5 {
-            height:200vh;
+            height:450vh;
 
             div#sub-containerEnd5 {
                 @include subContainers;
@@ -180,7 +183,8 @@ div#end-container4-5-6 {
         }
 
         div#endContainer6 {
-            height:200vh;
+            position:relative;
+            height:620vh;
 
             div#sub-containerEnd6 {
                 @include subContainers;
@@ -189,4 +193,26 @@ div#end-container4-5-6 {
             }
         }
     }
+}
+
+// TRIGGERS /////////////
+
+.end4-5-6Trigger-boat {
+    position: absolute;
+    top:100vh;
+}
+
+.end4Trigger-content {
+    position: absolute;
+    top:150vh;
+}
+
+.end5-6Trigger-leftContent {
+    position:absolute;
+    top:75vh;
+}
+
+.end6Trigger-out {
+    position:absolute;
+    bottom:70vh;
 }
