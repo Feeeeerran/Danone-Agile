@@ -2,6 +2,10 @@
 div#end-container1-2 {
     position: relative;
 
+    @include backg;
+    >img {height: 50%;}
+    img:nth-child(2) {top:50%}
+
     div.end1-2_icons {
         position:sticky;
         top:35vh;

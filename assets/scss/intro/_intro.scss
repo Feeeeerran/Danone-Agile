@@ -1,6 +1,9 @@
 section#intro {
     position: relative;
-    height:400vh;
+    height:300vh;
+
+    @include backg;
+
 
     .intro-container {
         * {z-index:10;}
@@ -12,7 +15,7 @@ section#intro {
     
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         align-items: center;
     
         .introTit-container {

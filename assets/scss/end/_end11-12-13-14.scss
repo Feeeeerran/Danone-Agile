@@ -2,6 +2,12 @@
 div#end-container11-12-13-14 {
     position: relative;
 
+    @include backg;
+    img:nth-child(1) {height: 25%;}
+    img:nth-child(2) {height: 25%;top:25%}
+    img:nth-child(3) {height: 25%;top:50%}
+    img:nth-child(4) {height: 25%;top:75%}
+
 
     .groupContainer {
         position: sticky;

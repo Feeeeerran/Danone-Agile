@@ -2,6 +2,8 @@ div#mid-container3 {
     position: relative;
     height:600vh;
 
+    @include backg;
+
     div#sub-containerMid3 {
         z-index:101;
         @include subContainers;

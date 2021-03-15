@@ -2,6 +2,8 @@ div#mid-container5 {
     position: relative;
     height:600vh;
 
+    @include backg;
+
     div#sub-containerMid5 {
         @include subContainers;
         @include midTitulos;

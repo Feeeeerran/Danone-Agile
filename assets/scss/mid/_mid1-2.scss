@@ -1,5 +1,8 @@
 div#mid-container1-2 {
     position: relative;
+    @include backg;
+    >img {height: 50%;}
+    >img:nth-child(2) {top:50%}
 
     .girlContainer {
         position:sticky;

@@ -1,6 +1,8 @@
 #containerWhy {
     position: relative;
     height:650vh;
+    @include backg;
+
     #sub-containerWhy {
         @include subContainers;
         @include menuTitulos;

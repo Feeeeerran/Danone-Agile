@@ -1,6 +1,8 @@
 #containerHow {
     position: relative;
     height:650vh;
+    @include backg;
+    
     #sub-containerHow {
         @include subContainers;
         @include menuTitulos;

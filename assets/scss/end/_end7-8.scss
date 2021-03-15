@@ -2,6 +2,10 @@
 div#end-container7-8 {
     position: relative;
 
+    @include backg;
+    img:nth-child(1) {height: 50%;}
+    img:nth-child(2) {height: 50%;top:50%}
+
     .end7-8Icon {
         position:sticky;
         z-index:1001;

@@ -1,5 +1,8 @@
 #containerWhat {
-    height: 600vh;
+    position: relative;
+    height: 550vh;
+    @include backg;
+
     #sub-containerWhat {
         @include subContainers;
         justify-content: center;

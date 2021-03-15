@@ -2,6 +2,8 @@ div#endContainer3 {
     position: relative;
     height:550vh;
 
+    @include backg;
+
     div#sub-containerEnd3 {
         z-index: 1000;
         @include subContainers;

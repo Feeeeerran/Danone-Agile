@@ -2,6 +2,8 @@ div#endContainer15 {
     position: relative;
     height:280vh;
 
+    @include backg;
+
     div#sub-containerEnd15 {
         @include subContainers;
         justify-content: flex-start;

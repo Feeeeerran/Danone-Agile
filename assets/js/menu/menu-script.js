@@ -25,7 +25,7 @@ export default function menu(controller) {
 
     var menuActive = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-title",
-        duration:3500
+        duration:3200
     })
     .setClassToggle("#what","menuActive")
     .addTo(controller)

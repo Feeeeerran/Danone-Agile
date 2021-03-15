@@ -2,6 +2,9 @@ div#endContainer16 {
     position: relative;
     height:2100vh;
 
+    @include backg;
+
+
     div#sub-containerEnd16 {
         @include subContainers;
         justify-content: center;

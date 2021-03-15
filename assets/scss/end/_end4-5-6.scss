@@ -1,5 +1,10 @@
 div#end-container4-5-6 {
     position: relative;
+    @include backg;
+    >img:nth-child(1) {height: 35%;}
+    >img:nth-child(2) {height: 35%;top:35%}
+    >img:nth-child(3) {height: 30%;top:70%}
+
 
     .end4-5-6Icon {
         position: sticky;

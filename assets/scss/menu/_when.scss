@@ -1,6 +1,8 @@
 #containerWhen {
     position: relative;
     height:520vh;
+    @include backg;
+
     #sub-containerWhen {
         @include subContainers;
         // justify-content: center;
