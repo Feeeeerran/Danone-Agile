@@ -2,13 +2,16 @@ export default function intro (controller) {
 
  // SONIDOS
 
-    var movimiento = new Audio();
-    movimiento.src = "sounds/movimiento.mp3";
+    // var movimiento = new Audio();
+    // movimiento.src = "sounds/movimiento.mp3";
+    var movimientoo = document.getElementById("audio1");
+
+
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".introSound-movimiento"
     })
     .on("enter",function(e){
-        movimiento.play()
+        movimientoo.play()
     })
     .addTo(controller)
     
