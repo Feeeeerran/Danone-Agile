@@ -3,7 +3,7 @@ export default function intro (controller) {
  // SONIDOS
 
     var movimiento = new Audio();
-    movimiento.src = "../../../../sounds/movimiento.mp3";
+    movimiento.src = "sounds/movimiento.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".introSound-movimiento"
     })
