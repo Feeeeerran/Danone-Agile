@@ -2,9 +2,6 @@ export default function mid5 (controller) {
 
 
     // SOUNDS
-
-    var movimiento = new Audio();
-    movimiento.src = "../../../sounds/movimiento.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".mid5Sound-movimiento"
     })

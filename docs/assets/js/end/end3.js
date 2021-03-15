@@ -4,8 +4,6 @@ export default function end3(controller) {
 
     // SOUNDS
 
-    var agua = new Audio();
-    agua.src = "../../../sounds/agua.wav";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon"
     })

@@ -3,8 +3,6 @@ export default function how (controller) {
 
     // SOUNDS 
 
-    var lampara = new Audio();
-    lampara.src = "../../../sounds/lampara.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".howSound-lampara"
     })
@@ -14,8 +12,6 @@ export default function how (controller) {
     .addTo(controller)
 
     
-    var papel = new Audio();
-    papel.src = "../../../sounds/papel.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".howSound-papel"
     })
@@ -29,7 +25,7 @@ export default function how (controller) {
 
 
 
-
+    // ANIMACIONES 
 
     var howT = new ScrollMagic.Scene({
         triggerElement:".howTrigger-title",

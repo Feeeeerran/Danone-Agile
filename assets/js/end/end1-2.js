@@ -2,8 +2,6 @@ export default function end1_2(controller) {
 
     // SOUNDS 
 
-    var marcador = new Audio();
-    marcador.src = "../../../sounds/marcador.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".end2Trigger"
     })

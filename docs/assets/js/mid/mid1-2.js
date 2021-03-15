@@ -3,8 +3,6 @@ export default function mid1_2 (controller) {
 
     // SOUNDS
 
-    var alert = new Audio();
-    alert.src = "../../../sounds/alert.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".girlSound-alert"
     })
@@ -14,8 +12,6 @@ export default function mid1_2 (controller) {
     .addTo(controller)
 
 
-    var notificacion = new Audio();
-    notificacion.src = "../../../sounds/notificacion.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".girlSound-notificacion"
     })

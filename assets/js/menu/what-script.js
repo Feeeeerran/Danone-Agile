@@ -3,8 +3,7 @@ export default function what (controller) {
 
     // SOUNDS
 
-    var notificacion = new Audio();
-    notificacion.src = "../../../sounds/notificacion.mp3";
+
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-title"
     })
@@ -14,8 +13,7 @@ export default function what (controller) {
     .addTo(controller)
     
     
-    var movimiento = new Audio();
-    movimiento.src = "../../../sounds/movimiento.mp3";
+
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-content"
     })

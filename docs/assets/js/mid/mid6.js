@@ -2,8 +2,6 @@ export default function mid6 (controller) {
 
     // SOUNDS
 
-    var launch = new Audio();
-    launch.src = "../../../sounds/launch.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".mid6Trigger-icons"
     })

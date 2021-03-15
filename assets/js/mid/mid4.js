@@ -2,8 +2,6 @@ export default function mid4 (controller) {
 
     // SOUNDS
 
-    var aplauso = new Audio();
-    aplauso.src = "../../../sounds/aplauso.mp3";
     var audio1 = new ScrollMagic.Scene({
         triggerElement:".mid4Trigger-icon"
     })
