@@ -1,5 +1,19 @@
 export default function when (controller) {
 
+    // SOUNDS
+
+
+    var calendario = new Audio();
+    calendario.src = "../../../sounds/calendario.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".whenTrigger-content"
+    })
+    .on("enter",function(e){
+        calendario.play()
+    })
+    .addTo(controller)
+
+
 
     var whenT = new ScrollMagic.Scene({
         triggerElement:".whenTrigger-title",

@@ -1,5 +1,6 @@
 div#endContainer16 {
-    height:200vh;
+    position: relative;
+    height:2100vh;
 
     div#sub-containerEnd16 {
         @include subContainers;
@@ -81,7 +82,7 @@ div#endContainer16 {
                     right:-5%;
                     p {margin-top: 1vh;width:60%}
                     svg {
-                        transform: scale(1.5) translateY(-1vh);
+                        transform: scale(1.5);
                     }
                 }
 
@@ -190,4 +191,15 @@ div#endContainer16 {
 
 
     }
+}
+
+// TRIGGERS ////////////
+
+.end16Trigger {
+    position: absolute;
+    top:120vh;
+}
+.end16Trigger-icons {
+    position: absolute;
+    top:200vh;
 }

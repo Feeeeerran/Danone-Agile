@@ -1,5 +1,35 @@
 export default function mid1_2 (controller) {
 
+
+    // SOUNDS
+
+    var alert = new Audio();
+    alert.src = "../../../sounds/alert.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".girlSound-alert"
+    })
+    .on("enter",function(e){
+        alert.play()
+    })
+    .addTo(controller)
+
+
+    var notificacion = new Audio();
+    notificacion.src = "../../../sounds/notificacion.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".girlSound-notificacion"
+    })
+    .on("enter",function(e){
+        notificacion.play()
+    })
+    .addTo(controller)
+
+
+
+
+
+    // ANIMACIONES
+
     var mid1_2T1 = new ScrollMagic.Scene({
         triggerElement:".mid1-2Trigger-title1",
     })

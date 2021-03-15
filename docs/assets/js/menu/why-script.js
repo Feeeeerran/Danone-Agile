@@ -1,5 +1,21 @@
 export default function why (controller) {
 
+    // SOUNDS
+
+    var cohete = new Audio();
+    cohete.src = "../../../sounds/cohete.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".whyTrigger-rocket"
+    })
+    .on("enter",function(e){
+        cohete.play()
+    })
+    .addTo(controller)
+
+
+
+
+
     var whyT = new ScrollMagic.Scene({
         triggerElement:".whyTrigger-title",
     })

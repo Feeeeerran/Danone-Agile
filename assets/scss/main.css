@@ -35,6 +35,30 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  @-webkit-keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -56,6 +80,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
+    position: relative;
     height: 400vh;
   }
   section#intro .intro-container {
@@ -156,6 +181,14 @@
     height: 100vh;
     z-index: 0;
   }
+  .introSound-movimiento {
+    position: absolute;
+    top: 60vh;
+  }
+  .introSound-click {
+    position: absolute;
+    bottom: 60vh;
+  }
   #containerWhat {
     height: 600vh;
   }
@@ -243,6 +276,27 @@
     grid-area: icon1;
     position: relative;
     width: 100%;
+    height: 100%;
+    -webkit-animation: SpinB 8s infinite linear;
+            animation: SpinB 8s infinite linear;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-5 {
+    fill: #fff;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-6 {
+    fill: #231f20;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-animation: SpinA 8s infinite linear;
+            animation: SpinA 8s infinite linear;
   }
   #containerWhat #sub-containerWhat .whatContent .whatIcon2 {
     -ms-grid-row: 2;
@@ -486,6 +540,7 @@
     grid-area: check4;
   }
   #containerWhy #sub-containerWhy .whyContent .whyText .whyCheck p {
+    margin: 0;
     color: black;
     font-family: bariolB;
     font-size: 1.8rem;
@@ -663,6 +718,14 @@
   .howTrigger-content {
     position: absolute;
     top: 180vh;
+  }
+  .howSound-lampara {
+    position: absolute;
+    top: 320vh;
+  }
+  .howSound-papel {
+    position: absolute;
+    bottom: 200vh;
   }
   section#menu {
     position: relative;
@@ -904,6 +967,14 @@
     position: absolute;
     top: 80vh;
   }
+  .girlSound-alert {
+    position: absolute;
+    top: 400vh;
+  }
+  .girlSound-notificacion {
+    position: absolute;
+    top: 200vh;
+  }
   div#mid-container3 {
     position: relative;
     height: 600vh;
@@ -987,10 +1058,6 @@
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
   }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
-    -webkit-clip-path: url(#clip-path-2);
-            clip-path: url(#clip-path-2);
-  }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-6 {
     fill: #020100;
   }
@@ -1017,9 +1084,21 @@
     position: absolute;
     top: 150vh;
   }
+  .mid3Sound-movimiento1 {
+    position: absolute;
+    top: 200vh;
+  }
+  .mid3Sound-movimiento2 {
+    position: absolute;
+    top: 280vh;
+  }
+  .mid3Sound-movimiento3 {
+    position: absolute;
+    top: 380vh;
+  }
   div#mid-container4 {
     position: relative;
-    height: 300vh;
+    height: 350vh;
   }
   div#mid-container4 div#sub-containerMid4 {
     overflow: hidden;
@@ -1077,6 +1156,10 @@
   .mid4Trigger-title {
     position: absolute;
     top: 100vh;
+  }
+  .mid4Trigger-icon {
+    position: absolute;
+    top: 220vh;
   }
   div#mid-container5 {
     position: relative;
@@ -1204,6 +1287,10 @@
     position: absolute;
     top: 200vh;
   }
+  .mid5Sound-movimiento {
+    position: absolute;
+    top: 420vh;
+  }
   div#mid-container6 {
     position: relative;
     height: 580vh;
@@ -1298,13 +1385,16 @@
   section#mid {
     position: relative;
   }
+  div#end-container1-2 {
+    position: relative;
+  }
   div#end-container1-2 div.end1-2_icons {
     position: -webkit-sticky;
     position: sticky;
-    top: 30vh;
+    top: 35vh;
     height: 0;
-    z-index: 100;
     width: 80%;
+    z-index: 100;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1316,37 +1406,88 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  div#end-container1-2 div.end1-2_icons svg {
+  div#end-container1-2 div.end1-2_icons .iconsContainer {
+    overflow: hidden;
+    position: absolute;
+    top: -35vh;
+    width: 96vw;
+    height: 150vh;
+    padding-top: 35vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer svg {
     position: relative;
-    width: 18%;
+    width: 33.3%;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon2 {
-    top: 15vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 {
+    top: 40vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon1, div#end-container1-2 div.end1-2_icons .end1-2Icon3 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 {
     top: -5vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4, div#end-container1-2 div.end1-2_icons .end1-2Icon5, div#end-container1-2 div.end1-2_icons .end1-2Icon6, div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1 .pp, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .fillS {
     position: absolute;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4 {
-    left: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon4 {
+    left: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon6 {
-    right: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon6 {
+    right: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon5 {
-    top: 10vh;
-  }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon5 {
+    top: 45vh;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    left: 25%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon7 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: 15%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon8 {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+    right: 12%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon9 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    right: 15%;
+    top: 45vh;
   }
   div#end-container1-2 div#endContainer1 {
-    height: 200vh;
+    position: relative;
+    height: 600vh;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 {
     overflow: hidden;
@@ -1395,15 +1536,22 @@
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3 {
     width: 55%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3:after {
     content: "COORDINATION BETWEEN TEAMS";
     font-family: blog;
   }
   div#end-container1-2 div#endContainer2 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#end-container1-2 div#endContainer2 div#sub-containerEnd2 {
     overflow: hidden;
@@ -1451,6 +1599,22 @@
     margin-bottom: 1vh;
     width: 80%;
     font-size: 2.8rem;
+  }
+  .end1Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end1Trigger-movs {
+    position: absolute;
+    top: 180vh;
+  }
+  .end1Trigger-fills {
+    position: absolute;
+    top: 480vh;
+  }
+  .end2Trigger {
+    position: absolute;
+    top: 0vh;
   }
   div#endContainer3 {
     position: relative;
@@ -2683,7 +2847,8 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
-    height: 200vh;
+    position: relative;
+    height: 250vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -2728,8 +2893,13 @@
     position: absolute;
     top: 50vh;
   }
+  .end14Trigger {
+    position: absolute;
+    bottom: 50vh;
+  }
   div#endContainer15 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#endContainer15 div#sub-containerEnd15 {
     overflow: hidden;
@@ -2782,8 +2952,13 @@
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
   }
+  .end15Trigger {
+    position: absolute;
+    top: 50vh;
+  }
   div#endContainer16 {
-    height: 200vh;
+    position: relative;
+    height: 2100vh;
   }
   div#endContainer16 div#sub-containerEnd16 {
     overflow: hidden;
@@ -2909,8 +3084,8 @@
     width: 60%;
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentTop .top3 svg {
-    -webkit-transform: scale(1.5) translateY(-1vh);
-            transform: scale(1.5) translateY(-1vh);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentMid {
     height: 20%;
@@ -3010,6 +3185,14 @@
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentBottom .bottom3 {
     left: 10%;
+  }
+  .end16Trigger {
+    position: absolute;
+    top: 120vh;
+  }
+  .end16Trigger-icons {
+    position: absolute;
+    top: 200vh;
   }
 }
 
@@ -3050,6 +3233,30 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  @-webkit-keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -3071,6 +3278,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
+    position: relative;
     height: 400vh;
   }
   section#intro .intro-container {
@@ -3171,6 +3379,14 @@
     height: 100vh;
     z-index: 0;
   }
+  .introSound-movimiento {
+    position: absolute;
+    top: 60vh;
+  }
+  .introSound-click {
+    position: absolute;
+    bottom: 60vh;
+  }
   #containerWhat {
     height: 600vh;
   }
@@ -3258,6 +3474,27 @@
     grid-area: icon1;
     position: relative;
     width: 100%;
+    height: 100%;
+    -webkit-animation: SpinB 8s infinite linear;
+            animation: SpinB 8s infinite linear;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-5 {
+    fill: #fff;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-6 {
+    fill: #231f20;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-animation: SpinA 8s infinite linear;
+            animation: SpinA 8s infinite linear;
   }
   #containerWhat #sub-containerWhat .whatContent .whatIcon2 {
     -ms-grid-row: 2;
@@ -3501,6 +3738,7 @@
     grid-area: check4;
   }
   #containerWhy #sub-containerWhy .whyContent .whyText .whyCheck p {
+    margin: 0;
     color: black;
     font-family: bariolB;
     font-size: 1.8rem;
@@ -3678,6 +3916,14 @@
   .howTrigger-content {
     position: absolute;
     top: 180vh;
+  }
+  .howSound-lampara {
+    position: absolute;
+    top: 320vh;
+  }
+  .howSound-papel {
+    position: absolute;
+    bottom: 200vh;
   }
   section#menu {
     position: relative;
@@ -3919,6 +4165,14 @@
     position: absolute;
     top: 80vh;
   }
+  .girlSound-alert {
+    position: absolute;
+    top: 400vh;
+  }
+  .girlSound-notificacion {
+    position: absolute;
+    top: 200vh;
+  }
   div#mid-container3 {
     position: relative;
     height: 600vh;
@@ -4002,10 +4256,6 @@
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
   }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
-    -webkit-clip-path: url(#clip-path-2);
-            clip-path: url(#clip-path-2);
-  }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-6 {
     fill: #020100;
   }
@@ -4032,9 +4282,21 @@
     position: absolute;
     top: 150vh;
   }
+  .mid3Sound-movimiento1 {
+    position: absolute;
+    top: 200vh;
+  }
+  .mid3Sound-movimiento2 {
+    position: absolute;
+    top: 280vh;
+  }
+  .mid3Sound-movimiento3 {
+    position: absolute;
+    top: 380vh;
+  }
   div#mid-container4 {
     position: relative;
-    height: 300vh;
+    height: 350vh;
   }
   div#mid-container4 div#sub-containerMid4 {
     overflow: hidden;
@@ -4092,6 +4354,10 @@
   .mid4Trigger-title {
     position: absolute;
     top: 100vh;
+  }
+  .mid4Trigger-icon {
+    position: absolute;
+    top: 220vh;
   }
   div#mid-container5 {
     position: relative;
@@ -4219,6 +4485,10 @@
     position: absolute;
     top: 200vh;
   }
+  .mid5Sound-movimiento {
+    position: absolute;
+    top: 420vh;
+  }
   div#mid-container6 {
     position: relative;
     height: 580vh;
@@ -4313,13 +4583,16 @@
   section#mid {
     position: relative;
   }
+  div#end-container1-2 {
+    position: relative;
+  }
   div#end-container1-2 div.end1-2_icons {
     position: -webkit-sticky;
     position: sticky;
-    top: 30vh;
+    top: 35vh;
     height: 0;
-    z-index: 100;
     width: 80%;
+    z-index: 100;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4331,37 +4604,88 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  div#end-container1-2 div.end1-2_icons svg {
+  div#end-container1-2 div.end1-2_icons .iconsContainer {
+    overflow: hidden;
+    position: absolute;
+    top: -35vh;
+    width: 96vw;
+    height: 150vh;
+    padding-top: 35vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer svg {
     position: relative;
-    width: 18%;
+    width: 33.3%;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon2 {
-    top: 15vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 {
+    top: 40vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon1, div#end-container1-2 div.end1-2_icons .end1-2Icon3 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 {
     top: -5vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4, div#end-container1-2 div.end1-2_icons .end1-2Icon5, div#end-container1-2 div.end1-2_icons .end1-2Icon6, div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1 .pp, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .fillS {
     position: absolute;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4 {
-    left: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon4 {
+    left: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon6 {
-    right: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon6 {
+    right: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon5 {
-    top: 10vh;
-  }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon5 {
+    top: 45vh;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    left: 25%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon7 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: 15%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon8 {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+    right: 12%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon9 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    right: 15%;
+    top: 45vh;
   }
   div#end-container1-2 div#endContainer1 {
-    height: 200vh;
+    position: relative;
+    height: 600vh;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 {
     overflow: hidden;
@@ -4410,15 +4734,22 @@
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3 {
     width: 55%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3:after {
     content: "COORDINATION BETWEEN TEAMS";
     font-family: blog;
   }
   div#end-container1-2 div#endContainer2 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#end-container1-2 div#endContainer2 div#sub-containerEnd2 {
     overflow: hidden;
@@ -4466,6 +4797,22 @@
     margin-bottom: 1vh;
     width: 80%;
     font-size: 2.8rem;
+  }
+  .end1Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end1Trigger-movs {
+    position: absolute;
+    top: 180vh;
+  }
+  .end1Trigger-fills {
+    position: absolute;
+    top: 480vh;
+  }
+  .end2Trigger {
+    position: absolute;
+    top: 0vh;
   }
   div#endContainer3 {
     position: relative;
@@ -5698,7 +6045,8 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
-    height: 200vh;
+    position: relative;
+    height: 250vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -5743,8 +6091,13 @@
     position: absolute;
     top: 50vh;
   }
+  .end14Trigger {
+    position: absolute;
+    bottom: 50vh;
+  }
   div#endContainer15 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#endContainer15 div#sub-containerEnd15 {
     overflow: hidden;
@@ -5797,8 +6150,13 @@
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
   }
+  .end15Trigger {
+    position: absolute;
+    top: 50vh;
+  }
   div#endContainer16 {
-    height: 200vh;
+    position: relative;
+    height: 2100vh;
   }
   div#endContainer16 div#sub-containerEnd16 {
     overflow: hidden;
@@ -5924,8 +6282,8 @@
     width: 60%;
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentTop .top3 svg {
-    -webkit-transform: scale(1.5) translateY(-1vh);
-            transform: scale(1.5) translateY(-1vh);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentMid {
     height: 20%;
@@ -6025,6 +6383,14 @@
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentBottom .bottom3 {
     left: 10%;
+  }
+  .end16Trigger {
+    position: absolute;
+    top: 120vh;
+  }
+  .end16Trigger-icons {
+    position: absolute;
+    top: 200vh;
   }
   section#intro .intro-container h1 {
     font-size: 9vw;
@@ -6203,6 +6569,30 @@
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
   }
+  @-webkit-keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes SpinA {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes SpinB {
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -6224,6 +6614,7 @@
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
   }
   section#intro {
+    position: relative;
     height: 400vh;
   }
   section#intro .intro-container {
@@ -6324,6 +6715,14 @@
     height: 100vh;
     z-index: 0;
   }
+  .introSound-movimiento {
+    position: absolute;
+    top: 60vh;
+  }
+  .introSound-click {
+    position: absolute;
+    bottom: 60vh;
+  }
   #containerWhat {
     height: 600vh;
   }
@@ -6412,6 +6811,27 @@
     grid-area: icon1;
     position: relative;
     width: 100%;
+    height: 100%;
+    -webkit-animation: SpinB 8s infinite linear;
+            animation: SpinB 8s infinite linear;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-1 {
+    fill: none;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-5 {
+    fill: #fff;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .cls-6 {
+    fill: #231f20;
+  }
+  #containerWhat #sub-containerWhat .whatContent .whatIcon1 .pp {
+    -webkit-animation: SpinA 8s infinite linear;
+            animation: SpinA 8s infinite linear;
   }
   #containerWhat #sub-containerWhat .whatContent .whatIcon2 {
     -ms-grid-row: 2;
@@ -6655,6 +7075,7 @@
     grid-area: check4;
   }
   #containerWhy #sub-containerWhy .whyContent .whyText .whyCheck p {
+    margin: 0;
     color: black;
     font-family: bariolB;
     font-size: 1.8rem;
@@ -6830,6 +7251,14 @@
   .howTrigger-content {
     position: absolute;
     top: 180vh;
+  }
+  .howSound-lampara {
+    position: absolute;
+    top: 320vh;
+  }
+  .howSound-papel {
+    position: absolute;
+    bottom: 200vh;
   }
   section#menu {
     position: relative;
@@ -7071,6 +7500,14 @@
     position: absolute;
     top: 80vh;
   }
+  .girlSound-alert {
+    position: absolute;
+    top: 400vh;
+  }
+  .girlSound-notificacion {
+    position: absolute;
+    top: 200vh;
+  }
   div#mid-container3 {
     position: relative;
     height: 600vh;
@@ -7154,10 +7591,6 @@
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-3 {
     isolation: isolate;
   }
-  div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-5 {
-    -webkit-clip-path: url(#clip-path-2);
-            clip-path: url(#clip-path-2);
-  }
   div#mid-container3 div#sub-containerMid3 .mid3Content .mid3Icon2 .cls-6 {
     fill: #020100;
   }
@@ -7184,9 +7617,21 @@
     position: absolute;
     top: 150vh;
   }
+  .mid3Sound-movimiento1 {
+    position: absolute;
+    top: 200vh;
+  }
+  .mid3Sound-movimiento2 {
+    position: absolute;
+    top: 280vh;
+  }
+  .mid3Sound-movimiento3 {
+    position: absolute;
+    top: 380vh;
+  }
   div#mid-container4 {
     position: relative;
-    height: 300vh;
+    height: 350vh;
   }
   div#mid-container4 div#sub-containerMid4 {
     overflow: hidden;
@@ -7244,6 +7689,10 @@
   .mid4Trigger-title {
     position: absolute;
     top: 100vh;
+  }
+  .mid4Trigger-icon {
+    position: absolute;
+    top: 220vh;
   }
   div#mid-container5 {
     position: relative;
@@ -7371,6 +7820,10 @@
     position: absolute;
     top: 200vh;
   }
+  .mid5Sound-movimiento {
+    position: absolute;
+    top: 420vh;
+  }
   div#mid-container6 {
     position: relative;
     height: 580vh;
@@ -7465,13 +7918,16 @@
   section#mid {
     position: relative;
   }
+  div#end-container1-2 {
+    position: relative;
+  }
   div#end-container1-2 div.end1-2_icons {
     position: -webkit-sticky;
     position: sticky;
-    top: 30vh;
+    top: 35vh;
     height: 0;
-    z-index: 100;
     width: 80%;
+    z-index: 100;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7483,37 +7939,88 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  div#end-container1-2 div.end1-2_icons svg {
+  div#end-container1-2 div.end1-2_icons .iconsContainer {
+    overflow: hidden;
+    position: absolute;
+    top: -35vh;
+    width: 96vw;
+    height: 150vh;
+    padding-top: 35vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer svg {
     position: relative;
-    width: 18%;
+    width: 33.3%;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon2 {
-    top: 15vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 {
+    top: 40vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon1, div#end-container1-2 div.end1-2_icons .end1-2Icon3 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon2 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 {
     top: -5vh;
+    width: 25%;
+    -webkit-animation: SpinB 10s infinite linear;
+            animation: SpinB 10s infinite linear;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4, div#end-container1-2 div.end1-2_icons .end1-2Icon5, div#end-container1-2 div.end1-2_icons .end1-2Icon6, div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon1 .pp, div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon3 .pp {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: SpinA 10s infinite linear;
+            animation: SpinA 10s infinite linear;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .fillS {
     position: absolute;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon4 {
-    left: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon4 {
+    left: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon6 {
-    right: 25%;
-    top: 35vh;
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon6 {
+    right: 15%;
+    top: 70vh;
   }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon5 {
-    top: 10vh;
-  }
-  div#end-container1-2 div.end1-2_icons .end1-2Icon7 {
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon5 {
+    top: 45vh;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    left: 25%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon7 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: 15%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon8 {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+    right: 12%;
+  }
+  div#end-container1-2 div.end1-2_icons .iconsContainer .end1-2Icon9 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    right: 15%;
+    top: 45vh;
   }
   div#end-container1-2 div#endContainer1 {
-    height: 200vh;
+    position: relative;
+    height: 600vh;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 {
     overflow: hidden;
@@ -7562,15 +8069,22 @@
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3 {
     width: 55%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
   }
   div#end-container1-2 div#endContainer1 div#sub-containerEnd1 h3:after {
     content: "COORDINATION BETWEEN TEAMS";
     font-family: blog;
   }
   div#end-container1-2 div#endContainer2 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#end-container1-2 div#endContainer2 div#sub-containerEnd2 {
     overflow: hidden;
@@ -7618,6 +8132,22 @@
     margin-bottom: 1vh;
     width: 80%;
     font-size: 2.8rem;
+  }
+  .end1Trigger {
+    position: absolute;
+    top: 100vh;
+  }
+  .end1Trigger-movs {
+    position: absolute;
+    top: 180vh;
+  }
+  .end1Trigger-fills {
+    position: absolute;
+    top: 480vh;
+  }
+  .end2Trigger {
+    position: absolute;
+    top: 0vh;
   }
   div#endContainer3 {
     position: relative;
@@ -8850,7 +9380,8 @@
     z-index: 0;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
-    height: 200vh;
+    position: relative;
+    height: 250vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -8895,8 +9426,13 @@
     position: absolute;
     top: 50vh;
   }
+  .end14Trigger {
+    position: absolute;
+    bottom: 50vh;
+  }
   div#endContainer15 {
-    height: 200vh;
+    position: relative;
+    height: 280vh;
   }
   div#endContainer15 div#sub-containerEnd15 {
     overflow: hidden;
@@ -8949,8 +9485,13 @@
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
   }
+  .end15Trigger {
+    position: absolute;
+    top: 50vh;
+  }
   div#endContainer16 {
-    height: 200vh;
+    position: relative;
+    height: 2100vh;
   }
   div#endContainer16 div#sub-containerEnd16 {
     overflow: hidden;
@@ -9076,8 +9617,8 @@
     width: 60%;
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentTop .top3 svg {
-    -webkit-transform: scale(1.5) translateY(-1vh);
-            transform: scale(1.5) translateY(-1vh);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentMid {
     height: 20%;
@@ -9177,6 +9718,14 @@
   }
   div#endContainer16 div#sub-containerEnd16 .end16Content .contentBottom .bottom3 {
     left: 10%;
+  }
+  .end16Trigger {
+    position: absolute;
+    top: 120vh;
+  }
+  .end16Trigger-icons {
+    position: absolute;
+    top: 200vh;
   }
   section#intro .intro-container h1 {
     width: 80%;

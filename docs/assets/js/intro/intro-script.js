@@ -1,5 +1,33 @@
 export default function intro (controller) {
 
+ // SONIDOS
+
+    var movimiento = new Audio();
+    movimiento.src = "../../../sounds/movimiento.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".introSound-movimiento"
+    })
+    .on("enter",function(e){
+        movimiento.play()
+    })
+    .addTo(controller)
+    
+    
+    var click = new Audio();
+    click.src = "../../../sounds/click.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".introSound-click"
+    })
+    .on("enter",function(e){
+        click.play()
+    })
+    .addTo(controller)
+
+
+
+
+
+
     var introTitle = new TimelineMax()
     .fromTo("#introTit",1,{opacity:0},{opacity:1})
     .fromTo(".introTit-container>img",1,{width:0},{width:"27%"})
@@ -11,5 +39,7 @@ export default function intro (controller) {
     })
     .setTween(introTitle)
     .addTo(controller)
+
+
 }
 

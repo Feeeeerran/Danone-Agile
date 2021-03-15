@@ -68,6 +68,16 @@ export default function end11_12_13_14(controller) {
     .addTo(controller)
 
 
+    // END 14 OUT 
+
+    var end14 = new ScrollMagic.Scene({
+        triggerElement:".end14Trigger",
+        duration:700
+    })
+    .setTween(".groupContainer,.responsib",{transform:"translateY(-80vh)"})
+    .addTo(controller)
+
+
 
     // ESTELA
 

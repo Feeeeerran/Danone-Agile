@@ -1,5 +1,20 @@
 export default function mid6 (controller) {
 
+    // SOUNDS
+
+    var launch = new Audio();
+    launch.src = "../../../sounds/launch.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".mid6Trigger-icons"
+    })
+    .on("enter",function(e){
+        launch.play()
+    })
+    .addTo(controller)
+
+
+
+    // ANIMACIONES
     var mid6T = new TimelineMax()
         .fromTo("#sub-containerMid6>h3",1,{transform:"translateY(-30vh)"},{transform:"translateY(0)"})
 

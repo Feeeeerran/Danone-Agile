@@ -1,5 +1,44 @@
 export default function mid3 (controller) {
 
+
+    // SOUNDS
+
+
+    var movimiento = new Audio();
+    movimiento.src = "../../../sounds/movimiento.mp3";
+
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".mid3Sound-movimiento1"
+    })
+    .on("enter",function(e){
+        movimiento.play()
+    })
+    .addTo(controller)
+
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".mid3Sound-movimiento2"
+    })
+    .on("enter",function(e){
+        movimiento.play()
+    })
+    .addTo(controller)
+
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".mid3Sound-movimiento3"
+    })
+    .on("enter",function(e){
+        movimiento.play()
+    })
+    .addTo(controller)
+
+
+
+
+
+
+
+    // ANIMACIONES
+
     var mid3T = new TimelineMax()
         .fromTo("#sub-containerMid3>h3",1,{transform:"translateY(-50vh)"},{transform:"translateY(0vh)"})
 

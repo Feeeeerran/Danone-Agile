@@ -1,6 +1,6 @@
 div#mid-container4 {
     position: relative;
-    height:300vh;
+    height:350vh;
 
     div#sub-containerMid4 {
         @include subContainers;
@@ -22,4 +22,9 @@ div#mid-container4 {
 .mid4Trigger-title {
     position: absolute;
     top:100vh;
+}
+
+.mid4Trigger-icon {
+    position: absolute;
+    top:220vh;
 }

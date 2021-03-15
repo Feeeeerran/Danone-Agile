@@ -1,57 +1,102 @@
 
 div#end-container1-2 {
-
+    position: relative;
 
     div.end1-2_icons {
         position:sticky;
-        top:30vh;
+        top:35vh;
         height: 0;
-        z-index:100;
         width:80%;
+        z-index:100;
         margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
-        svg {
-            position: relative;
-            width:18%
+        .iconsContainer {
+            overflow: hidden;
+            position: absolute;
+            top:-35vh;
+            width:96vw;
+            height:150vh;
+
+            padding-top: 35vh;
+
+            
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            svg {
+                position: relative;
+                width:33.3%
+            }
+    
+            .end1-2Icon2 {
+                top:40vh;
+                width: 25%;
+                .pp {
+                        transform-origin: center;
+                        transform-box: fill-box;
+                        animation:SpinA 10s infinite linear;
+                    }
+                    animation:SpinB 10s infinite linear;
+            }
+    
+            .end1-2Icon1,.end1-2Icon3 {
+                top:-5vh;
+                width: 25%;
+                .pp {
+                        transform-origin: center;
+                        transform-box: fill-box;
+                        animation:SpinA 10s infinite linear;
+                    }
+                    animation:SpinB 10s infinite linear;
+            }
+    
+            .fillS {
+                position:absolute;
+            }
+    
+            .end1-2Icon4 {
+                left:15%;
+                top:70vh;
+            }
+            .end1-2Icon6 {
+                right:15%;
+                top:70vh;
+            }
+    
+            .end1-2Icon5 {
+                top:45vh;
+                transform:scale(0.6);
+            }
+    
+            .end1-2Icon7 {
+                transform: scale(0.6);
+                left:15%;
+            }
+    
+            .end1-2Icon8 {
+                transform: scale(0.45);
+                right:12%;
+            }
+    
+            .end1-2Icon9 {
+                transform: scale(0.5);
+                right:15%;
+                top:45vh;
+            }
+
         }
 
-        .end1-2Icon2 {
-            top:15vh;
-        }
-
-        .end1-2Icon1,.end1-2Icon3 {
-            top:-5vh;
-        }
-
-        .end1-2Icon4,.end1-2Icon5,.end1-2Icon6,.end1-2Icon7 {
-            position:absolute;
-        }
-
-        .end1-2Icon4 {
-            left:25%;
-            top:35vh;
-        }
-        .end1-2Icon6 {
-            right:25%;
-            top:35vh;
-        }
-
-        .end1-2Icon5 {
-            top:10vh;
-        }
-
-        .end1-2Icon7 {
-            transform: scale(0.6);
-            left:25%;
-        }
     }
 
 
     div#endContainer1 {
-        height:200vh;
+        position: relative;
+        height:600vh;
 
         div#sub-containerEnd1 {
             @include subContainers;
@@ -61,8 +106,16 @@ div#end-container1-2 {
 
             h3 {
                 width: 55%;
-                margin-top: 15vh;
+                margin-top: 10vh;
                 font-size: 2.8rem;
+
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+
+                opacity: 0;
+                transition: opacity 0.5s;
             }
 
             h3:after {
@@ -75,7 +128,8 @@ div#end-container1-2 {
     }
 
     div#endContainer2 {
-        height:200vh;
+        position: relative;
+        height:280vh;
 
         div#sub-containerEnd2 {
             @include subContainers;
@@ -89,4 +143,26 @@ div#end-container1-2 {
             }
         }
     }
+}
+
+
+// TRIGGERS ///////////
+
+.end1Trigger {
+    position:absolute;
+    top:100vh;
+}
+
+.end1Trigger-movs {
+    position:absolute;
+    top:180vh;
+}
+.end1Trigger-fills {
+    position:absolute;
+    top:480vh;
+}
+
+.end2Trigger {
+    position: absolute;
+    top:0vh;
 }

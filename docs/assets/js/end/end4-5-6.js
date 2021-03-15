@@ -1,5 +1,34 @@
 export default function end4_5_6(controller) {
 
+
+
+    // SOUNDS
+
+    // var audio1 = new ScrollMagic.Scene({
+    //     triggerElement:".end4-5-6Trigger-boat"
+    // })
+    // .on("enter",function(e){
+    //     agua.play()
+    // })
+    // .addTo(controller)
+    
+    
+    // var audio1 = new ScrollMagic.Scene({
+    //     triggerElement:".end4-5-6Trigger-boat"
+    // })
+    // .on("enter",function(e){
+    //     agua.play()
+    // })
+    // .addTo(controller)
+
+
+
+
+
+
+
+    // ANIMACIONES
+
     // BOAT IN
     var boatIn = new TimelineMax()
         .fromTo(".end4-5-6Icon",0.1,{transform:"translateY(100vh) scale(0.5)"},{transform:"translateY(10vh) scale(0.8)"})

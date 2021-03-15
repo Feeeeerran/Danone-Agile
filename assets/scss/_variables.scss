@@ -117,6 +117,15 @@
     }
 }
 
+// Spin para las personas + tuerca
+@keyframes SpinA {
+    to {transform:rotate(360deg)}
+}
+
+@keyframes SpinB {
+    to {transform:rotate(-360deg)}
+}
+
 
 
 

@@ -1,4 +1,5 @@
 section#intro {
+    position: relative;
     height:400vh;
 
     .intro-container {
@@ -103,3 +104,14 @@ section#intro {
 }
 
 
+// TRIGGERS ///////////
+
+.introSound-movimiento {
+    position: absolute;
+    top:60vh;
+}
+
+.introSound-click {
+    position: absolute;
+    bottom:60vh;
+}

@@ -1,6 +1,36 @@
 export default function what (controller) {
 
 
+    // SOUNDS
+
+    var notificacion = new Audio();
+    notificacion.src = "../../../sounds/notificacion.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-title"
+    })
+    .on("enter",function(e){
+        notificacion.play()
+    })
+    .addTo(controller)
+    
+    
+    var movimiento = new Audio();
+    movimiento.src = "../../../sounds/movimiento.mp3";
+    var audio1 = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-content"
+    })
+    .on("enter",function(e){
+        movimiento.play()
+    })
+    .addTo(controller)
+
+
+
+    
+
+
+    // ANIMACIONES
+
     var whatT = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-title",
     })
@@ -23,6 +53,18 @@ export default function what (controller) {
         duration:2500
     })
     .setTween(whatContent)
+    .addTo(controller)
+
+
+    // WHEEL 
+    var wheel = new TimelineMax()
+        .fromTo(".whatIcon1",1,{left:"-50vw"},{left:"0vw"})
+
+    var what = new ScrollMagic.Scene({
+        triggerElement:".whatTrigger-content",
+        duration:2500
+    })
+    .setTween(wheel)
     .addTo(controller)
 
 }
