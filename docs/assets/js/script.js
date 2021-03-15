@@ -1,3 +1,21 @@
+var agua = document.getElementById("agua");
+var alert = document.getElementById("alert");
+var aplauso = document.getElementById("aplauso");
+var calendario = document.getElementById("calendario");
+var click = document.getElementById("click");
+var cohete = document.getElementById("cohete");
+var chat = document.getElementById("chat");
+var flag = document.getElementById("flag");
+var lampara = document.getElementById("lampara");
+var launch = document.getElementById("launch");
+var marcador = document.getElementById("marcador");
+var movimiento = document.getElementById("movimiento");
+var notificacion = document.getElementById("notificacion");
+var papel = document.getElementById("papel");
+var popup = document.getElementById("popup");
+
+
+
 const controller = new ScrollMagic.Controller();
 
 import intro from './intro/intro-script.js';
@@ -14,21 +32,6 @@ end(controller);
 
 
 
-var agua = document.getElementById("agua");
-var alert = document.getElementById("alert");
-var aplauso = document.getElementById("aplauso");
-var calendario = document.getElementById("calendario");
-var click = document.getElementById("click");
-var cohete = document.getElementById("cohete");
-var chat = document.getElementById("chat");
-var flag = document.getElementById("flag");
-var lampara = document.getElementById("lampara");
-var launch = document.getElementById("launch");
-var marcador = document.getElementById("marcador");
-var movimiento = document.getElementById("movimiento");
-var notificacion = document.getElementById("notificacion");
-var papel = document.getElementById("papel");
-var popup = document.getElementById("popup");
 
 
 
