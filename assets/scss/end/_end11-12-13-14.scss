@@ -41,7 +41,7 @@ div#end-container11-12-13-14 {
                 }
             }
             p:after {
-                content:"CHAPTER LEADER";
+                content:"TRIBE LEADER.";
                 font-family: blog;
             }
 
@@ -259,7 +259,7 @@ div#end-container11-12-13-14 {
                     }
                 }
                >p:after {
-                    content:"RESPONSIBILITIES";
+                    content:"RESPONSIBILITIES.";
                     font-family: bariolB;
                 }
 
@@ -301,6 +301,7 @@ div#end-container11-12-13-14 {
                         
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
                         .flipCard {
                             width: 100%;
@@ -310,8 +311,9 @@ div#end-container11-12-13-14 {
 
                         .flipText {
                             position: absolute;
-                            height:100%;
+                            height:50%;
                             width:50%;
+                            margin: 0;
 
                             text-align: center;
                             font:{
@@ -320,8 +322,8 @@ div#end-container11-12-13-14 {
                             }
                         }
 
-                        .flipTextCenter {
-                            top:25%;
+                        .flipTextRight {
+                            height:80%
                         }
                     }
                 }

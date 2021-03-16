@@ -1844,21 +1844,30 @@
     font-size: 2.5rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li {
+    position: relative;
     list-style: none;
     font-family: bariolB;
     font-size: 1.8rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
-    content: " (+)";
+    position: absolute;
+    width: 3vw;
+    content: " (+) ";
+    background-color: white;
+    text-align: center;
+    border-radius: 4vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(1):after {
-    color: greenyellow;
+    color: #0b367a;
+    left: 25%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(2):after {
-    color: blue;
+    color: #5cdd33;
+    left: 62%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(3):after {
-    color: grey;
+    color: #9984c2;
+    left: 44%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
     margin: 0;
@@ -2054,9 +2063,6 @@
     text-align: center;
     font-family: blog;
     font-size: 2rem;
-  }
-  div#end-container7-8 .end7-8Icon .center p {
-    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
     height: 850vh;
@@ -2343,6 +2349,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -2351,11 +2360,15 @@
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 55%;
     width: 55%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipTextCenter {
+    height: 80%;
   }
   div#end-container9-10 div#endContainer9 {
     height: 400vh;
@@ -2487,7 +2500,7 @@
     font-size: 2.8vw;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p:after {
-    content: "CHAPTER LEADER";
+    content: "TRIBE LEADER.";
     font-family: blog;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
@@ -2752,7 +2765,7 @@
     font-size: 2vw;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p:after {
-    content: "RESPONSIBILITIES";
+    content: "RESPONSIBILITIES.";
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
@@ -2794,6 +2807,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -2802,14 +2818,15 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 50%;
     width: 50%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
   }
-  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextCenter {
-    top: 25%;
+  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextRight {
+    height: 80%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
@@ -5042,21 +5059,30 @@
     font-size: 2.5rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li {
+    position: relative;
     list-style: none;
     font-family: bariolB;
     font-size: 1.8rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
-    content: " (+)";
+    position: absolute;
+    width: 3vw;
+    content: " (+) ";
+    background-color: white;
+    text-align: center;
+    border-radius: 4vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(1):after {
-    color: greenyellow;
+    color: #0b367a;
+    left: 25%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(2):after {
-    color: blue;
+    color: #5cdd33;
+    left: 62%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(3):after {
-    color: grey;
+    color: #9984c2;
+    left: 44%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
     margin: 0;
@@ -5252,9 +5278,6 @@
     text-align: center;
     font-family: blog;
     font-size: 2rem;
-  }
-  div#end-container7-8 .end7-8Icon .center p {
-    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
     height: 850vh;
@@ -5541,6 +5564,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -5549,11 +5575,15 @@
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 55%;
     width: 55%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipTextCenter {
+    height: 80%;
   }
   div#end-container9-10 div#endContainer9 {
     height: 400vh;
@@ -5685,7 +5715,7 @@
     font-size: 2.8vw;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p:after {
-    content: "CHAPTER LEADER";
+    content: "TRIBE LEADER.";
     font-family: blog;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
@@ -5950,7 +5980,7 @@
     font-size: 2vw;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p:after {
-    content: "RESPONSIBILITIES";
+    content: "RESPONSIBILITIES.";
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
@@ -5992,6 +6022,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -6000,14 +6033,15 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 50%;
     width: 50%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
   }
-  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextCenter {
-    top: 25%;
+  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextRight {
+    height: 80%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
@@ -8377,21 +8411,30 @@
     font-size: 2.5rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li {
+    position: relative;
     list-style: none;
     font-family: bariolB;
     font-size: 1.8rem;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
-    content: " (+)";
+    position: absolute;
+    width: 3vw;
+    content: " (+) ";
+    background-color: white;
+    text-align: center;
+    border-radius: 4vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(1):after {
-    color: greenyellow;
+    color: #0b367a;
+    left: 25%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(2):after {
-    color: blue;
+    color: #5cdd33;
+    left: 62%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:nth-child(3):after {
-    color: grey;
+    color: #9984c2;
+    left: 44%;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .info {
     margin: 0;
@@ -8587,9 +8630,6 @@
     text-align: center;
     font-family: blog;
     font-size: 2rem;
-  }
-  div#end-container7-8 .end7-8Icon .center p {
-    bottom: 18%;
   }
   div#end-container7-8 div#endContainer7 {
     height: 850vh;
@@ -8876,6 +8916,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -8884,11 +8927,15 @@
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 55%;
     width: 55%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
+  }
+  div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipTextCenter {
+    height: 80%;
   }
   div#end-container9-10 div#endContainer9 {
     height: 400vh;
@@ -9020,7 +9067,7 @@
     font-size: 2.8vw;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons p:after {
-    content: "CHAPTER LEADER";
+    content: "TRIBE LEADER.";
     font-family: blog;
   }
   div#end-container11-12-13-14 .groupContainer .groupIcons .chat {
@@ -9285,7 +9332,7 @@
     font-size: 2vw;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p:after {
-    content: "RESPONSIBILITIES";
+    content: "RESPONSIBILITIES.";
     font-family: bariolB;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card {
@@ -9327,6 +9374,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -9335,14 +9385,15 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipText {
     position: absolute;
-    height: 100%;
+    height: 50%;
     width: 50%;
+    margin: 0;
     text-align: center;
     font-family: bariolR;
     font-size: 1.5vw;
   }
-  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextCenter {
-    top: 25%;
+  div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipTextRight {
+    height: 80%;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
