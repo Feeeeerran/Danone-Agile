@@ -1,3 +1,19 @@
+section#introYmenu {
+    margin-bottom: 0vh;
+    position: relative;
+    * {z-index: 10;}
+    
+    >img {
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}
+
+
+
 section#intro {
     position: relative;
     height:400vh;

@@ -33,7 +33,7 @@ export default function intro (controller) {
     // .fromTo(".introIcons,p:nth-child(4)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
 
     var scene1 = new ScrollMagic.Scene({
-        duration:2000,
+        duration:"300%"
     })
     .setTween(introTitle)
     .addTo(controller)

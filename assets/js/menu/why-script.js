@@ -35,7 +35,7 @@ export default function why (controller) {
 
     var why = new ScrollMagic.Scene({
         triggerElement:".whyTrigger-content",
-        duration:2500
+        duration:"380%"
     })
     .setTween(whyContent)
     .addTo(controller)

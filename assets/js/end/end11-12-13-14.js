@@ -43,19 +43,9 @@ export default function end11_12_13_14(controller) {
 
     // CARDS
     var cards = new TimelineMax()
-    .fromTo(".responsib>.cardLeft",1,{top:"40vh"},{top:0})
-    .fromTo(".responsib>.cardCenter",1,{top:"120%"},{top:0})
-    .fromTo(".responsib>.cardRight",1,{top:"120%"},{top:0})
     .fromTo(".responsib>p",1,{opacity:0},{opacity:1})
+    .fromTo(".responsib",1,{top:"120%"},{top:0})
 
-    .to(".responsib>.cardLeft>.back",1,{transform:"rotateY(90deg)"})
-    .fromTo(".responsib>.cardLeft>.flip",1,{transform:"rotateY(90deg)"},{transform:"rotateY(0)"})
-    
-    .to(".responsib>.cardCenter>.back",1,{transform:"rotateY(90deg)"})
-    .fromTo(".responsib>.cardCenter>.flip",1,{transform:"rotateY(90deg)"},{transform:"rotateY(0)"})
-
-    .to(".responsib>.cardRight>.back",1,{transform:"rotateY(90deg)"})
-    .fromTo(".responsib>.cardRight>.flip",1,{transform:"rotateY(90deg)"},{transform:"rotateY(0)"})
 
     var end13 = new ScrollMagic.Scene({
         triggerElement:".end13Trigger",

@@ -48,7 +48,7 @@ export default function what (controller) {
 
     var what = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-content",
-        duration:2500
+        duration:"380%"
     })
     .setTween(whatContent)
     .addTo(controller)
@@ -60,7 +60,7 @@ export default function what (controller) {
 
     var what = new ScrollMagic.Scene({
         triggerElement:".whatTrigger-content",
-        duration:2500
+        duration:"380%"
     })
     .setTween(wheel)
     .addTo(controller)

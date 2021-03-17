@@ -1,6 +1,9 @@
 #containerHow {
-    position: relative;
-    height:600vh;
+    position: absolute;
+    bottom:-100vh;
+    height:700vh;
+
+    z-index: 9999999;
     #sub-containerHow {
         @include subContainers;
         @include menuTitulos;
@@ -93,6 +96,20 @@
         }
     }
 }
+
+
+#howPass {
+    position: relative;
+    height: 0;
+}
+
+.howPass {
+    height: 600vh;
+}
+.howPass2 {
+    height:100vh;
+}
+
 
 
 ////// TRIGGERS /////////////////7

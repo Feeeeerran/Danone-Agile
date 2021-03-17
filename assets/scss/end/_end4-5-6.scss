@@ -120,6 +120,7 @@ div#end-container4-5-6 {
                     }
 
                     li:after {
+                        cursor: pointer;
                         width:3.5vw;
                         content:" (+) ";
                         background-color: white;

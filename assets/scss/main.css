@@ -59,6 +59,125 @@
               transform: rotate(-360deg);
     }
   }
+  .hideK {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+  .showKeyRole {
+    -webkit-animation: showK 4s forwards;
+            animation: showK 4s forwards;
+  }
+  .showKeyRole p {
+    -webkit-animation: showK-text 4.5s forwards;
+            animation: showK-text 4.5s forwards;
+  }
+  @-webkit-keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -78,6 +197,20 @@
   @font-face {
     font-family: helv;
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
+  }
+  section#introYmenu {
+    margin-bottom: 0vh;
+    position: relative;
+  }
+  section#introYmenu * {
+    z-index: 10;
+  }
+  section#introYmenu > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
   section#intro {
     position: relative;
@@ -563,8 +696,10 @@
     top: 300vh;
   }
   #containerHow {
-    position: relative;
-    height: 600vh;
+    position: absolute;
+    bottom: -100vh;
+    height: 700vh;
+    z-index: 9999999;
   }
   #containerHow #sub-containerHow {
     overflow: hidden;
@@ -712,6 +847,16 @@
     font-family: helv;
     font-size: 1.8vw;
   }
+  #howPass {
+    position: relative;
+    height: 0;
+  }
+  .howPass {
+    height: 600vh;
+  }
+  .howPass2 {
+    height: 100vh;
+  }
   .howTrigger-title {
     position: absolute;
     top: 80vh;
@@ -817,7 +962,7 @@
     z-index: 100;
   }
   div#mid-container1-2 .girl-subContainer .girlContainer {
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     width: 100%;
     height: 90vh;
@@ -1391,6 +1536,16 @@
   section#mid {
     position: relative;
   }
+  section#mid * {
+    z-index: 10;
+  }
+  section#mid > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   div#end-container1-2 {
     position: relative;
   }
@@ -1849,6 +2004,7 @@
     font-size: 2.3vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
+    cursor: pointer;
     width: 3.5vw;
     content: " (+) ";
     background-color: white;
@@ -2307,6 +2463,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
     position: absolute;
@@ -2321,8 +2479,17 @@
     position: relative;
     height: 100%;
     width: 30%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -2331,6 +2498,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
@@ -2359,6 +2528,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -2766,6 +2939,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p {
     position: absolute;
@@ -2784,8 +2959,17 @@
     position: relative;
     height: 100%;
     width: 100%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -2794,6 +2978,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backCard {
     width: 100%;
@@ -2822,6 +3008,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -2838,7 +3028,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
-    height: 400vh;
+    height: 200vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -2873,7 +3063,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
     position: relative;
-    height: 250vh;
+    height: 150vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -2960,6 +3150,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#endContainer15 div#sub-containerEnd15 * {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
   div#endContainer15 div#sub-containerEnd15 h3 {
     width: 35%;
     color: white;
@@ -2968,6 +3162,7 @@
     font-size: 2.4vw;
   }
   div#endContainer15 div#sub-containerEnd15 svg {
+    cursor: pointer;
     margin-top: 2%;
     height: 18%;
   }
@@ -2976,6 +3171,14 @@
   }
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
+  }
+  div#endContainer15 div#sub-containerEnd15 video {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    outline: none;
   }
   .end15Trigger {
     position: absolute;
@@ -3218,6 +3421,19 @@
   .end16Trigger-icons {
     position: absolute;
     top: 200vh;
+  }
+  #end {
+    position: relative;
+  }
+  #end * {
+    z-index: 10;
+  }
+  #end > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
 }
 
@@ -3282,6 +3498,125 @@
               transform: rotate(-360deg);
     }
   }
+  .hideK {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+  .showKeyRole {
+    -webkit-animation: showK 4s forwards;
+            animation: showK 4s forwards;
+  }
+  .showKeyRole p {
+    -webkit-animation: showK-text 4.5s forwards;
+            animation: showK-text 4.5s forwards;
+  }
+  @-webkit-keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -3301,6 +3636,20 @@
   @font-face {
     font-family: helv;
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
+  }
+  section#introYmenu {
+    margin-bottom: 0vh;
+    position: relative;
+  }
+  section#introYmenu * {
+    z-index: 10;
+  }
+  section#introYmenu > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
   section#intro {
     position: relative;
@@ -3786,8 +4135,10 @@
     top: 300vh;
   }
   #containerHow {
-    position: relative;
-    height: 600vh;
+    position: absolute;
+    bottom: -100vh;
+    height: 700vh;
+    z-index: 9999999;
   }
   #containerHow #sub-containerHow {
     overflow: hidden;
@@ -3935,6 +4286,16 @@
     font-family: helv;
     font-size: 1.8vw;
   }
+  #howPass {
+    position: relative;
+    height: 0;
+  }
+  .howPass {
+    height: 600vh;
+  }
+  .howPass2 {
+    height: 100vh;
+  }
   .howTrigger-title {
     position: absolute;
     top: 80vh;
@@ -4040,7 +4401,7 @@
     z-index: 100;
   }
   div#mid-container1-2 .girl-subContainer .girlContainer {
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     width: 100%;
     height: 90vh;
@@ -4614,6 +4975,16 @@
   section#mid {
     position: relative;
   }
+  section#mid * {
+    z-index: 10;
+  }
+  section#mid > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   div#end-container1-2 {
     position: relative;
   }
@@ -5072,6 +5443,7 @@
     font-size: 2.3vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
+    cursor: pointer;
     width: 3.5vw;
     content: " (+) ";
     background-color: white;
@@ -5530,6 +5902,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
     position: absolute;
@@ -5544,8 +5918,17 @@
     position: relative;
     height: 100%;
     width: 30%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -5554,6 +5937,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
@@ -5582,6 +5967,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -5989,6 +6378,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p {
     position: absolute;
@@ -6007,8 +6398,17 @@
     position: relative;
     height: 100%;
     width: 100%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -6017,6 +6417,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backCard {
     width: 100%;
@@ -6045,6 +6447,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -6061,7 +6467,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
-    height: 400vh;
+    height: 200vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -6096,7 +6502,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
     position: relative;
-    height: 250vh;
+    height: 150vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -6183,6 +6589,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#endContainer15 div#sub-containerEnd15 * {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
   div#endContainer15 div#sub-containerEnd15 h3 {
     width: 35%;
     color: white;
@@ -6191,6 +6601,7 @@
     font-size: 2.4vw;
   }
   div#endContainer15 div#sub-containerEnd15 svg {
+    cursor: pointer;
     margin-top: 2%;
     height: 18%;
   }
@@ -6199,6 +6610,14 @@
   }
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
+  }
+  div#endContainer15 div#sub-containerEnd15 video {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    outline: none;
   }
   .end15Trigger {
     position: absolute;
@@ -6441,6 +6860,19 @@
   .end16Trigger-icons {
     position: absolute;
     top: 200vh;
+  }
+  #end {
+    position: relative;
+  }
+  #end * {
+    z-index: 10;
+  }
+  #end > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
   section#intro .intro-container h1 {
     font-size: 9vw;
@@ -6643,6 +7075,125 @@
               transform: rotate(-360deg);
     }
   }
+  .hideK {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+  .showKeyRole {
+    -webkit-animation: showK 4s forwards;
+            animation: showK 4s forwards;
+  }
+  .showKeyRole p {
+    -webkit-animation: showK-text 4.5s forwards;
+            animation: showK-text 4.5s forwards;
+  }
+  @-webkit-keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes showK {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    10% {
+      -webkit-transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+              transform: scale(0.2) rotateY(65deg) rotateX(10deg);
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+              transform: scale(0.4) rotateX(50deg) rotateY(50deg);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+              transform: scale(0.6) rotateX(15deg) rotate(-30deg);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: scale(0.8) rotateX(-10deg);
+              transform: scale(0.8) rotateX(-10deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showK-text {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @font-face {
     font-family: amatic;
     src: url(../fonts/Amatic-Bold.ttf);
@@ -6662,6 +7213,20 @@
   @font-face {
     font-family: helv;
     src: url(../fonts/HelveticaLTStd-LightCond.otf);
+  }
+  section#introYmenu {
+    margin-bottom: 0vh;
+    position: relative;
+  }
+  section#introYmenu * {
+    z-index: 10;
+  }
+  section#introYmenu > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
   section#intro {
     position: relative;
@@ -7148,8 +7713,10 @@
     top: 300vh;
   }
   #containerHow {
-    position: relative;
-    height: 600vh;
+    position: absolute;
+    bottom: -100vh;
+    height: 700vh;
+    z-index: 9999999;
   }
   #containerHow #sub-containerHow {
     overflow: hidden;
@@ -7295,6 +7862,16 @@
     font-family: helv;
     font-size: 1.8vw;
   }
+  #howPass {
+    position: relative;
+    height: 0;
+  }
+  .howPass {
+    height: 600vh;
+  }
+  .howPass2 {
+    height: 100vh;
+  }
   .howTrigger-title {
     position: absolute;
     top: 80vh;
@@ -7400,7 +7977,7 @@
     z-index: 100;
   }
   div#mid-container1-2 .girl-subContainer .girlContainer {
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     width: 100%;
     height: 90vh;
@@ -7974,6 +8551,16 @@
   section#mid {
     position: relative;
   }
+  section#mid * {
+    z-index: 10;
+  }
+  section#mid > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   div#end-container1-2 {
     position: relative;
   }
@@ -8432,6 +9019,7 @@
     font-size: 2.3vw;
   }
   div#end-container4-5-6 div#end-container5-6 .contentContainer .end5-6Content .keyRoles li:after {
+    cursor: pointer;
     width: 3.5vw;
     content: " (+) ";
     background-color: white;
@@ -8890,6 +9478,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes > p {
     position: absolute;
@@ -8904,8 +9494,17 @@
     position: relative;
     height: 100%;
     width: 30%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -8914,6 +9513,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .back .backCard {
     width: 100%;
@@ -8942,6 +9543,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container9-10 .end9-10Content-container .tribeResContainer .tribeRes .card .flip .flipCard {
     width: 100%;
@@ -9349,6 +9954,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-perspective: 100%;
+            perspective: 100%;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib > p {
     position: absolute;
@@ -9367,8 +9974,17 @@
     position: relative;
     height: 100%;
     width: 100%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back {
+    position: absolute;
+    top: 0;
     height: 100%;
     background-color: transparent;
     display: -webkit-box;
@@ -9377,6 +9993,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .back .backCard {
     width: 100%;
@@ -9405,6 +10023,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   div#end-container11-12-13-14 div#end-container13-14 .responsibContainer > .responsib .card .flip .flipCard {
     width: 100%;
@@ -9421,7 +10043,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 {
     position: relative;
-    height: 400vh;
+    height: 200vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer13 div#sub-containerEnd13 {
     overflow: hidden;
@@ -9456,7 +10078,7 @@
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 {
     position: relative;
-    height: 250vh;
+    height: 150vh;
   }
   div#end-container11-12-13-14 div#end-container13-14 div#endContainer14 div#sub-containerEnd14 {
     overflow: hidden;
@@ -9543,6 +10165,10 @@
     height: 100vh;
     z-index: 0;
   }
+  div#endContainer15 div#sub-containerEnd15 * {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
   div#endContainer15 div#sub-containerEnd15 h3 {
     width: 35%;
     color: white;
@@ -9551,6 +10177,7 @@
     font-size: 2.4vw;
   }
   div#endContainer15 div#sub-containerEnd15 svg {
+    cursor: pointer;
     margin-top: 2%;
     height: 18%;
   }
@@ -9559,6 +10186,14 @@
   }
   div#endContainer15 div#sub-containerEnd15 svg .cls-2 {
     fill: #020100;
+  }
+  div#endContainer15 div#sub-containerEnd15 video {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    outline: none;
   }
   .end15Trigger {
     position: absolute;
@@ -9802,6 +10437,19 @@
     position: absolute;
     top: 200vh;
   }
+  #end {
+    position: relative;
+  }
+  #end * {
+    z-index: 10;
+  }
+  #end > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   section#intro .intro-container h1 {
     width: 80%;
     font-size: 12vw;
@@ -9983,5 +10631,9 @@ html, body {
           user-select: none;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+body {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

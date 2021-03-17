@@ -24,7 +24,7 @@ export default function end1_2(controller) {
 
     
     var end1An1 = new TimelineMax()
-        .fromTo(".end1-2Icon1",1,{left:"-50%"},{left:"0vw"})
+        .fromTo(".end1-2Icon1",1,{left:"-50%"},{left:"0%"})
     
     var end1 = new ScrollMagic.Scene({
         triggerElement:".end1Trigger-movs",
