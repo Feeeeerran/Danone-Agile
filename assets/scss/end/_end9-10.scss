@@ -1,5 +1,7 @@
 div#end-container9-10 {
     position: relative;
+
+
     .end9-10Content-container {
         position: sticky;
         z-index: 1002;
@@ -38,7 +40,7 @@ div#end-container9-10 {
                     color:white;
                     font:{
                         family:bariolB;
-                        size:3rem;
+                        size:3vw;
                     }
                 }
                 p:nth-child(1):after {
@@ -54,7 +56,7 @@ div#end-container9-10 {
                     margin:0;
                     font:{
                         family:bariolR;
-                        size:1.5rem;
+                        size:1.8vw;
                     }
                 }
             }
@@ -146,8 +148,7 @@ div#end-container9-10 {
 
                         .flipText {
                             position: absolute;
-                            height:55%;
-                            width:55%;
+                            width:65%;
                             margin:0;
 
                             text-align: center;
@@ -156,11 +157,6 @@ div#end-container9-10 {
                                 size:1.5vw;
                             }
                         }
-
-                        .flipTextCenter {
-                            height: 80%;
-                        }
-
 
                     }
                 }

@@ -1,7 +1,7 @@
 export default function end9_10(controller) {
 
     var TLeader = new TimelineMax()
-        .fromTo(".end9-10Content>img",1,{transform:"translateX(-80vw)"},{transform:"translateX(0)"})
+        .fromTo(".end9-10Content>img",1,{transform:"translateX(-70vw)"},{transform:"translateX(0)"})
         .fromTo(".contentText",1,{opacity:0},{opacity:1})
         .fromTo(".tribeRes>p",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
         .fromTo(".tribeRes>.cardLeft",1,{top:"120%"},{top:0})
@@ -20,14 +20,15 @@ export default function end9_10(controller) {
 
     var end9 = new ScrollMagic.Scene({
         triggerElement:".end9-10Trigger",
-        duration:4000
+        // duration:"1200%"
+        duration:"600%"
     })
     .setTween(TLeader)
     .addTo(controller)
 
     var end10 = new ScrollMagic.Scene({
         triggerElement:".end10Trigger-out",
-        duration:700
+        duration:"110%"
     })
     .setTween(".end9-10Content-container",{transform:"translateY(-100vh)"})
     .addTo(controller)

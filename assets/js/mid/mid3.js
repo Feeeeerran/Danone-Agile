@@ -81,7 +81,7 @@ export default function mid3 (controller) {
 
     var mid3An = new ScrollMagic.Scene({
         triggerElement:".mid3Trigger-animation2",
-        duration:2300
+        duration:"350%"
     })
     .setTween(mid3Anim)
     .addTo(controller)

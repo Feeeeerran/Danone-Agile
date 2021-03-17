@@ -5,7 +5,7 @@ export default function end16(controller) {
         
     var end16 = new ScrollMagic.Scene({
         triggerElement:".end16Trigger",
-        duration:800
+        duration:"120%"
     })
     .setTween(end16T)
     .addTo(controller)
@@ -63,7 +63,7 @@ export default function end16(controller) {
 
     var end16 = new ScrollMagic.Scene({
         triggerElement:".end16Trigger-icons",
-        duration:12000
+        duration:"1820%"
     })
     .setTween(end16Icons)
     .addTo(controller)

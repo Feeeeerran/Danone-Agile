@@ -50,7 +50,7 @@ export default function how (controller) {
     
     var how = new ScrollMagic.Scene({
         triggerElement:".howTrigger-content",
-        duration:2500
+        duration:"350%"
     })
     .setTween(howContent)
     .addTo(controller)

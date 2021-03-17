@@ -5,7 +5,7 @@ export default function end15(controller) {
 
     var end15 = new ScrollMagic.Scene({
         triggerElement:".end15Trigger",
-        duration:800
+        duration:"120%"
     })
     .setTween(end15T)
     .addTo(controller)

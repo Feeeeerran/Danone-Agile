@@ -1,5 +1,5 @@
 #containerWhat {
-    height: 600vh;
+    height: 500vh;
     #sub-containerWhat {
         @include subContainers;
         justify-content: center;
@@ -71,10 +71,8 @@
                 grid-area:icon2;
                 position:relative;
                 width:100%;
-                
-                .exclam {
-                    transform-origin: 50% 50%;
-                }
+                height:100%;
+                top:-2%;
             }
 
             .whatIcon3 {

@@ -21,7 +21,7 @@ export default function end3(controller) {
 
     var end3Title = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-title",
-        duration:500
+        duration:"75%"
     })
     .setTween(end3Tit)
     .addTo(controller)
@@ -34,7 +34,7 @@ export default function end3(controller) {
 
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:800
+        duration:"120%"
     })
     .setTween(end3I)
     .addTo(controller)
@@ -62,7 +62,7 @@ export default function end3(controller) {
     
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:3000
+        duration:"450%"
     })
     .setTween(estelaDG)
     .addTo(controller)
@@ -100,7 +100,7 @@ export default function end3(controller) {
     
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:3000
+        duration:"450%"
     })
     .setTween(estelaDp)
     .addTo(controller)
@@ -130,7 +130,7 @@ export default function end3(controller) {
     
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:3000
+        duration:"450%"
     })
     .setTween(estelaIG)
     .addTo(controller)
@@ -168,7 +168,7 @@ export default function end3(controller) {
     
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:3000
+        duration:"450%"
     })
     .setTween(estelaIp)
     .addTo(controller)
@@ -176,14 +176,14 @@ export default function end3(controller) {
     // MOVIMIENTO LADO A LADO
 
     var iconMov = new TimelineMax()
-        .to(".end3Icon",1,{transform:"translateX(2vw)"})
-        .to(".end3Icon",1,{transform:"translateX(-1vw)"})
-        .to(".end3Icon",1,{transform:"translateX(1vw)"})
-        .to(".end3Icon",1,{transform:"translateX(0)"})
+        .to(".end3Icon",1,{left:"5%"})
+        .to(".end3Icon",1,{left:"-1%"})
+        .to(".end3Icon",1,{left:"1%"})
+        .to(".end3Icon",1,{left:"0%"})
 
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-icon",
-        duration:1500
+        duration:"230%"
     })
     .setTween(iconMov)
     .addTo(controller)
@@ -200,7 +200,7 @@ export default function end3(controller) {
 
     var end3Icon = new ScrollMagic.Scene({
         triggerElement:".end3Trigger-iconOut",
-        duration:1000
+        duration:"150%"
     })
     .setTween(iconOut)
     .addTo(controller)

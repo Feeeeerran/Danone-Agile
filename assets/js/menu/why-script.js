@@ -44,7 +44,7 @@ export default function why (controller) {
         .fromTo(".whyIcon",1,{transform:"translateY(20vh)"},{transform:"translateY(-100vh)"}) 
     var whyRocket = new ScrollMagic.Scene({
         triggerElement:".whyTrigger-rocket",
-        duration:3000
+        duration:"400%"
     })
     .setTween(rocket)
     .addTo(controller)

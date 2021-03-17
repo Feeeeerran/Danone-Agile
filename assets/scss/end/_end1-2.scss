@@ -4,37 +4,36 @@ div#end-container1-2 {
 
     div.end1-2_icons {
         position:sticky;
-        top:35vh;
+        top:0vh;
         height: 0;
-        width:80%;
+        width:100%;
         z-index:100;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+
 
         .iconsContainer {
             overflow: hidden;
             position: absolute;
-            top:-35vh;
-            width:96vw;
-            height:150vh;
+            top:0;
 
-            padding-top: 35vh;
+            width:100%;
+            height: 100vh;
 
             
 
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            align-items: flex-end;
 
             svg {
                 position: relative;
-                width:33.3%
+                width:40%;
+                height:50%;
             }
     
             .end1-2Icon2 {
-                top:40vh;
+                // bottom:50%;
                 width: 25%;
                 .pp {
                         transform-origin: center;
@@ -45,7 +44,7 @@ div#end-container1-2 {
             }
     
             .end1-2Icon1,.end1-2Icon3 {
-                top:-5vh;
+                bottom:20%;
                 width: 25%;
                 .pp {
                         transform-origin: center;
@@ -57,36 +56,41 @@ div#end-container1-2 {
     
             .fillS {
                 position:absolute;
+                width:5%;
             }
     
             .end1-2Icon4 {
-                left:15%;
-                top:70vh;
+                left:32%;
+                // height: 50%;
+                bottom:-5%;
             }
             .end1-2Icon6 {
-                right:15%;
-                top:70vh;
+                right:32%;
+                bottom:-5%
             }
     
             .end1-2Icon5 {
-                top:45vh;
-                transform:scale(0.6);
+                bottom:40%;
+                width:3%;
+                height:30%;
             }
     
             .end1-2Icon7 {
-                transform: scale(0.6);
-                left:15%;
+                left:29%;
+                top:15%;
+                width:8%;
             }
     
             .end1-2Icon8 {
-                transform: scale(0.45);
-                right:12%;
+                top:15%;
+                right:28%;
+                width:5%;
             }
     
             .end1-2Icon9 {
-                transform: scale(0.5);
-                right:15%;
-                top:45vh;
+                right:32%;
+                top:28%;
+                width:4%;
             }
 
         }
@@ -107,7 +111,7 @@ div#end-container1-2 {
             h3 {
                 width: 55%;
                 margin-top: 10vh;
-                font-size: 2.8rem;
+                font-size: 3vw;
 
 
                 white-space: nowrap;
@@ -139,7 +143,7 @@ div#end-container1-2 {
             h3 {
                 margin-bottom: 1vh;
                 width: 80%;
-                font-size: 2.8rem;
+                font-size: 3vw;
             }
         }
     }

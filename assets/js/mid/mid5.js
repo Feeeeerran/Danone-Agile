@@ -18,7 +18,7 @@ export default function mid5 (controller) {
 
     var mid5 = new ScrollMagic.Scene({
         triggerElement:".mid5Trigger-title",
-        duration:500
+        duration:"75%"
     })
     .setTween(mid5T)
     .addTo(controller)
@@ -29,7 +29,7 @@ export default function mid5 (controller) {
         .fromTo(".mid5Icon2",1,{opacity:0,transform:"translateY(-5vh)"},{opacity:1,transform:"translateY(0)"})
     var mid5= new ScrollMagic.Scene({
         triggerElement:".mid5Trigger-icons",
-        duration:2000
+        duration:"300%"
     })
     .setTween(mid5Icons)
     .addTo(controller)

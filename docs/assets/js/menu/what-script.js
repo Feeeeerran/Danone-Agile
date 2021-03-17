@@ -43,7 +43,7 @@ export default function what (controller) {
     .fromTo(".whatIcon2",1,{transform:"scale(0)"},{transform:"scale(1.2)"},)
     .to(".whatIcon2",1,{transform:"scale(0.8)"})
     .to(".whatIcon2",1,{transform:"scale(0.8)"})
-    .to(".whatContent,#whatTit",1,{transform:"translateY(-50vh)"})
+    // .to(".whatContent,#whatTit",1,{transform:"translateY(-50vh)"})
 
 
     var what = new ScrollMagic.Scene({

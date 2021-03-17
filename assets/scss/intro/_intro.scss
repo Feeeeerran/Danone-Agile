@@ -76,19 +76,22 @@ section#intro {
             .introIcon1 {
                 height: 50%;
                 align-self: flex-end;
+                width:30%;
             }
     
             .introIcon2 {
                 align-self: flex-start;
                 position: relative;
                 top:-10%;
-                left:5%;
+                // left:5%;
                 height:100%;
+                width:35%;
             }
     
             .introIcon3 {
                 align-self: flex-end;
                 height: 50%;
+                width:30%;
             }
         }
 

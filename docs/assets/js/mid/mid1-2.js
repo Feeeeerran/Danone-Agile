@@ -50,7 +50,7 @@ export default function mid1_2 (controller) {
 
     var midGirl = new ScrollMagic.Scene({
         triggerElement:".girlTrigger",
-        duration:2500
+        duration:"500%"
     })
     .setTween(girl)
     .addTo(controller)
@@ -59,12 +59,13 @@ export default function mid1_2 (controller) {
     var girlQuestion = new TimelineMax()
         .fromTo("#sub-containerMid2>h3",1,{opacity:0,transform:"translateY(-20vh)"},{opacity:1,transform:"translateY(0vh)"})
         .to(".girlLine",1,{opacity:0})
-        .fromTo(".mid2Icon",1,{opacity:0,transform:"translateX(50vw)"},{opacity:1,transform:"translateX(0)"})
-        .to(".girlContainer,.mid2Icon,#sub-containerMid2>h3",1,{transform:"translateY(-60vh)",opacity:0})
+        .fromTo(".midIcon-question",1,{opacity:0,transform:"translateX(50vw)"},{opacity:1,transform:"translateX(0)"})
+        .to(".girlContainer",1,{top:"-100vh"})
+        // .to(".girlContainer,.mid2Icon,#sub-containerMid2>h3",1,{transform:"translateY(-60vh)",opacity:0})
 
     var midGirl2 = new ScrollMagic.Scene({
         triggerElement:".girlTrigger-question",
-        duration:2000
+        duration:"300%"
     })
     .setTween(girlQuestion)
     .addTo(controller)

@@ -24,7 +24,7 @@ export default function mid4 (controller) {
 
     var mid4 = new ScrollMagic.Scene({
         triggerElement:".mid4Trigger-title",
-        duration:500
+        duration:"75%"
     })
     .setTween(mid4T)
     .addTo(controller)
@@ -35,7 +35,7 @@ export default function mid4 (controller) {
 
     var mid4 = new ScrollMagic.Scene({
         triggerElement:".mid4Trigger-icon",
-        duration:200
+        duration:"30%"
     })
     .setTween(mid4Ic1)
     .addTo(controller)
@@ -46,7 +46,7 @@ export default function mid4 (controller) {
 
     var mid4 = new ScrollMagic.Scene({
         triggerElement:".mid4Trigger-icon",
-        duration:200
+        duration:"30%"
     })
     .setTween(mid4Ic2)
     .addTo(controller)
@@ -57,7 +57,7 @@ export default function mid4 (controller) {
 
     var mid4 = new ScrollMagic.Scene({
         triggerElement:".mid4Trigger-icon",
-        duration:200
+        duration:"30%"
     })
     .setTween(mid4Ic3)
     .addTo(controller)

@@ -38,7 +38,7 @@ export default function end4_5_6(controller) {
     
     var end4Icon = new ScrollMagic.Scene({
         triggerElement:".end4-5-6Trigger-boat",
-        duration:8000
+        duration:"1210%"
     })
     .setTween(boatIn)
     .addTo(controller)
@@ -48,15 +48,15 @@ export default function end4_5_6(controller) {
     var end4T = new TimelineMax()
         .fromTo(".end4Content>p",1,{transform:"translateX(-50vw)"},{transform:"translateX(0)"})
         .fromTo(".end4Content>ul",1,{transform:"translateX(35vw)"},{transform:"translateX(2vw)"})
-        .fromTo(".end4Content>ul>li:nth-child(1)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
-        .fromTo(".end4Content>ul>li:nth-child(2)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
-        .fromTo(".end4Content>ul>li:nth-child(3)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
-        .fromTo(".end4Content>ul>li:nth-child(4)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
+        .fromTo(".end4Content>ul>li:nth-child(1)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
+        .fromTo(".end4Content>ul>li:nth-child(2)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
+        .fromTo(".end4Content>ul>li:nth-child(3)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
+        .fromTo(".end4Content>ul>li:nth-child(4)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
     
     
     var end4T = new ScrollMagic.Scene({
         triggerElement:".end4Trigger-content",
-        duration:3000
+        duration:"450%"
     })
     .setTween(end4T)
     .addTo(controller)
@@ -110,7 +110,7 @@ export default function end4_5_6(controller) {
 
     var end5 = new ScrollMagic.Scene({
         triggerElement:".end5-6Trigger-leftContent",
-        duration:6000
+        duration:"900%"
     })
     .setTween(end4Cont)
     .addTo(controller)
@@ -121,7 +121,7 @@ export default function end4_5_6(controller) {
 
     var boatOut = new ScrollMagic.Scene({
         triggerElement:".end6Trigger-out",
-        duration:900
+        duration:"140%"
     })
     .setTween(".end4-5-6Icon,.contentContainer",1,{transform:"translateY(-100vh)"})
     .addTo(controller)
@@ -153,7 +153,7 @@ export default function end4_5_6(controller) {
     
     var end4Icon = new ScrollMagic.Scene({
         triggerElement:".end4-5-6Trigger-boat",
-        duration:10800
+        duration:"1640%"
     })
     .setTween(estelaDG)
     .addTo(controller)
@@ -192,7 +192,7 @@ export default function end4_5_6(controller) {
     
     var end4Icon = new ScrollMagic.Scene({
         triggerElement:".end4-5-6Trigger-boat",
-        duration:10800
+        duration:"1640%"
     })
     .setTween(estelaDp)
     .addTo(controller)
@@ -222,7 +222,7 @@ export default function end4_5_6(controller) {
     
     var end4Icon = new ScrollMagic.Scene({
         triggerElement:".end4-5-6Trigger-boat",
-        duration:10800
+        duration:"1640%"
     })
     .setTween(estelaIG)
     .addTo(controller)
@@ -259,7 +259,7 @@ export default function end4_5_6(controller) {
     
     var end4Icon = new ScrollMagic.Scene({
         triggerElement:".end4-5-6Trigger-boat",
-        duration:10800
+        duration:"1640%"
     })
     .setTween(estelaIp)
     .addTo(controller)

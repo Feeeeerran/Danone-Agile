@@ -7,15 +7,15 @@ export default function end11_12_13_14(controller) {
         .fromTo(".end11Content",1,{transform:"translateY(-100vh)"},{transform:"translateY(0)"})
         .fromTo(".boatIcons>p",1,{opacity:0},{opacity:1})
         .fromTo(".rect1",1,{opacity:0},{opacity:1})
-        .fromTo(".rect2",1,{opacity:0},{opacity:1})
-        .to(".rect2",1,{opacity:1})
-        .to(".rect2",1,{opacity:1})
-        .to(".rect2",1,{opacity:1})
-        .to(".boatIcons",1,{transform:"translate(-80vw,-20vh) scale(0.8)"})
+        .to(".rect1",1,{opacity:1})
+        .to(".rect1",1,{opacity:1})
+        .to(".rect1",1,{opacity:1})
+        .to(".boatIcons",1,{transform:"scale(0.8)"})
+        .to(".boatIcons",1,{transform:"translate(-80vw,-20vh) scale(0.4)"})
 
     var end11 = new ScrollMagic.Scene({
         triggerElement:".end11-12-13-14Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(boats)
     .addTo(controller)
@@ -25,20 +25,17 @@ export default function end11_12_13_14(controller) {
 
     var group = new TimelineMax()
         .fromTo(".end12Content",1,{transform:"translateY(100vh)"},{transform:"translateY(0)"})
-        .fromTo(".groundIcon",1,{opacity:0,transform:"translateX(80vw)"},{opacity:1,transform:"translateX(36vw)"})
-        .fromTo(".groupFirst",1,{opacity:0,transform:"translateX(80vw)"},{opacity:1,transform:"translateX(34vw)"})
-        .fromTo(".chat>.chatIcon1,.chat>.chatIcon2",1,{opacity:0,transform:"translateX(34vw)"},{opacity:0,transform:"translateX(34vw)"})
-        .to(".chatIcon1",1,{opacity:1,})
-        .to(".chatIcon2",1,{opacity:1,})
-        .to(".groupFirst,.groundIcon,.chatIcon1,.chatIcon2",1,{transform:"translateX(0)"})
-        .to(".end12Content",1,{transform:"translateX(80vw)"})
-        .fromTo(".groupIcon4",1,{opacity:0,transform:"translateX(50vw)"},{opacity:1,transform:"translateX(0)"})
-        .to(".groupIcons",1,{top:"-7vh"})
+        .fromTo(".groundIcon",1,{left:"100%"},{left:"40%"})
+        .fromTo(".group,.chat",1,{left:"100%"},{left:"37%"})
+        .fromTo(".chat",1,{opacity:0},{opacity:1})
+        .to(".group,.chat,.groundIcon",1,{left:"0%"})
+        .fromTo(".groupIcon4",1,{opacity:0,left:"100%"},{opacity:1,left:"50%"})
+        .to(".end12Content",1,{transform:"translateX(40vw)"})
         .fromTo(".groupIcons>p",1,{opacity:0},{opacity:1})
 
     var end12 = new ScrollMagic.Scene({
         triggerElement:".end12Trigger",
-        duration:4500
+        duration:"680%"
     })
     .setTween(group)
     .addTo(controller)
@@ -62,7 +59,7 @@ export default function end11_12_13_14(controller) {
 
     var end13 = new ScrollMagic.Scene({
         triggerElement:".end13Trigger",
-        duration:3000
+        duration:"460%"
     })
     .setTween(cards)
     .addTo(controller)
@@ -72,7 +69,7 @@ export default function end11_12_13_14(controller) {
 
     var end14 = new ScrollMagic.Scene({
         triggerElement:".end14Trigger",
-        duration:700
+        duration:"110%"
     })
     .setTween(".groupContainer,.responsib",{transform:"translateY(-80vh)"})
     .addTo(controller)
@@ -104,7 +101,7 @@ export default function end11_12_13_14(controller) {
     
     var end11Icon = new ScrollMagic.Scene({
         triggerElement:".end11-12-13-14Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaDG)
     .addTo(controller)
@@ -143,7 +140,7 @@ export default function end11_12_13_14(controller) {
     
     var end11Icon = new ScrollMagic.Scene({
         triggerElement:".end11-12-13-14Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaDp)
     .addTo(controller)
@@ -173,7 +170,7 @@ export default function end11_12_13_14(controller) {
     
     var end11Icon = new ScrollMagic.Scene({
         triggerElement:".end11-12-13-14Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaIG)
     .addTo(controller)
@@ -210,7 +207,7 @@ export default function end11_12_13_14(controller) {
     
     var end11Icon = new ScrollMagic.Scene({
         triggerElement:".end11-12-13-14Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaIp)
     .addTo(controller)

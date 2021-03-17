@@ -1,21 +1,40 @@
 div#mid-container1-2 {
     position: relative;
 
-    .girlContainer {
+    .girl-subContainer {
         position:sticky;
-        top:25%;
+        top:0;
         height:0;
         width:100%;
         z-index:100;
 
-        display: flex;
-        justify-content: center;
+        .girlContainer {
+            overflow-x: hidden;
+            position: absolute;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+    
+            .midIcon-girl {
+                // position:relative;
+                width: 25%;
+                height: 60%;
+                // top:8vh;      
+            }
 
-        .midIcon-girl {
-            // position:absolute;
-            width: 25%;
+            .midIcon-question {
+                position: absolute;
+                top:20%;
+                left:55%;
+                width:10%;
+                height: 50%;
+
+            }
             
         }
+
     }
 
     div#mid-container1 {
@@ -63,19 +82,6 @@ div#mid-container1-2 {
                     family:blog;
                 }
             }
-
-            .mid2Content {
-                position: relative;
-                width: 100%;
-                text-align: center;
-                z-index: 100;
-                .mid2Icon {
-                    position:relative;
-                    width:10%;
-                    left:10%;
-                    top:-10%;
-                }
-            }
         }
     }
 }
@@ -89,12 +95,12 @@ div#mid-container1-2 {
 }
 .mid1-2Trigger-title2 {
     position: absolute;
-    top:220vh;
+    top:200vh;
 }
 
 .girlTrigger {
     position:absolute;
-    top:300vh;
+    top:250vh;
 }
 
 .girlTrigger-question {

@@ -8,11 +8,11 @@ export default function end7_8(controller) {
         .fromTo(".left",1,{transform:"translateY(100vh)"},{transform:"translateY(0)"}) 
         .fromTo(".right",1,{transform:"translateY(100vh)"},{transform:"translateY(0)"})
         .fromTo(".end7Content",0.8,{transform:"translateY(100vh)"},{transform:"translateY(0)"})
-        .fromTo(".end7-8Icon>p",1,{opacity:0,transform:"translateY(-10vh)"},{opacity:1,transform:"translateY(0)"}) 
+        .fromTo(".triBoats-container>p",1,{opacity:0,transform:"translateY(-10vh)"},{opacity:1,transform:"translateY(0)"}) 
 
     var end7 = new ScrollMagic.Scene({
         triggerElement:".end7Trigger",
-        duration:4500
+        duration:"680%"
     })
     .setTween(triBoat)
     .addTo(controller)
@@ -24,9 +24,9 @@ export default function end7_8(controller) {
 
         var end7 = new ScrollMagic.Scene({
             triggerElement:".end8Trigger-out",
-            duration:700
+            duration:"106%"
         })
-        .setTween(".end7-8Icon,.end8Content",1,{transform:"translateY(-100vh)"})
+        .setTween(".triBoats-container,.end8Content",1,{transform:"translateY(-100vh)"})
         .addTo(controller)
 
 
@@ -58,7 +58,7 @@ export default function end7_8(controller) {
     
     var end7Icon = new ScrollMagic.Scene({
         triggerElement:".end7Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaDG)
     .addTo(controller)
@@ -97,7 +97,7 @@ export default function end7_8(controller) {
     
     var end7Icon = new ScrollMagic.Scene({
         triggerElement:".end7Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaDp)
     .addTo(controller)
@@ -127,7 +127,7 @@ export default function end7_8(controller) {
     
     var end7Icon = new ScrollMagic.Scene({
         triggerElement:".end7Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaIG)
     .addTo(controller)
@@ -164,7 +164,7 @@ export default function end7_8(controller) {
     
     var end7Icon = new ScrollMagic.Scene({
         triggerElement:".end7Trigger",
-        duration:7000
+        duration:"1060%"
     })
     .setTween(estelaIp)
     .addTo(controller)

@@ -5,7 +5,7 @@ div#end-container11-12-13-14 {
 
     .groupContainer {
         position: sticky;
-        top:8vh;
+        top:0vh;
         z-index:10010;
         
         width:100%;
@@ -16,22 +16,22 @@ div#end-container11-12-13-14 {
 
         
         .groupIcons {
-            overflow-x: hidden;
+            overflow: hidden;
             position: absolute;
-            left:30%;
-            width:69%;
-            height:60vh;
+            width:100%;
+            height:55vh;
 
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
+            align-items: center;
 
-            svg {height: 100%;}
+
 
             p {
                 position: absolute;
                 top:-10%;
-                right:0%;
+                right:-10%;
                 width:50%;
 
                 color:white;
@@ -46,57 +46,67 @@ div#end-container11-12-13-14 {
             }
 
             .chat {
+                position: relative;
                 width:45%;
                 height:20%;
                 
                 display: flex;
                 flex-direction: row-reverse;
+                justify-content: flex-end;
 
-                svg {height: 100%;}
+                svg {height: 100%;position: relative;}
 
                 .chatIcon1 {
-                    position: relative;
-                    left:-20%;
                     width: 40%;
                 }
                 .chatIcon2{
-                    width:60%;
+                    width:30%;
+                    left:10%;
+                    transform: scale(1.5);
                 }
             }
 
             .group {
-                width:100%;
+                position: relative;
+                width:45%;
                 height:45%;
 
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
 
-                svg {
+                >svg {
                     position: relative;
+                    width:25%;
+                    height: 100%;
+                }
+
+                .groupFlag {
+                    position: relative;
+                    height: 100%;
+                    width: 25%;
+
+                    svg {
+                        position:relative;
+                        height: 100%;
+                        width: 100%;
+
+                        bottom:15%;
+                        left: 50%;
+                        transform: scale(1.5);
+                    }
                 }
 
                 .groupIcon1 {
-                    bottom:-8%;
-                    // left: 15%;
+                    bottom:2%;
                 }
-                .groupIcon2 {
-                    bottom:-9%;
-                    left:-5%;
-                }
-                .groupIcon3 {
-                    bottom: -10%;
-                    left:-8%;
-                }
-                .groupIcon4 {
-                    bottom:16%;
-                    left:-15%;
-                    height:125%;                
-                }
+
             }
 
             .groundIcon {
-                width:70%;
+                position: relative;
+                top:-5%;
+                width:45%;
                 height:8%;
             }
         }
@@ -105,6 +115,7 @@ div#end-container11-12-13-14 {
 
 
     div#end-container11-12 {
+
         .boatContainer {
             position: sticky;
             top:16vh;
@@ -112,7 +123,6 @@ div#end-container11-12-13-14 {
             
             width:100%;
             height: 0;
-    
             
             .boatIcons {
                 position: absolute;
@@ -146,7 +156,7 @@ div#end-container11-12-13-14 {
                     position: absolute;
                     
                     width: 100%;
-                    height: 70%;
+                    height: 100%;
 
                     display: flex;
                     flex-direction: column;
@@ -154,11 +164,12 @@ div#end-container11-12-13-14 {
 
                     svg {
                         position: relative;
-                        width: 85%;
+                        width: 90%;
+                        height:100%;
                     }
 
-                    .rect1 {top:25%;}
-                    .rect2 {top:29%;}
+                    .rect1 {top:-22%;}
+                    // .rect2 {top:29%;}
                 }
             }
         }
@@ -311,8 +322,7 @@ div#end-container11-12-13-14 {
 
                         .flipText {
                             position: absolute;
-                            height:50%;
-                            width:50%;
+                            width:70%;
                             margin: 0;
 
                             text-align: center;
@@ -322,9 +332,6 @@ div#end-container11-12-13-14 {
                             }
                         }
 
-                        .flipTextRight {
-                            height:80%
-                        }
                     }
                 }
                 
