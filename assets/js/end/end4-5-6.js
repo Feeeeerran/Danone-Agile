@@ -70,42 +70,7 @@ export default function end4_5_6(controller) {
         .fromTo(".keyRoles>li:nth-child(1)",1,{transform:"translateY(60vh)"},{transform:"translateY(0)"})
         .fromTo(".keyRoles>li:nth-child(2)",1,{transform:"translateY(60vh)"},{transform:"translateY(0)"})
         .fromTo(".keyRoles>li:nth-child(3)",1,{transform:"translateY(60vh)"},{transform:"translateY(0)"})
-
-        // .fromTo(".info1>img",1,{transform:"scale(0)"},{transform:"scale(0.2) rotateY(65deg) skewX(10deg)"})
-        // .to(".info1>img",1,{opacity:0})
-        // .to(".info1>img",1,{opacity:1,transform:"scale(0.4) rotateX(50deg) skewY(30deg)"})
-        // .to(".info1>img",1,{opacity:0})
-        // .to(".info1>img",1,{opacity:1,transform:"scale(0.6) rotateX(15deg) SkewX(25deg)"})
-        // .to(".info1>img",1,{opacity:0})
-        // .to(".info1>img",1,{opacity:1,transform:"scale(0.8) rotate(-10deg)"})
-        // .to(".info1>img",1,{opacity:0})
-        // .to(".info1>img",1,{opacity:1,transform:"scale(1)"})
-        // .fromTo(".info1>p",1,{opacity:0},{opacity:1})
-
-        // .fromTo(".info2>img",1,{transform:"scale(0)"},{transform:"scale(0.2) rotateY(65deg) skewX(10deg)"})
-        // .to(".info2>img",1,{opacity:0})
-        // .to(".info2>img",1,{opacity:1,transform:"scale(0.4) rotateX(50deg) skewY(30deg)"})
-        // .to(".info2>img",1,{opacity:0})
-        // .to(".info2>img",1,{opacity:1,transform:"scale(0.6) rotateX(15deg) SkewX(25deg)"})
-        // .to(".info2>img",1,{opacity:0})
-        // .to(".info2>img",1,{opacity:1,transform:"scale(0.8) rotate(-10deg)"})
-        // .to(".info2>img",1,{opacity:0})
-        // .to(".info2>img",1,{opacity:1,transform:"scale(1)"})
-        // .fromTo(".info2>p",1,{opacity:0},{opacity:1})
         
-        // .fromTo(".info3>img",1,{transform:"scale(0)"},{transform:"scale(0.2) rotateY(65deg) skewX(10deg)"})
-        // .to(".info3>img",1,{opacity:0})
-        // .to(".info3>img",1,{opacity:1,transform:"scale(0.4) rotateX(50deg) skewY(30deg)"})
-        // .to(".info3>img",1,{opacity:0})
-        // .to(".info3>img",1,{opacity:1,transform:"scale(0.6) rotateX(15deg) SkewX(25deg)"})
-        // .to(".info3>img",1,{opacity:0})
-        // .to(".info3>img",1,{opacity:1,transform:"scale(0.8) rotate(-10deg)"})
-        // .to(".info3>img",1,{opacity:0})
-        // .to(".info3>img",1,{opacity:1,transform:"scale(1)"})
-        // .fromTo(".info3>p",1,{opacity:0},{opacity:1})
-
-        
-
 
 
     var end5 = new ScrollMagic.Scene({

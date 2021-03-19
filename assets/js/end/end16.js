@@ -1,6 +1,7 @@
 export default function end16(controller) {
 
     var end16T = new TimelineMax()
+        .to("#end>.backgroundContainer",1,{opacity:0})
         .fromTo("#sub-containerEnd16>h3",1,{opacity:0},{opacity:1})
         
     var end16 = new ScrollMagic.Scene({

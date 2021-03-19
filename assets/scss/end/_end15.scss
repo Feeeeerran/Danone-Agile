@@ -1,6 +1,7 @@
 div#endContainer15 {
     position: relative;
     height:280vh;
+    z-index: 11;
 
     div#sub-containerEnd15 {
         @include subContainers;
@@ -34,6 +35,7 @@ div#endContainer15 {
             height:100%;
             opacity:0;
             outline: none;
+            background-color: white;
         }
 
     }

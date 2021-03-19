@@ -25,18 +25,30 @@ export default function intro (controller) {
 
     // ANIMACIONES
 
+    if (window.innerWidth>992) {
+        var introTitle = new TimelineMax()
+        .fromTo(".introTit-container>img",1,{width:0},{width:"27%"})
+        .fromTo(".introSubT",1,{opacity:0},{opacity:1})
+    
+        var scene1 = new ScrollMagic.Scene({
+            duration:"300%"
+        })
+        .setTween(introTitle)
+        .addTo(controller)
+    }
 
-    var introTitle = new TimelineMax()
-    // .fromTo("#introTit",1,{opacity:0},{opacity:1})
-    .fromTo(".introTit-container>img",1,{width:0},{width:"27%"})
-    .fromTo(".introSubT",1,{opacity:0},{opacity:1})
-    // .fromTo(".introIcons,p:nth-child(4)",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
+    if (window.innerWidth<600) {
+        var introTitle = new TimelineMax()
+        .fromTo(".introTit-container>img",1,{width:0},{width:"36%"})
+        .fromTo(".introSubT",1,{opacity:0},{opacity:1})
+    
+        var scene1 = new ScrollMagic.Scene({
+            duration:"300%"
+        })
+        .setTween(introTitle)
+        .addTo(controller)
+    }
 
-    var scene1 = new ScrollMagic.Scene({
-        duration:"300%"
-    })
-    .setTween(introTitle)
-    .addTo(controller)
 
 
 }

@@ -13,6 +13,13 @@ section#menu {
         width:100%;
         height: 0;
 
+        >img {
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 100vh;
+        }
+
         #menuQuestions {
             position: relative;
             width: 65%;
@@ -74,7 +81,22 @@ section#menu {
             }
         }
     }
+    
+    .backgroundContainer {
+        position: sticky;
+        top:0vh;
+        height: 0;
+        width: 100%;
+    
+       >img {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+       }
+    }
 }
+
+
 
 // TRIGGERS ////////////
 

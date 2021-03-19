@@ -41,7 +41,7 @@ div#end-container11-12-13-14 {
                 }
             }
             p:after {
-                content:"TRIBE LEADER.";
+                content:"CHAPTER LEADER.";
                 font-family: blog;
             }
 
@@ -336,7 +336,8 @@ div#end-container11-12-13-14 {
 
                         .flipText {
                             position: absolute;
-                            width:70%;
+                            z-index: 11;
+                            width:60%;
                             margin: 0;
 
                             text-align: center;

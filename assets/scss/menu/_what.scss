@@ -1,5 +1,5 @@
 #containerWhat {
-    height: 500vh;
+    height: 700vh;
     #sub-containerWhat {
         @include subContainers;
         justify-content: center;
@@ -99,4 +99,10 @@
 .whatTrigger-content {
     position: absolute;
     top:230vh;
+}
+
+
+.whatTrigger-out {
+    position: absolute;
+    bottom:120vh;
 }

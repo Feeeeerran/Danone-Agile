@@ -23,8 +23,13 @@ export default function mid6 (controller) {
     .setTween(mid6T)
     .addTo(controller)
 
-    var mid6Icons = new TimelineMax()
-        .fromTo(".mid6Content",1,{right:"-80%",top:"50%"},{right:"65%",top:"-30%"})
+    if (window.innerWidth>=992) {
+        var mid6Icons = new TimelineMax()
+            .fromTo(".mid6Content",1,{right:"-80%",top:"50%"},{right:"65%",top:"-30%"})
+    } else if (window.innerWidth<=600) {
+        var mid6Icons = new TimelineMax()
+            .fromTo(".mid6Content",1,{right:"-80%",top:"10%"},{right:"100%",top:"-35%"})
+    }
 
     var mid5 = new ScrollMagic.Scene({
         triggerElement:".mid6Trigger-icons",

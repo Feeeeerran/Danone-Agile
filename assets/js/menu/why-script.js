@@ -41,10 +41,11 @@ export default function why (controller) {
     .addTo(controller)
 
     var rocket = new TimelineMax()
-        .fromTo(".whyIcon",1,{transform:"translateY(20vh)"},{transform:"translateY(-100vh)"}) 
+        .fromTo(".whyIcon",1,{transform:"translateY(0vh)"},{transform:"translateY(-120vh)"}) 
+        .to("#whyTit,.whyContent",1,{transform:"translateX(130vw)"})
     var whyRocket = new ScrollMagic.Scene({
         triggerElement:".whyTrigger-rocket",
-        duration:"400%"
+        duration:"500%"
     })
     .setTween(rocket)
     .addTo(controller)

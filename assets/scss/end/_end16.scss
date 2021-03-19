@@ -1,6 +1,9 @@
 div#endContainer16 {
-    position: relative;
+    position: absolute;
+    z-index:10;
+    top:-100vh;
     height:2100vh;
+    width: 100%;
 
     div#sub-containerEnd16 {
         @include subContainers;
@@ -191,6 +194,12 @@ div#endContainer16 {
 
 
     }
+}
+
+#end16Pass {
+    position: relative;
+    height: 100vh;
+    width:inherit;
 }
 
 // TRIGGERS ////////////

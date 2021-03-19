@@ -16,6 +16,12 @@ export default function menu(controller) {
     .addTo(controller);
 
 
+
+
+
+
+
+    
     var menuQout = new ScrollMagic.Scene({
         triggerElement:".menuTrigger-out",
         duration:200

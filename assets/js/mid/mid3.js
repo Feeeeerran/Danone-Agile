@@ -49,8 +49,14 @@ export default function mid3 (controller) {
     .addTo(controller)
 
     // ANIMACION DE FLECHA ////////////
-    var mid3Anim = new TimelineMax()
-        .fromTo(".mid3Icon3",1,{transform:"translateX(-60vw)"},{transform:"translateX(0)"})
+
+    if (window.innerWidth>=992) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon3",1,{transform:"translateX(-60vw)"},{transform:"translateX(0)"})
+    } else if (window.innerWidth<=600) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon3",1,{transform:"translateX(-80vw)"},{transform:"translateX(0)"})
+    }
 
     var mid3An = new ScrollMagic.Scene({
         triggerElement:".mid3Trigger-animation1",
@@ -59,8 +65,14 @@ export default function mid3 (controller) {
     .setTween(mid3Anim)
     .addTo(controller)
     
-    var mid3Anim = new TimelineMax()
-        .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(100vw)"},{transform:"translateX(0)"})
+
+    if (window.innerWidth>=992) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(100vw)"},{transform:"translateX(0)"})
+    } else if (window.innerWidth<=600) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(300vw)"},{transform:"translateX(0)"})
+    }
 
     var mid3An = new ScrollMagic.Scene({
         triggerElement:".mid3Trigger-animation2",
@@ -71,13 +83,24 @@ export default function mid3 (controller) {
     
     // ANIMACION DE PERSONA
 
-    var mid3Anim = new TimelineMax()
-        .fromTo(".mid3Icon2",1,{top:"45%",width:"0",transform:"rotate(-35deg)"},{top:"-8%",width:"10%",transform:"rotate(-25deg)"})
-        .to(".mid3Icon2",1,{top:"-5%",width:"13%",transform:"rotate(5deg)"})
-        .to(".mid3Icon2",1,{top:"-25%",width:"18%",transform:"rotate(-15deg)"})
-        .to(".mid3Icon2",1,{top:"-20%",width:"19.5%",transform:"rotate(15deg)"})
-        .to(".mid3Icon2",1,{top:"-18%",width:"23%",transform:"rotate(0)"})
-        .fromTo(".mid3Icon1",0.5,{opacity:0,transform:"translateY(10vh)"},{opacity:1,transform:"translateY(0vh)"})
+    if (window.innerWidth>992) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon2",1,{top:"45%",width:"0",transform:"rotate(-35deg)"},{top:"-8%",width:"10%",transform:"rotate(-25deg)"})
+            .to(".mid3Icon2",1,{top:"-5%",width:"13%",transform:"rotate(5deg)"})
+            .to(".mid3Icon2",1,{top:"-25%",width:"18%",transform:"rotate(-15deg)"})
+            .to(".mid3Icon2",1,{top:"-20%",width:"19.5%",transform:"rotate(15deg)"})
+            .to(".mid3Icon2",1,{top:"-18%",width:"23%",transform:"rotate(0)"})
+            .fromTo(".mid3Icon1",0.5,{opacity:0,transform:"translateY(10vh)"},{opacity:1,transform:"translateY(0vh)"})
+
+    } else if (window.innerWidth<=600) {
+        var mid3Anim = new TimelineMax()
+            .fromTo(".mid3Icon2",1,{top:"45%",width:"0",transform:"rotate(-35deg)"},{top:"-8%",width:"10%",transform:"rotate(-25deg)"})
+            .to(".mid3Icon2",1,{top:"-5%",width:"15%",transform:"rotate(5deg)"})
+            .to(".mid3Icon2",1,{top:"-25%",width:"25%",transform:"rotate(-15deg)"})
+            .to(".mid3Icon2",1,{top:"-20%",width:"35%",transform:"rotate(15deg)"})
+            .to(".mid3Icon2",1,{top:"-18%",width:"45%",transform:"rotate(0)"})
+            .fromTo(".mid3Icon1",0.5,{opacity:0,transform:"translateY(10vh)"},{opacity:1,transform:"translateY(0vh)"})
+    }
 
     var mid3An = new ScrollMagic.Scene({
         triggerElement:".mid3Trigger-animation2",

@@ -1,7 +1,7 @@
 #containerHow {
     position: absolute;
-    bottom:-100vh;
-    height:700vh;
+    bottom:-200vh;
+    height:900vh;
 
     z-index: 9999999;
     #sub-containerHow {
@@ -100,14 +100,14 @@
 
 #howPass {
     position: relative;
-    height: 0;
+    height: 100vh;
 }
 
 .howPass {
     height: 600vh;
 }
 .howPass2 {
-    height:100vh;
+    height:200vh;
 }
 
 

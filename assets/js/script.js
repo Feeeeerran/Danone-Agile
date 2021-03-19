@@ -70,6 +70,7 @@ end15Play.onclick = () => {
     end15Play.style.opacity=0
     end15Text.style.opacity=0
     end15Video.style.opacity=1
+    end15Video.play()
 }
 
 
