@@ -14,6 +14,7 @@ div#end-container4-5-6 {
         svg {
             position: absolute;
             height:85vh;
+            width:31%;
         }
 
         p {
@@ -114,32 +115,28 @@ div#end-container4-5-6 {
 
                     
                     li {
-                        position: relative;
+                        width:100%;
                         list-style: none;
-                        font:{family:bariolB;size:2.3vw;}
+                        font:{family:bariolB;size:2.3vw;};
 
                         
                         button {
-                            cursor: pointer;
+                            cursor: pointer !important;
+                            position: relative;
                             width: 12%;
                             border-radius:100vw;
                             border:none;
                             background-color: white;
-                            outline-style:none ;
+                            outline-style:none;
                             
                             font:{family:bariolB;size:3vw;}
                             line-height: 0.8;
                             padding-bottom: 2.5%;
-                            
-
                         }
-
                     }
 
-        
-
                     li:nth-child(1) {button{color:#0b367a};}
-                    li:nth-child(2) {button{color:#5cdd33};}
+                    li:nth-child(2) {button{color:#5cdd33;cursor: pointer;};}
                     li:nth-child(3) {button{color:#9984c2};}
                 }
 

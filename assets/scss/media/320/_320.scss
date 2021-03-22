@@ -1,0 +1,43 @@
+@media only screen and (max-width: 320px) {
+    @import "../../variables";
+    @import "../../intro/intro";
+    @import "../../menu/menu";
+    @import "../../mid/mid";
+    @import "../../end/end";
+    @import "../../pass/pass";
+
+
+    #mid {
+        #mid-container5 {
+            #sub-containerMid5{
+                .mid5Content {
+                    .mid5Icon2 {
+                        top: 1% !important;
+                        left: 29% !important;
+                        height: 63% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #end {
+        div#end-container11-12-13-14 {
+            .groupContainer {
+                .groupIcons {
+                    .group {
+                        .groupFlag {
+                            svg {
+                                transform:scale(1.9) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}

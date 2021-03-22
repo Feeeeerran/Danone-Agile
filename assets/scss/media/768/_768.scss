@@ -1,4 +1,4 @@
-@media only screen and (min-width:600px) and (max-width: 768px) {
+@media only screen and (min-width:600px) and (max-width: 992px) {
     @import "../../variables";
     @import "../../intro/intro";
     @import "../../menu/menu";
@@ -11,12 +11,15 @@
 
     section#intro {
         .intro-container {
-            h1 {
-                font-size: 9vw;
+            
+            .introTit-container {
+                // h1 {font-size: 9vw;}
+                img {height: 18vh;}
             }
+
             p:nth-child(2) {
                 width: 85%;
-                font-size: 5vw;
+                font-size: 3vw;
             }
             p:nth-child(4) {
                 width: 80%;
@@ -32,33 +35,35 @@
                 // .introIcon3 {height: 30%;}
             }
         }
-
-
     }
 
     section#menu {
-        #menuQuestions {
-            width:70%;
-            li {
-                font-size: 4vw;
+        .menuQuestions-container {
+            #menuQuestions {
+                padding:0;
+                width:80%;
+                li {
+                    font-size: 4vw;
+    
+                }
             }
         }
 
         #containerWhat {
             #sub-containerWhat {
-                @include menuTitulosResp;      
+                @include menuTitulosResp;
                 .whatContent {
                     height:60%;
                     width:90%;
 
                     p:nth-child(1) {
-                        font-size: 4vw;
+                        font-size: 3vw;
                         padding-left: 3vw;
                     }   
                     
                     p:nth-child(2) {
                         align-self: center;
-                        font-size: 2.8vw;
+                        font-size: 2.5vw;
                     }
         
                     .whatIcon1 {
@@ -77,9 +82,11 @@
         #containerWhen {
             #sub-containerWhen {
                 padding-top: 0;
-                @include menuTitulosResp;      
+                @include menuTitulosResp;
+                h3 {height: 10%;}
+                justify-content: center;     
                 .whenContent {
-                    height:70%;
+                    height:60%;
                     width:95%;
 
                     margin-bottom: 0;
@@ -103,15 +110,17 @@
         #containerWhy {
             #sub-containerWhy {
                 padding-top: 0;
-                @include menuTitulosResp;      
+                @include menuTitulosResp;
+                h3 {height: 10%;margin:0} 
                 .whyContent {
-                    height: 70%;
-                    width:95%;
+                    margin-bottom: 5vh;
+                    height: 60%;
+                    width:90%;
 
                     .whyText {
                         >p {
                             height: 30%;
-                            font-size: 4vw;
+                            font-size: 3.5vw;
                         }
                         .whyCheck {
                             margin-top: 10vh;
@@ -123,14 +132,16 @@
                             }
                             p {
                                 align-self: center;
-                                font-size: 3.8vw;
+                                font-size: 3vw;
                             }
                         }
                     }
                 }
             }
         }
-
+    }
+    
+    #howPass {
         #containerHow {
             #sub-containerHow {
                 padding-top: 0;
@@ -139,26 +150,26 @@
                 .howContent {
                     width:95%;
                     height:50%;
-
-
+    
+    
                     >p {
                         width:80%;
                         font-size: 3.3vw;
                     }
-
+    
                     .logo {
                         top:-10%;
                         left:-20%;
                         width: 100%;
                     }
-
+    
                     .howIcon1 {
-                        top:-100%;
-                        left:0;
+                        top:-80%;
+                        left:-15%;
                         width: 80%;;
                         transform: scale(1.2);
                     }
-
+    
                     .keepS {
                         p {
                             font-size: 2.3vw;
@@ -170,9 +181,361 @@
 
     }
 
+    #mid {
+        #mid-container1-2 {
+            .girl-subContainer {
+                .girlContainer {
+                    height: 100vh;
+                }
+            }
+
+            #mid-container1 {
+                #sub-containerMid1 {
+                    h3 {font-size: 5.5vw;}
+                }
+            }
+            #mid-container2 {
+                #sub-containerMid2 {
+                    h3 {
+                        margin:0;
+                        font-size: 5.2vw;
+                        span {line-height: 0;}
+                    }
+                }
+            }
+        }
+
+        #mid-container3 {
+            #sub-containerMid3 {
+                h3 {font-size: 4.5vw;}
+            }
+        }
+
+        #mid-container4 {
+            #sub-containerMid4 {
+                h3 {font-size: 4.5vw;margin-bottom: 10vh;}
+            }
+        }
+
+        #mid-container5 {
+            #sub-containerMid5 {
+                h3 {font-size: 4.5vw;width:80%}
+                .mid5Content {
+                    .mid5Icon2 {
+                        top: -24% !important;
+                        left: 37% !important;
+                        height: 95% !important;
+                    }
+                }
+            }
+        }
+
+        #mid-container6 {
+            #sub-containerMid6 {
+                h3 {font-size: 4.5vw;}
+                .mid6Content {
+                    .mid6Icon1 {
+                        top:8%;
+                    }
+
+                    .mid6Icon3 {
+                        top:50%;
+                    }
+                }
+            }
+        }
+    }
+
+    #end {
+        #end-container1-2 {
+            .iconsContainer {
+
+                .end1-2Icon4 {
+                    bottom:5%;
+                }
+                .end1-2Icon6 {
+                    bottom:5%;
+                }
+                .end1-2Icon7 {
+                    top:20%;
+                }
+                .end1-2Icon8 {
+                    top:20%;
+                }
+                .end1-2Icon9{
+                    top:30%;
+                }
+            }
+
+            #endContainer1 {
+                #sub-containerEnd1 {
+                    h3 {
+                        width:80%;
+                        font-size: 5vw;
+                    }
+                }
+            }
+
+            #endContainer2 {
+                #sub-containerEnd2 {
+                    h3 {
+                        margin-bottom:5vh;
+                        width:80%;
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+
+        #endContainer3 {
+            #sub-containerEnd3 {
+                h3 {
+                    font-size:4.5vw;
+                    width:85%;
+                }
+
+                p {
+                    font-size: 3.5vw;
+                }
+
+                svg {
+                    width:30%;
+                }
+            }
+        }
+
+        #end-container4-5-6 {
+            .end4-5-6Icon {
+                p {
+                    left:0;
+                    font-size: 4vw;
+                }
+                svg {
+                    width:25%;
+                }
+            }
+
+            #endContainer4 {
+                #sub-containerEnd4 {
+                    .end4Content {
+                        height: 75%;
+                        p {
+                            width:30%;
+                            font-size: 3.5vw;
+                        }
+                        ul {
+                            font-size: 3.5vw;
+                            li {font-size: 2.5vw;}
+                        }
+                    }
+                }
+            }
+
+            #end-container5-6 {
+                .contentContainer {
+                    .end5-6Content {
+                        .keyRoles {
+                            padding-left: 4%;
+                        }
+                        .info {
+                            width:35%;
+                            li {
+                                p {
+                                    width: 85%;
+                                    font-size: 2.3vw;
+                                }
+
+                                img {
+                                    left:-2%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #end-container7-8 {
+            .triBoats-subContainer {
+                .triBoats-container {
+                    align-items: center;
+                    width:55%;
+                    >p{
+                        font-size: 4vw;
+                        bottom:0;
+                    }
+                    div {
+                        height:80vh;
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+
+            #endContainer7 {
+                #sub-containerEnd7 {
+                    .end7Content {
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+            
+            #endContainer8 {
+                #sub-containerEnd8 {
+                    .end8Content {
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        #end-container9-10 {
+            .end9-10Content-container {
+                .end9-10Content {
+                    width:70%;
+                    .contentText {
+                        width:40%;
+                        right:-22%;
+                        p:nth-child(1) {
+                            font-size: 3.5vw;
+                            margin-bottom: 0;
+                        }
+                        p:nth-child(2) {
+                            width:100%;
+                            top:0;
+                            font-size: 2.2vw;
+                        }
+                    }
+                }
+
+                .tribeResContainer {
+                    .tribeRes {
+                        width: 80%;
+                        height:50vh;
+                        top:5vh;
+                        >p {
+                            font-size: 3.5vw;
+                            top:-5%;
+                        }
+
+                        .card {
+                            .flip{
+                                .flipText {
+                                    width:80%;
+                                    font-size: 2.5vw;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        #end-container11-12-13-14 {
+            .groupContainer {
+                .groupIcons {
+                    >p {
+                        top:0;
+                        font-size: 3vw;
+                    }
+                    .chat {
+                        width:65%;
+                    }
+                    .group {
+                        width:65%;
+                        .groupFlag {
+                            svg {bottom:10%;}
+                        }
+                    }
+                    .groundIcon {
+                        width:65%;
+                    }
+                }
+            }
+
+            #end-container11-12 {
+
+                .boatContainer {
+                    
+                    .boatIcons {
+                        >p {
+                            font-size: 4vw;
+                            top:-10%;
+                        }
+
+                        .rectangles {
+                            .rect1 {
+                                top:31.5%;
+                                height: initial;
+                            }
+                        }
+                    }
+                }
+
+                #endContainer11 {
+                    #sub-containerEnd11 {
+                        .end11Content {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            right:5%;
+                            width:26%;
+
+                            p{font-size: 3vw;}
+                        }
+                    }
+                }
+                
+                #endContainer12 {
+                    #sub-containerEnd12 {
+                        .end12Content {
+                            p{font-size: 3vw;}
+                        }
+                    }
+                }
+            }
+
+            div#end-container13-14 {
+                .responsibContainer {
+                    >.responsib {
+                        width:80%;
+                        >p {
+                            font-size: 2.8vw;
+                        }
+
+                        .card {
+                            .flip {
+                                .flipText {
+                                    width:65%;
+                                    font-size: 2.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
 
+        }
+    }
 
+    #end16Pass {
+        #endContainer16 {
+            #sub-containerEnd16 {
+                .end16Content {
+                    p {font-size: 2vw;}
+                }
+            }
+        }
+    }
 
 
 

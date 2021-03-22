@@ -372,4 +372,508 @@
 
     }
 
+    section#end {
+        #end-container1-2 {
+            .end1-2_icons {
+                .iconsContainer {
+                    .end1-2Icon1,.end1-2Icon2,.end1-2Icon3 {
+                        width:100%;
+                    }
+
+                    .fillS {width:10%}
+                    .end1-2Icon4 {
+                        bottom:5%;
+                        left:23%;
+                    }
+
+                    .end1-2Icon6 {
+                        bottom:5%;
+                        right:23%;
+                    }
+
+                    .end1-2Icon5 {
+                        bottom:35%;
+                        width:5%;
+                    }
+            
+                    .end1-2Icon7 {
+                        width:12%;
+                        top:25%;
+                    }
+            
+                    .end1-2Icon8 {
+                        width:10%;
+                        top:25%;
+                        right:30%
+                    }
+            
+                    .end1-2Icon9 {
+                        width:8%;
+                        top:32%;
+                        right: 34%;
+                    }
+                }
+            }
+
+
+            #endContainer1 {
+                #sub-containerEnd1 {
+                    h3 {
+                        font-size: 5.5vw;
+                    }
+                }
+            }
+            #endContainer2 {
+                #sub-containerEnd2 {
+                    h3 {
+                        font-size: 5vw;
+                        width:85%;
+                    }
+                }
+            }
+        }
+
+        #endContainer3 {
+        
+            #sub-containerEnd3 {
+                h3 {
+                    font-size: 5.2vw;
+                    width: 90%;
+                }
+
+                p {
+                    font-size: 3.5vw;
+                }
+
+                svg {
+                    width: 55%;
+                }
+            }
+        }
+
+        #end-container4-5-6 {
+        
+            .end4-5-6Icon {
+                svg {
+                    height:50vh;
+                    width:80%;
+                }
+
+                p {
+                    font-size: 5vw;
+                }
+            }
+
+            #endContainer4 {
+                #sub-containerEnd4 {
+                    justify-content: flex-end;
+                    .end4Content {
+                        margin:0;
+                        height: 35%;
+
+                        p {
+                            width:40%;
+                            font-size: 5vw;
+                        }
+
+                        ul {
+                            width:60%;
+                            align-self: flex-start;
+                            font-size: 5vw;
+                            li {
+                                font-size:4vw;
+                            }
+                        }
+                    }
+                }   
+            }
+            
+            #end-container5-6 {
+                .contentContainer {
+                    top:60vh;
+                    .end5-6Content {
+                        height: 35vh;
+                        
+
+                        .keyRoles {
+                            padding-left:3%;
+                            width:50%;
+                            font-size: 4vw;
+                            li {
+                                font-size: 4vw;
+
+                                button {
+                                    font-size: 4vw;
+
+                                }
+                            }
+                        }
+
+                        .info {
+                            margin-right: 2vw;
+                            padding: 0;
+                            width: 42%;
+                            height: 95%;
+                            font-size: 2.8vw;
+
+                            li {
+                                p {
+                                    width:90%;
+                                }
+    
+                                img {
+                                    left:-2%;
+                                    height:100%;
+                                }
+                            }
+
+
+                        }
+
+                        .info3 {
+                            img {
+                                height:135% !important;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        
+        #end-container7-8 {
+            .triBoats-subContainer {
+                .triBoats-container {
+                    height:60vh;
+                    width: 95%;
+                    left:2.5%;
+
+                    >p {
+                        font-size: 4.5vw;
+                        top:0;
+                    }
+                    div {
+                        height: 100%;
+                        p {
+                            font-size: 4vw;
+                            bottom:20%;
+                        }
+                    }
+                }
+            }
+
+            #endContainer7 {
+                #sub-containerEnd7 {
+                    justify-content: flex-end;     
+                    .end7Content {
+                        height:40%;
+                        justify-content: flex-start;
+
+                        p {
+                            text-align: center;
+                            width: 100%;
+                            font-size: 5.5vw;
+                        }
+
+                    }
+                }
+            }
+
+            #endContainer8 {
+                #sub-containerEnd8 {
+                    justify-content: flex-end;
+                    .end8Content {
+                        height:45%;
+                        justify-content: center;
+
+                        p {
+                            margin:2vh 0;
+                            text-align: center;
+                            width: 100%;
+                            font-size: 5.5vw;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #end-container9-10 {
+            .end9-10Content-container {
+                .end9-10Content {
+                    flex-direction: column-reverse;
+
+                    width: 90%;
+                    left:5%;
+                    top:10vh;
+
+                    .contentText {
+                        position: relative;
+                        right: 0;
+                        margin-bottom: 3vh;
+
+                        p:nth-child(1) {
+                            margin:0;
+                            text-align: center;
+                            font-size: 6vw;
+                        }
+                        p:nth-child(2) {
+                            width:100%;
+                            margin:0;
+                            top:0;
+                            left:0;
+                            text-align: center;
+                            font-size: 4vw;
+                        }
+                    }
+                }
+
+                .tribeResContainer {
+                    .tribeRes {
+                        top:15vh;
+                        width:90%;
+                        height: 40vh;
+
+                        >p {
+                            top:0;
+                            font-size: 5vw;
+                        }
+
+                        .card {
+                            width:32%;
+                            .flip {
+                                .flipText {
+                                    width:90%;
+                                    font-size:3.7vw;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        #end-container11-12-13-14 {
+            .groupContainer {
+                .groupIcons {
+                    height: 45vh;
+                    left:-5%;
+
+                    p {
+                        top:15%;
+                        font-size:5vw;
+                        right: 0;
+                    }
+
+                    .group {
+                        width:70%;
+                        height:40%;
+                        align-items: flex-end;
+
+                        svg {
+                            height: 80%;
+                        }
+
+
+
+
+                        .groupFlag {
+                            svg {
+                                transform:scale(1.9);
+                                bottom:-8%;
+                            }
+                        }
+                    }
+
+                    .groundIcon {
+                        width:70%;
+                    }
+
+                    .chat {
+                        top:5%;
+                        width: 70%;
+                        .chatIcon1 {
+                            width:20%;
+                        }
+                        .chatIcon2 {
+                            left:0;
+                            transform: scale(1);
+                        }
+                    }
+
+
+                }
+            }
+
+            #end-container11-12 {
+                .boatContainer {
+                    top:0;
+                    .boatIcons {
+                        width:90%;
+                        left:5%;
+                        height: 50vh;
+
+                        align-items: flex-end;
+
+                        p {
+                            top:0;
+                            font-size: 4.5vw;
+                        }
+
+                        .boat {
+                            height:80%;
+                        }
+
+                        .rectangles {
+                            .rect1 {
+                                top:-8%;
+                            }
+                        }
+                    }
+                }
+
+                #endContainer11 {
+                    #sub-containerEnd11 {
+                        align-items: center;
+                        justify-content: flex-end;
+                        .end11Content {
+                            width:inherit;
+                            height: 50%;
+                            right:0;
+                            display: flex;
+                            justify-content: center;
+                            p {
+                                width:80%;
+                                font-size: 6vw;
+                            }
+
+                        }
+                    }
+                }
+
+                #endContainer12 {                
+                    div#sub-containerEnd12 {
+                        align-items: center;
+                        justify-content: flex-end;        
+                        .end12Content {
+                            width:inherit;
+                            height: 50%;
+                            right:0;
+                            display: flex;
+                            justify-content: center;
+                            p {
+                                width:80%;
+                                font-size: 6vw;
+                            }
+                        }
+                
+                    }
+                }
+
+            }
+
+            div#end-container13-14 {
+
+                .responsibContainer {
+
+
+
+                    >.responsib {
+                        width:90%;
+                        height:50vh;
+
+                        >p {
+                            font-size:4.3vw;
+                        }
+
+                        >p:after {
+                            margin-top: 2vh;
+                            line-height: 4.2;
+                        }
+
+                        .card {
+                            margin:0 1vw;
+                            height: 50%;
+                            .flip {
+                                .flipText {
+                                    width:80%;
+                                    font-size:3.8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #endContainer15 {
+            #sub-containerEnd15 {
+                h3 {
+                    width:80%;
+                    font-size: 5vw;
+                }
+            }
+        }
+
+    }
+    
+    #end16Pass {
+        #endContainer16 {
+            #sub-containerEnd16 {
+                h3 {
+                    font-size: 4.5vw;
+                    width: 80%;
+                }
+                .end16Content {
+                    .contentTop {
+                        .topContainer {
+                            p {font-size: 3.5vw;}
+                        }
+                    }
+                    .contentMid {
+
+                        .midIcon2 {
+                            top:50%;
+                            width:18%;
+                        }
+                        .midIcon3 {
+                            top:45%;
+                            left:0;
+                            width:12%;
+                        }
+                        .midIcon4 {
+                            top:60%;
+                            left:0%;
+                            width:14%;
+                        }
+                        .midIcon5 {
+                            transform:scaleX(-1) scaleY(-1) rotate(35deg);
+                            top:25%;
+                            left:-2%;
+                            width:15%;
+                        }
+                    }
+
+
+                    .contentBottom {
+                        .bottomContainer {
+                            p {font-size: 3.5vw;width:100%;}
+                        }
+
+                        .bottom1 {
+                            top:0;
+                        }
+                        .bottom2 {
+                            top:0;
+                            left:0;
+                        }
+                        .bottom3 {
+                            left:0;
+                        } 
+                    }
+                }
+            }
+        }
+    }
 }

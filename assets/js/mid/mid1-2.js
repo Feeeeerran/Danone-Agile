@@ -7,7 +7,7 @@ export default function mid1_2 (controller) {
         triggerElement:".girlSound-alert"
     })
     .on("enter",function(e){
-        alert.play()
+        alerta.play()
     })
     .addTo(controller)
 

@@ -23,7 +23,7 @@ export default function mid6 (controller) {
     .setTween(mid6T)
     .addTo(controller)
 
-    if (window.innerWidth>=992) {
+    if (window.innerWidth>600) {
         var mid6Icons = new TimelineMax()
             .fromTo(".mid6Content",1,{right:"-80%",top:"50%"},{right:"65%",top:"-30%"})
     } else if (window.innerWidth<=600) {

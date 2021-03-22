@@ -2,6 +2,8 @@ export default function end11_12_13_14(controller) {
 
     // BOATS IN
 
+   
+
     var boats = new TimelineMax()
         .fromTo(".boat",1,{transform:"translateY(100vh)"},{transform:"translateY(0)"})
         .fromTo(".end11Content",1,{transform:"translateY(-100vh)"},{transform:"translateY(0)"})
@@ -13,12 +15,23 @@ export default function end11_12_13_14(controller) {
         .to(".boatIcons",1,{transform:"scale(0.8)"})
         .to(".boatIcons",1,{transform:"translate(-80vw,-20vh) scale(0.4)"})
 
-    var end11 = new ScrollMagic.Scene({
-        triggerElement:".end11-12-13-14Trigger",
-        duration:"1060%"
-    })
-    .setTween(boats)
-    .addTo(controller)
+
+    if (window.innerWidth>600) {
+        var end11 = new ScrollMagic.Scene({
+            triggerElement:".end11-12-13-14Trigger",
+            duration:"1000%"
+        })
+        .setTween(boats)
+        .addTo(controller)
+    } else if (window.innerWidth<=600) {
+        var end11 = new ScrollMagic.Scene({
+            triggerElement:".end11-12-13-14Trigger",
+            duration:"800%"
+        })
+        .setTween(boats)
+        .addTo(controller)
+    } 
+
 
 
     // GROUP IN
@@ -30,7 +43,7 @@ export default function end11_12_13_14(controller) {
         .fromTo(".chat",1,{opacity:0},{opacity:1})
         .to(".group,.chat,.groundIcon",1,{left:"0%"})
         .fromTo(".groupIcon4",1,{opacity:0,left:"100%"},{opacity:1,left:"50%"})
-        .to(".end12Content",1,{transform:"translateX(40vw)"})
+        .to(".end12Content",1,{transform:"translateX(90vw)"})
         .fromTo(".groupIcons>p",1,{opacity:0},{opacity:1})
 
     var end12 = new ScrollMagic.Scene({
