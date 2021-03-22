@@ -24,7 +24,7 @@ export default function when (controller) {
 
     var whenContent = new TimelineMax()
         .fromTo(".whenIcon1",1,{transform:"translateX(-100vw)"},{transform:"translateX(0)"})
-        .fromTo(".whenText",1,{transform:"translateY(50vh)"},{transform:"translateY(0)"})
+        .fromTo(".whenText",1,{transform:"translateY(80vh)"},{transform:"translateY(0)"})
         .fromTo(".whenIcon2",1,{transform:"scale(0)"},{transform:"scale(1) rotate(30deg)"})
         .to(".whenIcon2",1,{transform:"rotate(-30deg)"})
         .to(".whenIcon2",1,{transform:"scale(1.1) rotate(0)"})

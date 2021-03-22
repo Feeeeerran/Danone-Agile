@@ -47,7 +47,7 @@ export default function end4_5_6(controller) {
 
     var end4T = new TimelineMax()
         .fromTo(".end4Content>p",1,{transform:"translateX(-50vw)"},{transform:"translateX(0)"})
-        .fromTo(".end4Content>ul",1,{transform:"translateX(35vw)"},{transform:"translateX(2vw)"})
+        .fromTo(".end4Content>ul",1,{transform:"translateX(50vw)"},{transform:"translateX(2vw)"})
         .fromTo(".end4Content>ul>li:nth-child(1)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
         .fromTo(".end4Content>ul>li:nth-child(2)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})
         .fromTo(".end4Content>ul>li:nth-child(3)",1,{transform:"translateY(55vh)"},{transform:"translateY(0)"})

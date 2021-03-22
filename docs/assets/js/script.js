@@ -1,5 +1,5 @@
 var agua = document.getElementById("agua");
-var alert = document.getElementById("alert");
+var alerta = document.getElementById("alerta");
 var aplauso = document.getElementById("aplauso");
 var calendario = document.getElementById("calendario");
 var click = document.getElementById("click");
@@ -16,7 +16,11 @@ var popup = document.getElementById("popup");
 
 
 
+
 const controller = new ScrollMagic.Controller();
+
+
+
 
 import intro from './intro/intro-script.js';
 intro(controller);
@@ -25,10 +29,25 @@ import menu from './menu/menu-script.js';
 menu(controller);
 
 import mid from './mid/mid-script.js';
-mid(controller);
+// mid(controller);
 
 import end from './end/end-script.js';
-end(controller);
+// end(controller);
+
+var flagIntro=1;
+var flagMid=1;
+
+window.addEventListener("scroll",()=> {
+    var Ypos = ((window.scrollY)/(window.innerHeight))*100
+    if(Ypos>3150 && flagIntro==1) {
+        mid(controller)
+        flagIntro=0;
+    } if (Ypos>6600 && flagMid==1) {
+        end(controller)
+        flagMid=0;
+    }
+})
+
 
 
 // CARDS + CLICK
@@ -49,14 +68,15 @@ clickCard.forEach(e => {
 
 // KEYROLES + CLICK
 
-var clickRoles = document.querySelectorAll(".keyRoles>li")
+var clickRoles = document.querySelectorAll(".keyRoles>li>button")
 var infoKeyRoles = document.querySelectorAll(".info>li")
 
 clickRoles.forEach((e,i)=> {
-    e.onclick= ()=> {
+    e.addEventListener("click",()=> {
+        console.log("click")
         infoKeyRoles[i].classList.add("showKeyRole")
         infoKeyRoles[i].classList.remove("hideK")
-    }
+    })
 })
 
 // VIDEO

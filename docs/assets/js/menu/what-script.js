@@ -37,7 +37,7 @@ export default function what (controller) {
 
 
     // Anim responsive
-    if (window.innerWidth>992) {
+    if (window.innerWidth>600) {
         var whatContent = new TimelineMax()
         .fromTo(".whatContent>.primerP",1,{opacity:0},{opacity:1})
         .fromTo(".whatContent>.whatIcon3",1,{transform:"translate(100vw,0)"},{transform:"translate(0,0)"})
@@ -45,7 +45,7 @@ export default function what (controller) {
         .fromTo(".whatIcon2",1,{transform:"scale(0)"},{transform:"scale(1.2)"},)
         .to(".whatIcon2",1,{transform:"scale(0.8)"})
         .to(".whatIcon2",1,{transform:"scale(0.8)"})
-    } else if (window.innerWidth<600) {
+    } else if (window.innerWidth<=600) {
         var whatContent = new TimelineMax()
         .fromTo(".whatContent>.primerP",1,{opacity:0},{opacity:1})
         .fromTo(".whatContent>.whatIcon3",1,{transform:"translate(100vw,0)"},{transform:"translate(0,0)"})

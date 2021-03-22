@@ -50,7 +50,7 @@ export default function mid3 (controller) {
 
     // ANIMACION DE FLECHA ////////////
 
-    if (window.innerWidth>=992) {
+    if (window.innerWidth>600) {
         var mid3Anim = new TimelineMax()
             .fromTo(".mid3Icon3",1,{transform:"translateX(-60vw)"},{transform:"translateX(0)"})
     } else if (window.innerWidth<=600) {
@@ -66,12 +66,12 @@ export default function mid3 (controller) {
     .addTo(controller)
     
 
-    if (window.innerWidth>=992) {
+    if (window.innerWidth>=600) {
         var mid3Anim = new TimelineMax()
             .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(100vw)"},{transform:"translateX(0)"})
     } else if (window.innerWidth<=600) {
         var mid3Anim = new TimelineMax()
-            .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(300vw)"},{transform:"translateX(0)"})
+            .fromTo(".mid3Icon3>polygon",1,{transform:"translateX(400vw)"},{transform:"translateX(0)"})
     }
 
     var mid3An = new ScrollMagic.Scene({
@@ -83,7 +83,7 @@ export default function mid3 (controller) {
     
     // ANIMACION DE PERSONA
 
-    if (window.innerWidth>992) {
+    if (window.innerWidth>600) {
         var mid3Anim = new TimelineMax()
             .fromTo(".mid3Icon2",1,{top:"45%",width:"0",transform:"rotate(-35deg)"},{top:"-8%",width:"10%",transform:"rotate(-25deg)"})
             .to(".mid3Icon2",1,{top:"-5%",width:"13%",transform:"rotate(5deg)"})
